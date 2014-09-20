@@ -2,4 +2,4 @@ naknak.me
 =========
 
 This is my personal site.
-![alt tag](http://http://naknak.me/images/azala.png)
+![alt tag](http://naknak.me/images/azala.png)
