@@ -1,0 +1,1748 @@
+
+
+@charset "utf-8";
+/* CSS Document by eSOFT. Technologies & Consulting */
+
+/*
+=============================
+UNDO 
+=============================
+ */
+
+h1, h2, h3, h4, h5, h6, form, body, html, p, address, fieldset, input, table, th, td, ul, li {
+	margin:0;
+	padding:0;
+}
+a {
+	outline:none;
+	text-decoration:none;
+}
+a img, :link img, :visited img {
+	border:none;
+}
+fieldset {
+	border: none;
+}
+/*
+=============================
+BY DEFAULT ESTILOAK
+============================= 
+*/
+
+/*
+================== COLORES QUE SE PUEDEN USAR==================
+1- #ccc
+2- #333333  gris oscuro
+
+border:0.1em solid #000; 
+==============================================================*/
+
+
+
+body {
+	margin:0em;
+	padding:0em 0 0 0;
+	border:0;
+
+	background: #FFF ;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#333;
+	
+}
+
+.body_wrap{background: #FFF url(../images/index.jpg) no-repeat top center ;backgroud-size:100%;  
+} 
+h1 {
+	padding:0.5em 0 1em 0;
+	margin:0em 0 1em 0em;
+	width:110px;
+	height:22px;
+	position:relative; float:left;
+
+}
+ h1 em { /* Irudien ordezkanpena egiteko, erabilerraztasunagaitik*/
+	background:url(../images/logo.png) no-repeat;
+	width:100%;
+	height:100%;
+	position: absolute;
+}
+ h1 span{ position:absolute; text-indent:-9999px;}
+ h2 {
+	color:#cccccc;
+}
+ h3{ margin:0 0 0 0em;  clear:both; font-size:2em;font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;}
+h4 {
+}
+h5 {
+}
+h6 {
+}
+p {
+	margin:0em;
+	padding:0;
+}
+a:link {color: #cccccc;padding:0;margin:0;border:0;}
+a:visited {color: #cccccc;padding:0;margin:0;border:0;}
+a:hover {color: #000000;padding:0;margin:0;border:0;}
+a:focus {color: #000000;padding:0;margin:0;border:0;}
+a:active {color: #000000;padding:0;margin:0;border:0;}
+
+table {
+	margin:2em;
+	padding:0.5em;
+	/*font-size:1em;*/
+	border:#CCCCCC 0.1em solid;
+}
+th {
+	background:#E9E9E9;
+	padding:1em 1em 1em 1em;
+	text-align:left;
+}
+td {
+	padding:1em 0.4em 1em 0.4em;
+	margin:2em;
+	border-bottom:0.1em #CCCCCC solid;
+}
+/*table td input{ margin:0.5em; float:left; width:30px; border:1px solid #444343; background: #2E2E2E ; color:#b1b1b1; padding:0.2em;}*/
+
+dl {
+	padding:1em;
+	margin:0;
+}
+dt {
+	width:10em;
+	float:left;
+	font-weight:bold;
+	margin:0 0 0em 2em;
+}
+dd {
+	margin:0 0 0.5em 0;
+}
+
+
+div.etk_box_txt dl dd ul {
+	margin:1.8em 1.5em 0.5em 12em;
+	padding:0;
+}
+div.etk_box_txt dl dd ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+	list-style-image:none;
+}
+abbr, acronym {
+	border-bottom:1px dotted #333333;
+	cursor:help;
+}
+/* 
+=============================
+ELEMENTOAK
+=============================
+*/
+
+	
+#content {
+	width:100%;
+	clear:both;
+	margin:auto;
+	/*border:0.06em #cbcac8 solid;*/
+	padding:0 0 0 0;
+
+	min-height:50em;
+}
+#content[id] { /* ie6k min-height ondo egiteko */
+	height:auto;
+	min-height:50em;
+}
+#content:after {/* Gillotina eragozteko, espazio bat sartzen da div-aren bukaeran*/
+	content: "&nbsp;";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+#content_wrap {
+	width:95em;
+	clear:both;
+	margin:auto;
+}
+
+#idiomas {
+	float:right;
+	margin:0em 0 0 3em;
+	padding:0 0 0 0.5em;
+	color:#ffffff;
+	/*font-size:1em;*/
+	border:0.1em #CCCCCC solid;
+}
+#idiomas div {
+	padding:1em;
+	float:left;
+}
+#idiomas a:link {color:#000000;font-weight:bold;padding:1em;}
+#idiomas a:visited {color:#000000;font-weight:bold;}
+#idiomas a:hover {color: #333333;font-weight:bold;}
+#idiomas a:focus {color: #333333;font-weight:bold;}
+#idiomas a:active {color:#999999;font-weight:bold;}
+
+.selected {
+	color: #333333;
+	font-weight:bold;
+	background:#CCCCCC;
+}
+
+
+header {width:100%; font-size:0.5em; }
+
+section header{ background:none;}
+
+#header_wrap {
+	width:100%;
+	margin:0em auto 0em auto;
+	
+}
+#header_wrap ul { float:right; }
+#header_wrap ul li {  float:left;margin:0 1em  1em 0;	list-style:none;  }
+
+
+
+#header_wrap ul li a{ font-size:1.5em; color:#333;}
+#drop{ width:100%;  float:left; text-align:center;background:#000 url(../images/header_nav_deco.png) no-repeat top center; padding:0 0 2em 0; position:absolute; z-index:5; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;  }
+ #drop ul {  margin:1em auto 0em auto;padding:3em 0 2em 1em; width:95em; 
+}
+
+ #drop ul li{ width:20%; float:left; margin:0; padding:0; text-align:left;  }
+
+ #drop ul li a{ color:#FFF; display:block; font-size:1.7em;}
+
+ #drop ul ul li{ width:100%; float:none; display:block;}
+ #drop ul ul { background:none; margin:1em 0 0 0; padding:0;}
+
+ #drop ul ul li a{ color:#FFF; display:block;  text-transform:none; background:url(../images/li.png) no-repeat left center; padding:0 0 0 1em; }
+
+#header_wrap img {
+	border:0;
+} 
+
+#top {
+}
+
+footer {}
+#footer_wrap {
+	clear:both;
+	width:95em;
+	margin:2em auto;
+	color:#cccccc;
+}
+#footer_wrap strong {
+	color:#ccc;
+}
+#footer_wrap a:link {
+	font-weight:normal;
+}
+#footer_wrap a:visited {
+	font-weight:normal;
+}
+#footer_wrap a:hover {
+	font-weight:normal;
+}
+#footer_wrap a:active {
+	font-weight:normal;
+}
+#footer_wrap p {
+	margin:0em 0 0 0;
+}
+#credits {
+	clear:both;
+	margin:0em auto 0em auto;
+	width:95em;
+	color: #999999;
+	float:left;
+}
+#credits ul {
+	float:right;
+}
+#credits ul li {
+	float:left;
+	list-style:none;
+	margin:0em 0.5em 0em 0.5em;
+}
+#credits p {
+}
+#credits a:link {
+	font-size:1em;
+	color:#999999;
+}
+#credits a:visited {
+	font-weight:normal;
+	color:#999999;
+}
+#credits a:hover {
+	font-weight:normal;
+	color: #333333;
+}
+#credits a:focus {
+	font-weight:normal;
+	color: #333333;
+}
+#credits a:active {
+	font-weight:normal;
+	color:#333333;
+}
+#validadores {
+	float:right;
+}
+#validadores ul li {
+	margin:0 0em 0 1em;
+	width:8em;
+	float:left;
+}
+.xhtml, .css, .esoft {
+	position:relative;
+}
+.xhtml em, .css em {
+	position:absolute;
+	top:0px;
+	left:0;
+	display:block;
+	background:#00CCCC;
+}
+.esoft em {
+	position:absolute;
+	top:0px;
+	left:0;
+	display:block;
+	background:#00CCCC;
+	padding:0 0 0 5em;
+}
+.xhtml a:link em, .xhtml a:visited em {
+	background:url(../images/creditos.png) no-repeat -0px -0px;
+	width:72px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+}
+.xhtml a:hover em, .xhtml a:focus em, .xhtml a:active em {
+	background:url(../images/creditos.png) no-repeat -0px -36px;
+	width:72px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+	cursor:pointer;
+}
+.css a:link em, .css a:visited em {
+	background:url(../images/creditos.png) no-repeat -79px -0px;
+	width:73px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+}
+.css a:hover em, .css a:focus em, .css a:active em {
+	background:url(../images/creditos.png) no-repeat -79px -36px;
+	width:73px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+	cursor:pointer;
+}
+#esoft {
+	float:right;
+	margin:0 1em 0 0;
+}
+.esoft a:link em, .esoft a:visited em {
+	background:url(../images/creditos.png) no-repeat -161px -0px;
+	width:189px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+}
+.esoft a:hover em, .esoft a:focus em, .esoft a:active em {
+	background:url(../images/creditos.png) no-repeat -161px -36px;
+	width:189px;
+	height:32px;
+	padding:0em 0.4em 0em 0.4em;
+	text-decoration:none;
+	cursor:pointer;
+}
+/*
+=============================
+ZUTABEAK
+=============================
+*/
+
+#colmask {
+	position:relative;		/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:80%;			/* width of whole page */
+	overflow:hidden;	/* This chops off any overhanging divs */
+}
+/* Zutabeen ezaugarri orokorrak */
+
+.colleft {
+	float:left;
+	width:100%;
+	position:relative;
+}
+.col1, .col3 {
+	float:left;
+	position:relative;
+	padding:0 0 0em 0;
+	overflow:hidden;
+	margin:0em 0 0 0;
+}
+.col2 {
+	float:left;
+	position:relative;
+	padding:0 0 0 0;
+	overflow:hidden;
+	margin:0em 0 0 0;
+}
+/* 
+=============================
+1 ZUTABE (menu barik) 
+=============================
+ */
+	
+	.fullpage {
+/* page background colour */
+	}
+.fullpage .col1 { /*background:#0CF;*/
+	width:96%;				/* page width minus left and right padding */
+	left:0%;				/* page left padding */
+}
+/* 
+=============================
+2 ZUTABE (menua ezkerrean) 
+=============================
+ */
+
+.leftmenu {
+}
+.leftmenu .colleft {
+	right:75%;
+}
+.leftmenu .col1 {
+	/* border:0.1em #00CCCC solid;*/
+	width:73%;
+	left:101%;
+}
+.leftmenu .col2 {
+	/* border:0.1em #00CCCC solid;*/
+	width:25%;
+	left:2%;
+}
+/*
+=============================
+2 ZUTABE (Menua eskuinean)
+=============================
+*/
+	.rightmenu {
+/* right column background colour */
+	}
+.rightmenu .colleft {
+	right:25%;				/* right column width *//* left column background colour */
+	}
+.rightmenu .col1 {
+	width:71%;				/* left column content width (left column width minus left and right padding) */
+	left:27%;				/* (right column width) plus (left column left padding) */
+}
+.rightmenu .col2 {
+	width:21%;				/* right column content width (right column width minus left and right padding) */
+	left:31%;				/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+/*
+=============================
+3 ZUTABE (Menuak alboetan)
+=============================
+*/
+
+.threecol {
+}
+.threecol .colmid {
+	right:25%;
+}
+.threecol .colleft {
+	right:50%;
+}
+.threecol .col1 { /* border:0.1em #00CCCC solid;*/
+	width:53%;
+	left:76%;
+}
+.threecol .col2 {  /* border:0.1em #00CCCC solid;*/
+	width:25%;
+	left:-3%;
+}
+.threecol .col3 { /* border:0.1em #00CCCC solid;*/
+	width:20%;
+	left:51.5%;
+}
+/*
+=============================
+2 ZUTABE (biak berdinak)
+=============================
+*/
+	.doublepage {
+/* right column background colour */
+	}
+.doublepage .colleft {
+	right:50%;				/* right column width *//* left column background colour */
+	}
+.doublepage .col1 {
+	width:46%;				/* left column content width (column width minus left and right padding) */
+	left:52%;				/* right column width plus left column left padding */
+}
+.doublepage .col2 {
+	width:46%;				/* right column content width (column width minus left and right padding) */
+	left:56%;				/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+}
+/*
+=============================
+col2 ZUTABEA. Ezkerreko menua hemendik editatzen da.
+=============================
+*/
+
+.col2 {
+	position:relative;
+}
+.col2 h3 {
+	color:#cccccc;
+	margin:1em 1em 1em 1em;
+	font-size:1.4em;
+	background:#999999;
+	color:#FFFFFF;
+	padding:0 0 0 1em;
+}
+.col2 h4 {
+	color:#cccccc;
+	margin:1em 1em 1em 1em;
+	font-size:1.4em;
+	background:#999999;
+	color:#FFFFFF;
+	padding:0 0 0 1em;
+}
+.col2 img {
+	border:0;
+	margin:0.5em;
+	border:0.1em #999999 solid;
+}
+/*===========1. mailako lista=============*/
+	
+.col2 ul {
+	border-top:0.1em solid #cccccc;
+	margin:0em 0em 0em 0em;
+	padding:0 0 0 0em;
+	list-style:none;
+	position:relative;
+}
+.col2 ul li {
+	margin:0em 0em 0em 0em;
+	padding:0.6em 0 0.6em 0em;
+	border-bottom:0.1em solid #cccccc;
+}
+.col2 ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+.col2 ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+.col2 ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+.col2 ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+/*===========2. mailako lista=============*/
+
+.col2 ul ul {
+	margin:1em 0 0 0em;
+	padding:0em 0 0 2em;/*background:#477a89;*/
+}
+.col2 ul ul li {
+	font-size:1em;
+	margin:0em 0em 0em 0em;
+	padding-right:0em;
+	background:none;
+	border-bottom: none;
+}
+.col2 ul ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #ccc;
+	background:url(../images/col2_ul_ul_bg.png) 0px 0px no-repeat;
+	padding:0em 0 0em 2em;
+}
+.col2 ul ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #ccc;
+	background:url(../images/col2_ul_ul_bg.png) 0px 0px no-repeat;
+	padding:0em 0 0em 2em;
+}
+.col2 ul ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_ul_ul_bg.png)0px -21px no-repeat;
+	padding:0em 0 0em 2em;
+	color:#cccccc;
+}
+.col2 ul ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_ul_ul_bg.png) 0px -21px no-repeat;
+	padding:0em 0 0em 2em;
+	color:#cccccc;
+}
+/*===========3. mailako lista=============*/
+	
+.col2 ul ul ul li {
+	font-size:1em;
+	margin:0.4em 0em 0.4em 1em;
+	padding:0em;
+	list-style:url(../images/menu_li_li.png);
+	border-bottom: none;
+	background:none;
+	background-image:none;
+}
+.col2 ul ul ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:none;
+	padding:0em 0 0em 0em;
+}
+.col2 ul ul ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:none;
+	padding:0em 0 0em 0em;
+}
+.col2 ul ul ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+	padding:0em 0 0em 0em;
+	color:#cccccc;
+}
+.col2 ul ul ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+	padding:0em 0 0em 0em;
+	color:#cccccc;
+}
+/*
+=============================
+col1 ZUTABEA
+=============================
+*/
+.col1 {
+	color:#cccccc;
+	font-size:1.1em;
+}
+.col1 p {
+	padding:1em 0 1em 0; text-align:justify; margin:0 8em 0 0;
+}
+.col1 a:link {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 a:visited {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 a:hover, .col1 a:focus {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 a:active {
+	color:#ccc;
+	font-weight:normal;
+}
+ .col1  h1 {
+	font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#333333;
+	
+	margin:1em 0 0em 0;
+	padding:0em 1em 0em 0em;
+	font-size:2.8em;
+	font-weight:normal;
+	width: inherit;
+}
+.col1 h1 a:link, .col1 h1 a:visited, .col1 h1 a:hover, .col1 h1 a:active {
+	color:#ccc;
+	font-weight:bold;
+	text-decoration:none;
+}
+.col1 h1:first-letter {
+	color:#ccc;
+	
+}
+.col1 h2 {
+	/*font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	color:#333333;
+	border-bottom:0.1em #cccccc dotted;
+	margin:1em 0 1em 0em;
+	padding:0em 1em 0em 0.5em;
+	font-size:1.5em;
+	font-weight:normal; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+.col1 h2 a:link, .col1 h2 a:visited, .col1 h2 a:hover, .col1 h2 a:active {
+	text-decoration:none;
+	color:#cccccc;
+	font-weight:bold;
+}
+.col1 h4 {
+	color: #cccccc;
+	margin:0.6em 0 0.6em 2em;
+	padding:0 0 0 2em;
+	font-size:1.1em;
+	font-weight:bold;
+}
+.col1 h5 {
+	color: #cccccc;
+	margin:2em 0 1em 4em;
+	padding:0 0 0 1em;
+	font-size:1em;
+	font-weight:bold;
+}
+.col1 h6 {
+	color: #cccccc;
+	margin:2em 0 1em 5em;
+	padding:0 0 0 1em;
+	font-size:1em;
+	font-weight:bold;
+}
+/*============1. mailako lista=============================*/
+.col1 ul {
+	margin:2em;
+}
+.col1 ul li {
+	list-style: url(../images/li.png);
+	margin:1em;
+	padding:0em;
+}
+.col1 ul li a:link {
+	color:#ccc;
+	font-weight:bold;
+}
+.col1 ul li a:visited {
+	color:#ccc;
+	font-weight:bold;
+}
+.col1 ul li a:hover, .col1 ul li a:focus {
+	color:#ccc;
+	font-weight:bold;
+}
+.col1 ul li a:active {
+	color:#ccc;
+	font-weight:bold;
+}
+.col1 ul li img {
+	margin:0;
+	padding:0; /*border:0.1em solid #9EB51D;*/
+	float:left;
+}
+.col1 ol {
+}
+.col1 ol li {
+}
+/*============2. mailako lista=============================*/
+
+.col1 ul ul {
+}
+.col1 ul ul li {
+	list-style: url(../images/li.png);
+	margin:0 0 0 2em;
+}
+.col1 ul ul li a:link {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 ul ul li a:visited {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 ul ul li a:hover, .col1 ul ul li a:focus {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 ul ul li a:active {
+	color:#ccc;
+	font-weight:normal;
+}
+.col1 img {
+	padding:0em 0em 0em 0em;
+}
+.col1 img a {
+	border:none;
+}
+
+/*
+=============================
+col3 ZUTABEA. Eskuineko menua hemendik editatzen da.
+=============================
+*/
+
+.col3 {
+	position:relative;
+}
+.col3 h3 {
+	color:#cccccc;
+	margin:1em 1em 1em 1em;
+	font-size:1.4em;
+	background:#999999;
+	color:#FFFFFF;
+	padding:0 0 0 1em;
+}
+.col3 h4 {
+	color:#cccccc;
+	margin:1em 1em 1em 1em;
+	font-size:1.4em;
+	background:#999999;
+	color:#FFFFFF;
+	padding:0 0 0 1em;
+}
+.col3 img {
+	border:0;
+	margin:0.5em;
+	border:0.1em #999999 solid;
+}
+/*===========1. mailako lista=============*/
+	
+.col3 ul {
+	border-top:0.1em solid #cccccc;
+	margin:1em 0.5em 1em 1.5em;
+	padding:0 0 0 0em;
+	list-style:none;
+	position:relative;
+}
+.col3 ul li {
+	margin:0em 0em 0em 0em;
+	padding:0.6em 0 0.6em 0em;
+	border-bottom:0.1em solid #cccccc;
+}
+.col3 ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+.col3 ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+.col3 ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+.col3 ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+/*===========2. mailako lista=============*/
+
+.col3 ul ul {
+	margin:1em 0 0 0em;
+	padding:0em 0 0 2em;/*background:#477a89;*/
+}
+.col3 ul ul li {
+	font-size:1em;
+	margin:0em 0em 0em 0em;
+	padding-right:0em;
+	background:none;
+	border-bottom: none;
+}
+.col3 ul ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #ccc;
+	background:url(../images/col2_ul_ul_bg.png) 0px 0px no-repeat;
+	padding:0em 0 0em 2em;
+}
+.col3 ul ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #ccc;
+	background:url(../images/col2_ul_ul_bg.png) 0px 0px no-repeat;
+	padding:0em 0 0em 2em;
+}
+.col3 ul ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_ul_ul_bg.png)0px -21px no-repeat;
+	padding:0em 0 0em 2em;
+	color:#cccccc;
+}
+.col3 ul ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_ul_ul_bg.png) 0px -21px no-repeat;
+	padding:0em 0 0em 2em;
+	color:#cccccc;
+}
+/*===========3. mailako lista=============*/
+	
+.col3 ul ul ul li {
+	font-size:1em;
+	margin:0.4em 0em 0.4em 1em;
+	padding:0em;
+	list-style:url(../images/menu_li_li.png);
+	border-bottom: none;
+	background:none;
+	background-image:none;
+}
+.col3 ul ul ul li a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #FFFFFF;
+	background:none;
+	padding:0em 0 0em 0em;
+}
+.col3 ul ul ul li a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #FFFFFF;
+	background:none;
+	padding:0em 0 0em 0em;
+}
+.col3 ul ul ul li a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+	padding:0em 0 0em 0em;
+	color:#cccccc;
+}
+.col3 ul ul ul li a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:none;
+	padding:0em 0 0em 0em;
+	color:#cccccc;
+}
+/*
+=============================
+KLASEAK
+=============================
+*/
+	
+/*------------------KLASE OROKORRAK------------------*/
+
+
+
+.negrita {
+	font-weight:bold;
+}
+.clear {
+	clear:both;
+}
+.hidden {
+	display: block;
+	background: transparent;
+	background-image: none;
+	border: none;
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	margin: -1px 0 0 -1px;
+	width: 1px;
+}
+.cursiva {
+	font-style:italic;
+}
+.subrayado {
+	text-decoration:underline;
+}
+.imgsinborde {
+	border:none;
+}
+.float_left ul {
+	padding:0;
+	margin:0
+}
+.float_left ul li {
+	clear:both;
+	display:block;
+	padding:0;
+	margin:0
+}
+.float_left ul li img {
+	padding:0;
+	margin:0;
+	float:left;
+}
+.margin_right {
+	margin-right:2em;
+}
+.uppercase {
+	text-transform:uppercase;
+}
+.lowercase {
+	text-transform:lowercase;
+}
+.capitalize {
+	text-transform:capitalize;
+}
+
+.tachado { text-decoration:line-through;}
+
+
+
+
+/*-------------KLASEAK EDUKIA posizioa, margen eta padina kontrolatzeko. Bestelako etiketak col1-ean kudeatzen dira-----------------*/
+.boxmain {
+	margin:0em 0em 3em 0em;
+	padding: 2em 0em 2em 1em;
+}
+.boxcont {
+}
+.box {
+}
+
+.txt{ font-size:1.2em;}
+/*
+=============================
+ORRIALDE BAKOITZERAKO EZPEZIFIKOAK
+=============================
+*/
+/*---------Noticias-------------*/
+/*#blq_news{float:left;		}
+#blq_news a{display:block; font-weight:bold; background:url(../images/li.png) no-repeat left top; padding:0 0 0 1em;}
+#blq_news img{ margin:1em 1em 0 1em 0; 	}
+#blq_news ul {padding:0em;margin:0em; list-style:none; list-style-image:none;}
+#blq_news ul li{border:0.1em #CCCCCC solid;	padding:0.5em;margin:0.5em; list-style:none; list-style-image:none;	}*/
+	
+
+#col2_news {
+}
+#col2_news img {
+	float:left;
+	margin:1em 1em 0 0;
+}
+#col2_news ul {
+	padding:0em;
+	margin:0em 0 0 1em;
+}
+#col2_news ul li {
+	width:100%;
+	float:none;
+	clear:both;
+}
+#col2_news ul li p.blq_news_tit {
+	margin:1em 0 0 0;
+	display:block;
+}
+#col2_news ul li a {
+	list-style:none;
+	background:none;
+}
+#col2_news ul li p.blq_news_tit a:link {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+#col2_news ul li p.blq_news_tit a:visited {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	color: #cccccc;
+	background:url(../images/col2_li_bg.png) no-repeat 0px 0px;
+	padding:0em 0 0em 1em;
+}
+#col2_news ul li p.blq_news_tit a:hover {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+#col2_news ul li p.blq_news_tit a:active {
+	font-size:1.2em;
+	font-weight:bold;
+	text-decoration:none;
+	background:url(../images/col2_li_bg.png) no-repeat 0px -35px;
+	padding:0em 0 0em 1em;
+	color:#ccc;
+}
+#news_arch {
+	margin-bottom:3em;
+}
+#news_arch ul {
+	margin:0;
+	padding:0;
+}
+#news_arch ul li {
+	list-style:none;
+	margin:1em 0 1em 0;
+}
+#news_arch ul li img {
+	border:none;
+	margin:0em 0.5em 0.5em 0;
+}
+#news_arch ul li p.blq_news_tit {
+	background:#E9E9E9;
+	padding:0.4em 0 0.4em 0.5em;
+	display:block;
+	margin-bottom:1em;
+}
+#news_arch ul li p.blq_news_tit a {
+	text-decoration:none;
+}
+#col2_gal {
+}
+#col2_gal img {
+	float:left;
+}
+#col2_gal ul {
+	padding:0em;
+	margin:0em 0 0 1em;
+}
+#col2_gal ul li {
+	width:100%;
+	float:none;
+	clear:both;
+}
+#col2_gal ul li a {
+	font-size:1em;
+	margin:1em 0 0 0;
+}
+/*---------BUSQUEDA-------------*/
+#buscador form {
+	margin:0.5em 0.5em 2em 0.5em;
+	padding:0;
+}
+#buscador form fieldset {
+	margin:0;
+	padding:1em 1em 0em 1em;
+	width:90%;
+	border:0.1em solid #CCCCCC;
+}
+#buscador form legend {
+	font-size:1.1em;
+	font-weight:bold;
+	margin-bottom:5px;
+	padding:3px;
+	color:#cccccc;
+}
+#buscador form label {
+	float:left;
+	margin:0px 10px 0px 0;
+	height:4em;
+	text-align:left;
+	color:#cccccc;
+}
+#buscador form input {
+	border:1px solid #999999;
+	width:99%;
+	background:#FFFFFF;
+}
+.buscador {
+	width:60%;
+}
+#busqueda {
+	margin:1em 0 0 0;
+}
+#busqueda a {
+}
+#busqueda ul {
+	margin:0 0 0em 0em;
+}
+#busqueda ul li {
+	margin:1em;
+}
+#busqueda p {
+}
+/*---------MIGA-------------*/
+
+
+#miga {
+	margin:0 0.5em 0em 0em;font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:1.3em; float:left;
+}
+#miga ul{ margin:0; padding:0; float:left;}
+
+#miga li.li_miga a {
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+#miga li.li_miga {
+	list-style:url(../images/li_miga.png);
+	margin:0em 1.5em 0em 0.5em;
+	padding:0em;
+	float:left;
+}
+#miga ul.ul_miga {
+	margin:0 0 1em 1em;
+	padding:1em 0 0 0;
+	float:left;
+	width:100%;
+}
+#miga li.li_miga a:link {
+	font-size: 0.8em;
+	text-decoration:none;
+}
+#miga li.li_miga a:visited {
+	font-size: 0.8em;
+	text-decoration:none;
+}
+#miga li.li_miga a:hover {
+	font-size: 0.8em;
+	text-decoration:none;
+}
+#miga li.li_miga a:focus {
+	font-size: 0.8em;
+	text-decoration:none;
+}
+#miga li.li_miga a:active {
+	font-size: 0.8em;
+	text-decoration:none;
+}
+/*====================ANCHOS=======================*/
+.ancho1 {
+	width:/*100*/99%;
+}
+.ancho2 {
+	width:/*48*/48.2%;
+}
+.ancho3 {
+	width:32%;
+}
+.ancho4 {
+	width:23%;
+}
+.ancho5 {
+	width:18%;
+}
+/******** SEPARACIONES ************/
+
+.separarSup1_m {
+	margin-top: 1em;
+}
+.separarSup1_p {
+	padding-top:1em;
+}
+.separarInf1_m {
+	margin-bottom:1em;
+}
+.separarInf1_p {
+	padding-bottom:1em;
+}
+.separarIzq1_m {
+	margin-left:1em;
+}
+.separarIzq50_m {
+	margin-left:50em;
+}
+.separarIzq1_p {
+	padding-left:1em;
+}
+.separarDch1_m {
+	margin-right:1em;
+}
+.separarDch1_p {
+	padding-right:1em;
+}
+/*====================recomendacion ie6=======================*/
+
+#ie {
+	width:176px;
+	height:85px;
+	background: #CCCCCC url(../images/ie.gif) no-repeat;
+	position:absolute;
+	bottom:0;
+	right:2em;
+	color:#cccccc;
+	padding:1em 3em 0em 1em;
+}
+#ie img {
+	float:left;
+	padding: 0.5em 1em 0 0;
+}
+#ie a:link {
+	color:#000000;
+	font-weight:bold;
+}
+#ie a:visited {
+	color:#000000;
+	font-weight:bold;
+}
+#ie a:hover {
+	color: #FF0000;
+	font-weight:bold;
+}
+#ie a:active {
+	color:#FF0000;
+	font-weight:bold;
+}
+.right {
+	text-align:right;
+}
+/*====================
+GALERIAK
+=======================*/
+#fotos, #subgalerias, #blq_gal_fotos {  /*background:#afb176;*/ float:left; width:100%; display:block; padding:0em; position:relative;}
+#fotos ul, #subgalerias ul, #blq_gal_fotos ul{ margin:0em 0 0 0; padding:0;}
+#fotos ul li, #subgalerias ul li, #blq_gal_fotos ul li{ float:left; margin:0 0em 1em 1em; padding:0; list-style:none; list-style-image:none;text-align:center; font-size:0.8em; min-height:10em; width:215px; position:relative;  }
+
+#fotos ul li a, #subgalerias ul li a,  #blq_gal_fotos ul li a{font-weight:normal;color:#333; margin:0; padding:0;}
+#fotos ul li a:hover, #fotos ul li a:focus, #fotos ul li a:active{ color:#fff;}
+#subgalerias ul li em a:hover, #subgalerias ul li em a:focus, #subgalerias ul li em a:active{color:#fff; }
+#fotos img, #subgalerias img, #blq_gal_fotos img{ /*border:0.1em solid #DA0D5A;*/padding:0em 0em 0em 0em; margin:0em 0em 0em 0em;  float:none;  }
+
+
+
+.fotos_relative{ position:relative; width:219px; height:100px; margin:0em 0 0em 0em;}
+.fotos_clip{  position:absolute; clip:rect(15px, 219px, 115px, 0px);  top:-15px;  left:0px; z-index:0; }  
+.fotos_clip img { margin:0; padding:0;}
+
+#fotos  em, #subgalerias ul li  em ,  #blq_gal_fotos ul li  em { position:absolute; width:100%; height:100%; z-index:1; left:0; top:0; background:url(../images/fotos_em.png) no-repeat; }
+#fotos  a:hover  em, #subgalerias ul li  a:hover em,  #blq_gal_fotos ul li  a:hover em{  display:block; background:url(../images/fotos_em.png) no-repeat 0 -143px;}
+
+
+#blq_gal_galeria{ margin:2em 0 0 0;}
+
+#fotobox img{background:url(../images/fotos_bg.png) no-repeat right bottom;padding:0 1em 1em 0; margin-top:1em; }
+
+.imgtit{ background:#FFF;width:213px;  font-family:"Droid Serif",Georgia,Times,"Times New Roman",serif; font-style:italic; font-weight:bold; font-size:1.2em;line-height: 16px; border:0.1em solid #CCC; height:3em; overflow: auto;}
+
+.imgtit a{ display:block;}
+
+
+.img_bg{background:url(../images/fotos_bg.png) no-repeat right bottom; padding:0 1em 1em 0; }
+
+
+.news_intro {
+	color:#ccc;
+	font-size:1em;
+	font-style: italic;
+	font-weight:bold;
+	margin-bottom:1em;
+}
+.news_txt {
+	text-align:justify;
+}
+#enlaces ul {
+	margin:0;
+	padding:0;
+}
+#enlaces ul li {
+	list-style:none;
+	border:#cccccc solid 0.1em;
+	margin:0 0 1.5em 0;
+	padding:1.5em;
+	background:#F0F0F0;
+}
+#enlaces ul li img {
+	margin:0 1em 1em 0;
+}
+#enlaces ul ul li {
+	list-style: url(../images/li.png);
+	margin:0 1em 0 2em;
+	padding:0.3em;
+	border:none;
+}
+#enlaces ul li a:link {
+	color:#ccc;
+	font-weight:normal;
+	text-decoration:none;
+}
+#enlaces ul li a:visited {
+	color:#ccc;
+	font-weight:normal;
+	text-decoration:none
+}
+#enlaces ul li a:hover, a:focus {
+	color:#333333;
+	font-weight:normal;
+	text-decoration:none
+}
+#enlaces ul li a:active {
+	color:#333333;
+	font-weight:normal;
+	text-decoration:none
+}
+.blq_news_nav {
+	width:100%;
+}
+.blq_news_boton_prev {
+	float:left;
+}
+.blq_news_boton_next {
+	float:right;
+}
+.news_link_arch {
+	clear:both;
+}
+/*---General_editor.php-n sartzeko klase orokorrak  */
+
+
+p.encabezado_h3 {
+	color:#cccccc;
+	background:url(../images/h3.png) no-repeat  left bottom;
+	border-bottom:0.1em #cccccc dotted;
+	margin:1em 0 0.5em 0em;
+	padding:0em 0 0 1em;
+	font-size:1.3em;
+	font-weight:bold; text-align:left;font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif; float:left; width:43%;
+
+	 
+
+} /* tiene que ser igual a .col1 h3 */
+
+.texto_resaltado{ color:#ccc; font-size:1.3em; font-weight:bold;font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;}
+p.texto_cita{ color:#5e5549; font-size:1.3em; font-weight:bold; font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; text-align:left; margin:0 0 1em 0; float:left;}
+
+p.texto_cita:before { content:url(../images/before.png); margin-right:1em;} 
+p.texto_cita:after { content:url(../images/after.png); margin-left:1em; float:right;} 
+p.texto_cita span { margin-top:1.7em; display:inline-block;}
+
+ 
+.texto_color {
+	color:#52bdec;
+}
+.texto_small {
+	font-size:0.8em;
+}
+.texto_big {
+	font-size:1.2em;
+}
+.texto_verybig {
+	font-size:1.4em;
+}
+.borde {
+	border:0.1em #CCCCCC solid;
+	padding:0.12em 0.24em 0.12em 0.24em;
+}
+.imagen_derecha {
+	float:right;
+	padding:2em 0 1em 1em;
+}
+.imagen_izquierda {
+	float:left;
+	padding:2em 0 1em 1em;
+}
+p.descargar{background:url(../images/descargar.jpg) bottom left no-repeat;
+	padding:1em 2em 2em 2em; 
+	font-size:1em;
+	/*font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	margin:0;}
+
+p.fondo_1 {
+	background:url(../images/fondo_1.png) no-repeat bottom right; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:1em 2em 3em 2em;
+	font-size:1.8em; float: left;
+	/*font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	margin:0 1em 1em 0;
+}
+
+p.fondo_claro_corto {
+	background:url(../images/fondo_1.png) no-repeat bottom right; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:1em 1em 3em 1em;
+	font-size:1.8em; width:40%;
+	/*font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	margin:0 1em 1em 0;
+}
+
+p.fondo_corto {
+	background:url(../images/fondo_corto.png) no-repeat bottom right; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding:1em 1em 5em 1em; color:#FFF;
+	font-size:1.4em; float: left; width:43%; text-align:left; 
+	/*font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;*/
+	margin:0;
+}
+
+img.imagen_derecha {
+	float:right;
+	padding:2em 0 1em 1em;
+}
+img.imagen_izquierda {
+	float:left;
+	padding:2em 1em 1em 0em;
+}
+
+ul.lista{}
+ul.lista li{ float:left; width:20%; margin:1em 1em 0 0;}
+
+
+.col1 .txt ul.lista{ width:100%; float:left; margin:0 0 1em 0;}
+.col1 .txt ul.lista li{ float:left !important;  margin:1em 1em 0 0; width:20%; border:0.1em solid #CCC; border-radius:1em 1em 1em 1em; 
+ padding:1em 0.5em; text-align:left; background: #f7f6f6; min-height:9em; list-style:none;  }
+ 
+ .col1 .txt ul.lista li p{ width:95%; margin:auto;}
+ 
+ 
+ .col1 .txt ul.lista_larga{ width:100%; float:left; margin:0 0 1em 0;}
+.col1 .txt ul.lista_larga li{ float:left !important;  margin:1em 1em 0 0; width:20%; border:0.1em solid #CCC; border-radius:1em 1em 1em 1em; 
+ padding:1em 0.5em; text-align:left; background: #f7f6f6; min-height:27em; list-style:none;  }
+ 
+ .col1 .txt ul.lista_larga li p{width:95%; margin:auto; text-align:left;}
+ 
+ 
+ 
+ 
+
+p.barra_espaciadora{ clear:left; width:100%; margin:0; padding:0; height:0; }
+
+
+
+
+#spam {
+	color:#667193;
+	font-size:0.8em;
+	width:98%;
+	margin:2em 0em;
+	padding:0em;
+	float:left;
+}
+#spam input {
+	width:2em;
+}
+#spam fieldset {
+	width:92.5%;
+}
+
+/*===================SUBPAGINAS====================*/
+
+/*===================SUBPAGINAS====================*/
+
+.subpags{ width:100%; float:left; margin:0 0 5em 0; }
+.subpags ul{ margin:1em 0 0 0; padding:0; }
+.subpags ul li{ width:221px; margin:0em 0.3em 1.4em 0em;  float:left; list-style:none; text-align:center; padding:0 0 0em 0; background:#fff url(../images/col1_subpags_bg.png) no-repeat; position:relative; height:15em; border:0.1em solid #CCC;}
+.subpag_tit{ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; font-size:1.1em; margin:0em 0 0 0 ; position:absolute; bottom:0em; opacity:0.7; left:0em; width:100%; text-transform:uppercase; background:#000; height:4em; padding:0.5em 0 0 0;   } 
+
+.subpags_relative{ position:relative; width:221px; height:164px; margin:0em 0 0em 0em;} 
+.subpags_clip{  position:absolute; clip:rect(20px, 221px, 164px, 0px);  top:-20px;  left:0px; }  
+.subpags_clip img { margin:0; padding:0; width:221px;}
+
+.subpags em{ /*background:url(../images/col1_subpags_peg.png) no-repeat;*/ position:absolute; width:100%; height:100%; right:0em; top:0;}
+
+.subpags ul li a:link{ color:#fff;font-weight:normal; font-size:1.3em; cursor:pointer; }
+.subpags ul li a:visited{color:#fff;font-weight:normal; font-size:1.3em; cursor:pointer;}
+.subpags ul li a:hover{color:#ccc;font-weight:normal; font-size:1.3em; cursor:pointer; }
+.subpags ul li a:focus{color:#ccc;font-weight:normal; font-size:1.3em; cursor:pointer;}
+.subpags ul li a:active{color:#ccc;font-weight:normal; font-size:1.3em; cursor:pointer;}
+
+.contimg img{ background: url(../images/contimg_bg.png) no-repeat bottom right; padding:0 0 0em 0;  margin:0 0 0em 2em; }
+
+.contimg{ position:relative;   float:right;}
+.contimg em{ position:absolute; width:100%; height:100%; background:url(../images/chincheta.png) no-repeat; z-index:1; left:2em; top:-1em;}
+
+.share{ float:right;  width:1em; margin:0 3em 0 0;}
+.share ul, .share ul li, .share ul li a{ margin:0; padding:0;}
+.share img{ margin:0; padding:0;}
+
+/* clases HTML5 */
+
+ .nav_header ul li a:link{ color:#ccc; text-transform:uppercase; font-size:10px;}
+ .nav_header ul li a:visited{ color:#ccc;text-transform:uppercase;font-size:10px;}
+ .nav_header ul li a:hover{ color:#FFF;text-transform:uppercase;font-size:10px;}
+ .nav_header ul li a:focus{ color:#FFF;text-transform:uppercase;font-size:10px;}
+ .nav_header ul li a:active{ color:#FFF;text-transform:uppercase;font-size:10px;}
+ 
+ /* Específicas de esta página */
+ 
+ /*============== DECO =========*/
+#id_pie_1{  }
+
+.deco{} 
+
+
+/*============== REGISTRO =========*/
+
+article.pie_2{ height:114em;/*background:#1e1e1e url(../images/registro.jpg) no-repeat bottom center;*/}
+
+.registro { color:#FFF; width:95em; margin:auto; } 
+
+.registro form{ color:#FFF; margin:2em ; background:url(../images/registro_form.png) no-repeat;} 
+.registro p{ font-size:1.2em;}
+
+
+/*============== SOPORTE =========*/
+article.pie_3{ height:117em;/*background:#ccc url(../images/soporte.png) no-repeat bottom center;*/}
+
+.soporte{width:95em; margin:auto; color:#000;} 
+
+
+
+/*============== CONTACTO =========*/
+article.pie_4{ height:90em;/*background:#e2e1e1 url(../images/contacto.jpg) no-repeat bottom center;*/}
+
+#contacto { color:#000;} 
+#contacto  p{font-size:1.2em; width:100%; clear:both;}
+
+#contacto .form1 fieldset{border:0.1em solid #7a7a7a;}
+
+#contacto label{ font-size:1.2em;}
+
+#contacto input, #contacto textarea{ background:#f7f6f6; border:0.1em solid #dfdede;}
+#contacto input.boton{ background:#52bdec; border:0.1em solid #fff;}
+
+
+
+/*============== AYUDA =========*/
+
+
+.ayuda{ background:url(../images/ayuda.png) no-repeat; width:17em; height:29em; position:fixed; right:0em; bottom:0;}
+
+
+
+#ayuda_wrap{ background:url(../images/ayuda.png) no-repeat; width:17em; height:29em; position:fixed; right:0em; bottom:0; z-index:2; }
+#ayuda {width:17em; height:29em; position:relative; padding:0; margin:0 auto 3em auto; }
+#ayuda em {display:block;width:17em; height:29em; background:url(../images/ayuda.png); position:absolute; top:0; left:0;}
+#ayuda a {cursor:pointer;}
+#ayuda a:hover {background:#fff;}
+#ayuda a:hover em {background:url(../images/ayuda.png) 0 -297px;}
+#ayuda span{ position:absolute; text-indent:-9999em;} 
+
+
+
+#ayuda_wrap_mini{ background:url(../images/ayuda_mini.png) no-repeat; width:82px; height:64px; position:fixed; right:0em; bottom:0; z-index:0; }
+#ayuda_mini {width:82px; height:64px; position:relative; padding:0; margin:0 auto 3em auto; }
+#ayuda_mini em {display:block;width:82px; height:64px; background:url(../images/ayudamini.png); position:absolute; top:0; left:0;}
+#ayuda_mini a {cursor:pointer;}
+#ayuda_mini a:hover {background:#fff;}
+#ayuda_mini a:hover em {background:url(../images/ayudamini.png) 0 -64px;}
+#ayuda_mini span{ position:absolute; text-indent:-9999em;} 
+
+
+/*============== banner_incidencia =========*/
+
+.banner_incidencia_wrap{ position:absolute; left:2em; bottom:0em; z-index:5; }
+.banner_incidencia {width:200px; height:131px; position:relative; padding:0; margin:0 auto 3em auto; }
+.banner_incidencia em {display:block; width:200px; height:131px; background:url(../images/banner_incidencia.png); position:absolute; top:0; left:0;}
+.banner_incidencia a {cursor:pointer;}
+.banner_incidencia a:hover {background:#fff;}
+.banner_incidencia a:hover em {background:url(../images/banner_incidencia.png) 0 -131px;}
+.banner_incidencia span{ position:absolute; text-indent:-9999em;}
+
+
+
+ 
+
+
+
+/*============== SUBIR ==================*/
+
+/*.subir{ background:#999;} 
+.subir {width:74px; height:123px; position:relative; padding:0; margin:0 auto 3em auto; position:fixed; right:0; top:2em; z-index:10;}
+.subir em {display:block; width:74px; height:123px; background:url(../img/subir.png); position:absolute; top:0; left:0;}
+.subir a {cursor:pointer;}
+.subir a:hover {background:#fff;}
+.subir a:hover em {background:url(../img/subir.png) 0 -124px;}
+.subir span{ position:absolute; text-indent:-9999em;}*/
+
+
+
+.subir_wrap{ position: fixed; top:14em; right:0;}
+
+.subir{ width:74px; height:123px; position:relative;}
+.subir em{ position:absolute; width:100%; height:100%; background:url(../images/subir.png)  no-repeat 0px 0px;}
+
+
+.subir a {cursor:pointer; text-decoration: none;}
+.subir a:hover { text-decoration:none;}
+.subir a:hover em {background:url(../images/subir.png) no-repeat 0px -124px;}  
+
+.subir span{ position:absolute; text-indent:-9999px;} 
+
+
+
+
+/*====================GENERICAS=======================*/
+.azul{ color:#ccc;}
+.clear{ clear:both;}
+
+.ancho1{ width:/*100*/99%;}
+.ancho2{ width:/*48*/48.2%;}
+.ancho3{ width:32%;}
+.ancho4{ width:23%;}
+.ancho5{ width:18%;}
+
+/****FORMULARIO REGISTRO****/
+.form_registro {  padding:10px;  margin:2em 0 0 10em; width:30em; padding:10em 5.5em 3em 3em; background:url(../img/registro_form.png) no-repeat;}
+.form_registro fieldset {
+width:95%; display:block; border:none; padding:5px; font-family:verdana, sans-serif; margin:0 4em 0.5em 0em; line-height:1.5em;}
+.form_registro legend { font-size:1.1em; font-weight:bold;  margin-bottom:5px; padding:3px; width:150px; color:#fff; }
+.form_registro label {float:left; padding:0em 0.4em 0em 0em/*0px 4px 10px 0*/;  text-align:left; margin:0.5em 0em 0em 0em; font-size:1.5em; font-style:italic;}
+.form_registro label .textarea {float:left; margin:0px 6px 10px 0; height:10em; text-align:left;}
+.form_registro label input {border:1px solid #373736; width:97%;  padding:0.5em; margin:0.2em 0.5em 0.6em 0; color:#fff; background:#1a1a1a; }
+
+.form_registro  .btn_enviar_pedido_input { border:0;width:150px; height:38px;  padding:0; margin:1.5em 0em 0em 0em; background:url(../images/tienda/btn_enviar_pedido.png) no-repeat; cursor:pointer;  }
+.form_registro select {margin:0em 0 0.6em 0;}
+.form_registro textarea {width:96%;  border:1px solid #999999; padding:0.5em;  margin:0.2em 0 0.6em 0; color:#cccccc; display:block; float:left;}
+.form_registro option {background:#ffffff; color:#000000; margin:0.8em 0 0.6em 0;}
+.form_registro optgroup {background:#cccccc; color:#000; font-family:georgia, serif;}
+.form_registro optgroup option {background:#cccccc; color:#ffffff;}
+.form_registro .tienda_boton {color:#ffffff; padding-right:1em; cursor:pointer; width:150px; margin-left:8px; background:#78C400;}
+.form_registro .tienda_boton:hover {background-position:center left; color:#000;}
+
+h2.cufon_titulo{ font-size:6em;  font-style:italic ; margin:0em 0 0.5em 0; padding:0.5em 0 0 0; font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;}
+
+.remoto{ background: url(../images/soporte_lauki.png) no-repeat; padding:4em 2em 6em 2em; float:left;  width:29em; margin:0em 2em 0 0;}
+.soporte h3{ margin:0 0 0 1em; width:12.5em; clear:both; font-size:2em;font-family:'Open Sans Condensed',"Trebuchet MS", Arial, Helvetica, sans-serif;}
+.remoto p{ font-size:1.2em; margin:0 2em 1em 0;}
+
+.remoto form{ margin:4em 0 0 0;}
+.remoto form input{ width:68%; background:#52bdec; color:#000; border: 0.1em solid #488caa; padding:0.5em 0 0.5em 0.5em;margin:0;font-size:1em;}
+.remoto form input.boton{ width:25%; background:#192b33;  color:#0CF;padding:0.5em 0 ; margin:0; font-size:1em;}
+
+#lau article { float:left;  }
+
+.campos_requeridos{ float:right; width:100%; text-align:right; margin:2em 1em 0 0;}
+
+.centrar{ width:65em; margin:auto;}
