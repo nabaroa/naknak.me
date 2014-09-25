@@ -1,0 +1,322 @@
+/* reset */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+q:before,
+q:after {
+  content: '';
+}
+
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+legend {
+  color: #000;
+}
+
+/*Default*/
+body {
+  font-family: Lato;
+}
+
+h1 {
+  font-size: 6em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*Layout*/
+.main {
+  background: url(http://naknak.me/images/arale.jpg) top right no-repeat;
+  background-size: cover;
+  padding: 30px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 31em;
+  height: 31em;
+  border: 4px solid grey;
+  text-align: center;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 3px 20px black;
+}
+
+.content:hover {
+  -webkit-transform: translate(200px, 0);
+  -moz-transform: translate(200px, 0);
+  -ms-transform: translate(200px, 0);
+  -o-transform: translate(200px, 0);
+  transform: translate(200px, 0);
+  -webkit-transition: 2s ease-out;
+  -moz-transition: 2s ease-out;
+  -ms-transition: 2s ease-out;
+  -o-transition: 2s ease-out;
+  transition: 2s ease-out;
+}
+
+/*style*/
+.strong {
+  font-weight: bold;
+}
+
+/*font-face*/
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Lig.ttf");
+}
+
+
+@font-face {
+  font-family: "Lato";
+  src: url("font/Lato-Bla.ttf");
+  font-weight: bold;
+}
+
+
+/*animation*/
+@-webkit-keyframes pound {
+  50% {
+    -webkit-transform: scale(1.05);
+  }
+}
+
+
+@keyframes pound {
+  to {
+    transform: scale(1.05);
+  }
+}
+
+
+.animate {
+  -webkit-animation: pound .25s infinite alternate;
+  -webkit-transform-origin: center;
+  animation: pound .25s infinite alternate;
+  transform-origin: center;
+}
+
+@keyframes volar {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 80%;
+    top: 0px;
+  }
+  50% {
+    left: 80%;
+    top: 50%;
+    transform: scale(4);
+  }
+  75% {
+    left: 0px;
+    top: 80%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+@-webkit-keyframes volar {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 80%;
+    top: 0px;
+  }
+  50% {
+    left: 80%;
+    top: 50%;
+    -webkit-transform: scale(4);
+  }
+  75% {
+    left: 0px;
+    top: 80%;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+
+@keyframes color {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+  }
+  50% {
+    background: blue;
+  }
+  75% {
+    background: green;
+  }
+  100% {
+    background: red;
+  }
+}
+
+
+@-webkit-keyframes color {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+  }
+  50% {
+    background: blue;
+  }
+  75% {
+    background: green;
+  }
+  100% {
+    background: red;
+  }
+}
+
+
+.bolaauntxe {
+  -webkit-animation: volar 10s infinite alternate;
+  animation: volar 10s infinite alternate;
+  position: absolute;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.color {
+  -webkit-animation: color 10s infinite;
+  animation: color 10s infinite;
+}
+
+.delay {
+  -webkit-animation: volar 5s infinite  2s;
+  animation: volar 5s infinite  2s;
+  position: absolute;
+  border-radius: 50%;
+  padding: 30px;
+}
