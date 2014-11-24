@@ -1,0 +1,64 @@
+/*
+
+Created by NAK: @nabaroa
+2014
+
+*/
+// SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/
+
+//--------------------------------//
+//  base
+//--------------------------------//
+@import "base/reset";
+@import "base/typography";
+@import "base/oocss";
+
+//--------------------------------//
+//  components/ 
+//--------------------------------//
+
+@import "components/navigation";
+
+//--------------------------------//
+//  helpers/ 
+//--------------------------------//
+
+// _variables.scss   # Sass Variables 
+// _functions.scss   # Sass Functions 
+// _mixins.scss      # Sass Mixins 
+// _helpers.scss     # Class & placeholders helpers
+
+//--------------------------------//
+//   layout/ 
+//--------------------------------//
+
+@import "layout/layout";
+
+//--------------------------------//
+//    pages/ 
+//--------------------------------//
+
+@import "pages/home";
+@import "pages/works";
+@import "pages/findme";
+
+//--------------------------------//
+//     themes/ 
+//--------------------------------//
+
+@import "themes/theme";
+@import "themes/icons";
+
+//--------------------------------//
+//     extra/  
+//--------------------------------//
+@import "extra/circle/common";
+@import "extra/circle/style6";
+@import "extra/icomoon";
+@import "extra/masonry";
+
+//
+//
+//
+//
+//

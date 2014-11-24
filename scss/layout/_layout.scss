@@ -1,0 +1,168 @@
+/* **************** TEMPLATE ***************** */
+/* ====== Page Head, Body, and Foot ====== */
+body {
+  _text-align: center;
+}
+
+/* IE5.5 */
+.main {
+  /*display: table-cell;*/
+  *display: block;
+  width: auto;
+}
+
+.body,
+.main {
+  *zoom: 1;
+}
+
+.body:after,
+.main:after {
+  clear: both;
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  height: 0 !important;
+  line-height: 0;
+  font-size: xx-large;
+  content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
+}
+
+.page {
+  margin: 0 auto;
+  width: 950px;
+  _text-align: left;
+}
+
+/* wraps other template elems to set width */
+
+/* text-align IE5.5 */
+.mainbox {
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+.mainbox1500 {
+  width: 100%;
+  height: 1500px;
+  position: relative;
+}
+
+.mainbox2000 {
+  width: 100%;
+  height: 2000px;
+  position: relative;
+}
+
+.mainboxfree article, .mainbox #content {
+  padding: 0 !important;
+}
+
+/* "old school" and "liquid" extend page to allow for different page widths */
+.oldSchool {
+  width: 750px;
+}
+
+.gs960,
+article.gs960 {
+  width: 960px;
+}
+
+.liquid {
+  width: 100%;
+  margin: 0;
+}
+
+/* ====== Columns ====== */
+.leftCol {
+  float: left;
+  width: 250px;
+  _margin-right: -3px;
+}
+
+.rightCol {
+  float: right;
+  width: 300px;
+  _margin-left: -3px;
+}
+
+/* extend columns to allow for common column widths */
+.gMail {
+  width: 160px;
+}
+
+.gCal {
+  width: 180px;
+}
+
+.yahoo {
+  width: 240px;
+}
+
+.myYahoo {
+  width: 300px;
+}
+
+@media all and (max-width: 1000px) {
+  .gs960,
+  article.gs960 {
+    width: 100%;
+  }
+  .mainbox {
+    width: 100%;
+    height: 750px;
+  }
+}
+
+.line,
+.lastUnit {
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+}
+
+.unit {
+  float: left;
+}
+
+.unitRight {
+  float: right;
+}
+
+.lastUnit {
+  float: none;
+  width: auto;
+  _position: relative;
+  _left: -3px;
+  _margin-right: -3px;
+}
+
+header {
+  position: relative;
+}
+
+#content {
+  padding: 10px 10px 40px 10px;
+}
+
+/* screens smaller than 640 */
+@media screen and (max-width: 640px) {
+  #site-nav {
+    width: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-top: 0px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #content {
+    padding-left: 10px;
+  }
+}
+
+//
+//
+//
+//
