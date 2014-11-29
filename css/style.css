@@ -1533,7 +1533,6 @@ i.icon-blog:hover {
 
   #container img {
     max-width: 100%;
-    height: inherit;
   }
 
   .col4, .col3, .col2 {
@@ -2304,6 +2303,12 @@ button {
 .col4 {
   width: 380px;
   height: 400px;
+}
+@media all and (max-width: 400px) {
+  .col4 {
+    width: 100%;
+    height: inherit;
+  }
 }
 
 .col5 {

@@ -126,6 +126,10 @@ button {
 .col4 {
   width: 380px;
   height: 400px;
+  @media all and (max-width: 400px) {
+    width: 100%;
+    height: inherit;
+  }
 }
 
 .col5 {
