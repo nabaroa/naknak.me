@@ -15,17 +15,17 @@
     <link rel="shortcut icon" href="assets/favicon.ico">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <script>
-function randOrd() {
-    return (Math.round(Math.random())-0.5); 
-}
+    function randOrd() {
+        return (Math.round(Math.random()) - 0.5);
+    }
 
-$(document).ready(function() {
-    var klasses = [ 'index1', 'index2', 'index3', 'index4', 'index5' ];
-    klasses.sort( randOrd );
-    $('#home').each(function(i, val) {
-        $(this).addClass(klasses[i]);
+    $(document).ready(function() {
+        var klasses = ['index1', 'index2', 'index3', 'index4', 'index5'];
+        klasses.sort(randOrd);
+        $('#home').each(function(i, val) {
+            $(this).addClass(klasses[i]);
+        });
     });
-});
     </script>
     <script>
     $(function() {
@@ -279,7 +279,7 @@ $(document).ready(function() {
                             <!--  <div class="tac size1of1 mara line">
     <h2 class="mtl mbl wire tshadow bare">Web</h2>
   </div>-->
-                            <div id="container" class="transitions-enabled clearfix">
+                            <div id="container" class="transitions-enabled">
                                 <div class="box col4">
                                     <img src="assets/wimi5.jpg">
                                     <h2 class="abel contrast">WiMi5</h2>
@@ -398,7 +398,7 @@ $(document).ready(function() {
                                 </div>
 
                                 <div class="box col4">
-                                    <img src="assets/placecolor.jpg" width="400" height="300">
+                                    <img src="assets/placecolor.jpg">
                                     <h2 class="abel contrast">placeColor.in</h2>
                                     <p>Web: Design and front-end development</p>
                                     <p class="firm">2013</p>
@@ -409,7 +409,7 @@ $(document).ready(function() {
                                 </div>
 
                                 <div class="box col4">
-                                    <img src="assets/css.jpg" width="400" height="300">
+                                    <img src="assets/css.jpg">
                                     <h2 class="abel contrast">The CSS Preprocessor</h2>
                                     <p>Web slides for the speech in Bilbostack </p>
                                     <p class="firm">2013</p>
@@ -418,7 +418,7 @@ $(document).ready(function() {
                                     </p>
                                 </div>
                                 <div class="box col4">
-                                    <img src="assets/emmet.jpg" width="400" height="300">
+                                    <img src="assets/emmet.jpg">
                                     <h2 class="abel contrast">Emmet.io Improve your HTML & CSS workflow</h2>
                                     <p>Web slides</p>
                                     <p class="firm">2012</p>
@@ -428,7 +428,7 @@ $(document).ready(function() {
                                 </div>
 
                                 <div class="box col4">
-                                    <img src="assets/zen.jpg" width="400" height="300">
+                                    <img src="assets/zen.jpg">
                                     <h2 class="abel contrast">Zen coding</h2>
                                     <p>Web slides</p>
                                     <p class="firm">2012</p>
@@ -437,7 +437,7 @@ $(document).ready(function() {
                                 </div>
 
                                 <div class="box col4">
-                                    <img src="assets/nak_papel.jpg" width="400" height="300">
+                                    <img src="assets/nak_papel.jpg">
                                     <h2 class="abel contrast">Corporate image #nak</h2>
                                     <p>Cards, steakers,...</p>
                                     <p class="firm">2012</p>

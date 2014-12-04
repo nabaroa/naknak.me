@@ -1269,6 +1269,17 @@ header {
   margin-bottom: 20px;
   clear: both;
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .centered {
@@ -1281,7 +1292,8 @@ header {
   background: #131313;
   font-size: 13px;
   line-height: 1.4em;
-  float: left
+  float: left;
+  margin-bottom: 20px
   /*
   border-radius: 5px;
   box-shadow: 3px 3px 5px #000;*/
@@ -2252,7 +2264,7 @@ button {
 }
 
 .box {
-  margin: 5px;
+  margin: 5px 5px 20px 5px;
   padding: 5px;
   background: #131313;
   font-size: 13px;

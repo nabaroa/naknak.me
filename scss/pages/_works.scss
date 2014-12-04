@@ -173,6 +173,9 @@
   margin-bottom: 20px;
   clear: both;
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .centered {
@@ -186,6 +189,7 @@
   font-size: 13px;
   line-height: 1.4em;
   float: left;
+  margin-bottom: 20px;
   /*
   border-radius: 5px;
   box-shadow: 3px 3px 5px #000;*/

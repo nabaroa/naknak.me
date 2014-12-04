@@ -24,8 +24,9 @@ Created by NAK: @nabaroa
 //--------------------------------//
 
 // _variables.scss   # Sass Variables 
-// _functions.scss   # Sass Functions 
-// _mixins.scss      # Sass Mixins 
+// _functions.scss   # Sass Functions
+@import "helpers/mixins";
+
 // _helpers.scss     # Class & placeholders helpers
 
 //--------------------------------//
