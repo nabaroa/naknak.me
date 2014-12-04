@@ -23,11 +23,8 @@ Created by NAK: @nabaroa
 //  helpers/ 
 //--------------------------------//
 
-// _variables.scss   # Sass Variables 
-// _functions.scss   # Sass Functions
+@import "helpers/var";
 @import "helpers/mixins";
-
-// _helpers.scss     # Class & placeholders helpers
 
 //--------------------------------//
 //   layout/ 
