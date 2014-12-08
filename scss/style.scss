@@ -7,6 +7,14 @@ Created by NAK: @nabaroa
 // SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/
 
 //--------------------------------//
+//  helpers/ 
+//--------------------------------//
+
+@import "helpers/var";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+//--------------------------------//
 //  base
 //--------------------------------//
 @import "base/reset";
@@ -18,13 +26,6 @@ Created by NAK: @nabaroa
 //--------------------------------//
 
 @import "components/navigation";
-
-//--------------------------------//
-//  helpers/ 
-//--------------------------------//
-
-@import "helpers/var";
-@import "helpers/mixins";
 
 //--------------------------------//
 //   layout/ 
@@ -39,6 +40,7 @@ Created by NAK: @nabaroa
 @import "pages/home";
 @import "pages/works";
 @import "pages/findme";
+@import "pages/work_file";
 
 //--------------------------------//
 //     themes/ 
@@ -50,10 +52,14 @@ Created by NAK: @nabaroa
 //--------------------------------//
 //     extra/  
 //--------------------------------//
-@import "extra/circle/common";
-@import "extra/circle/style6";
+// @import "extra/circle/common";
+// @import "extra/circle/style6";
 @import "extra/icomoon";
-@import "extra/masonry";
+
+// @import "extra/masonry";
+@import "extra/horizontal_nabigation/component";
+@import "extra/horizontal_nabigation/dragdealer";
+@import "extra/horizontal_nabigation/demo";
 
 //
 //

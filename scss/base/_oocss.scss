@@ -20,7 +20,7 @@ ul.width200 li {
 }
 
 .txtac {
-  text-align: center;
+  text-align: center !important;
 }
 
 .tac {
@@ -41,7 +41,8 @@ ul.fll li {
 }
 
 ul.horiz li {
-  float: left;
+  // float: left;
+  display: inline-block;
 }
 
 .mara {
@@ -247,12 +248,13 @@ ul.height400 li {
 
 .size1of2,
 ul.li2 li {
-  width: 50%;
+  width: 49%;
 }
 
 .size1of3,
 ul.li3 li {
-  width: 33.33333%;
+  width: 33%;
+  // width: 33.33333%;
 }
 
 .size2of3 {
@@ -261,7 +263,7 @@ ul.li3 li {
 
 .size1of4,
 ul.li4 li {
-  width: 25%;
+  width: 24%;
 }
 
 .size3of4 {
