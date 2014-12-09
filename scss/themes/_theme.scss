@@ -396,6 +396,12 @@ h1.logo {
   }
 }
 
+.findme,.find {
+  @media all and (max-width: 810px) {
+    padding-left: 20px;
+  }
+}
+
 .cv {
   a:hover {
     color: $darker;

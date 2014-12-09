@@ -270,7 +270,7 @@ h6,
     color: #f4b408;
   }
 }
-.text {
+.works_file .text {
   display: inline-block;
 }
 .text.small {
@@ -460,6 +460,12 @@ ul.height100 li {
 ul.height120 li {
   height: 120px;
 }
+@media all and (max-width: 801px) {
+  .height120,
+  ul.height120 li {
+    height: inherit;
+  }
+}
 
 .height150,
 ul.height150 li {
@@ -575,7 +581,7 @@ ul.li4 li {
 
 .size1of6,
 ul.li6 li {
-  width: 16.6666666%;
+  width: 16%;
 }
 
 .size5of6 {
@@ -1302,7 +1308,7 @@ header {
 }
 
 .box {
-  /*margin: 5px;*/
+  margin: 5px;
   padding: 0px;
   background: #131313;
   font-size: 13px;
@@ -1453,7 +1459,7 @@ i.icon-blog:hover {
 
 .upcoming {
   color: #666;
-  font-size: 2em;
+  font-size: 1.5rem;
   top: 100px;
   left: -40px;
 }
@@ -1579,7 +1585,7 @@ i.icon-blog:hover {
     font-size: 180%;
   }
   .mainmenu li {
-    width: 50% !important;
+    width: 49% !important;
     margin: 0 !important;
     border-bottom: 1px dotted #000;
     padding: 10px !important;
@@ -2040,6 +2046,12 @@ h1.logo em {
 
 .findme a:hover i {
   color: #f4b408;
+}
+
+@media all and (max-width: 810px) {
+  .findme, .find {
+    padding-left: 20px;
+  }
 }
 
 .cv a:hover {
@@ -2678,20 +2690,19 @@ button.content-switch::before {
   clear: both;
 }
 
-body {
+body .works_file {
   background: #111111;
   color: #c5d3d6;
   font-weight: 400;
   font-size: 1em;
   font-family: 'Lato', Arial, sans-serif;
 }
-
-a {
+body .works_file a {
   color: white;
   text-decoration: none;
   outline: none;
 }
-a:hover, a:focus {
+body .works_file a:hover, body .works_file a:focus {
   color: #c5d3d6;
 }
 

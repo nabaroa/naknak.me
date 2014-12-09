@@ -177,6 +177,9 @@ ul.height100 li {
 .height120,
 ul.height120 li {
   height: 120px;
+  @media all and (max-width: 801px) {
+    height: inherit;
+  }
 }
 
 .height150,
@@ -288,7 +291,8 @@ ul.li4 li {
 
 .size1of6,
 ul.li6 li {
-  width: 16.6666666%;
+  width: 16%;
+  // width: 16.6666666%;
 }
 
 .size5of6 {
