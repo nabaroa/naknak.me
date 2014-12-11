@@ -4,6 +4,12 @@
 
 .works {
   background: #222;
+  a {
+    text-decoration: underline;
+    &:hover {
+      color: $color;
+    }
+  }
 }
 
 .esoft {
@@ -190,6 +196,7 @@
   line-height: 1.4em;
   float: left;
   margin-bottom: 20px;
+  position: relative;
   /*
   border-radius: 5px;
   box-shadow: 3px 3px 5px #000;*/

@@ -1124,6 +1124,12 @@ header {
 .works {
   background: #222;
 }
+.works a {
+  text-decoration: underline;
+}
+.works a:hover {
+  color: #f4b407;
+}
 
 .esoft {
   background: url(../assets/esoft1.jpg) 0 -150px;
@@ -1314,7 +1320,8 @@ header {
   font-size: 13px;
   line-height: 1.4em;
   float: left;
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  position: relative
   /*
   border-radius: 5px;
   box-shadow: 3px 3px 5px #000;*/
