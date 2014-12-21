@@ -38,21 +38,17 @@ ul.fll li {
 
 .flr {
   float: right;
+  @include respond-to(tablet) {
+    color: nak;
+  }
 }
 
-// ul.horiz li {
-//   // float: left;
-//   display: inline-block;
-// }
-.horiz {
+.horizontal {
   display: flex;
   justify-content: space-around;
-  @include respond-to(phablet) {
-    flex-direction: column;
-  }
-
-  @include respond-to(tablet) {
-    flex-direction: row;
+  flex-direction: row;
+  &.rwd {
+    @extend %phablet-vertical;
   }
 }
 

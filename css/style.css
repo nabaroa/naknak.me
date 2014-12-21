@@ -11,6 +11,25 @@ Created by NAK: @nabaroa
 /*----------------------------
 BREAKPOINTS
 -----------------------------*/
+@media (min-width: 0em) {
+  .horizontal.rwd {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 50em) {
+  .horizontal.rwd {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 /*Reset:
 Copyright (c) 2008, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
@@ -325,8 +344,13 @@ ul.fll li {
 .flr {
   float: right;
 }
+@media (min-width: 50em) {
+  .flr {
+    color: nak;
+  }
+}
 
-.horiz {
+.horizontal {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -334,24 +358,11 @@ ul.fll li {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-}
-@media (min-width: 37.5em) {
-  .horiz {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media (min-width: 50em) {
-  .horiz {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .mara {
@@ -902,10 +913,38 @@ ul.mrl li {
 }
 
 .mainmenu {
+  display: block;
   position: fixed;
   top: 0;
-  right: 10px;
-  z-index: 5;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all .10s ease;
+  transition: all .10s ease;
+}
+.mainmenu ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.mainmenu ul li {
+  display: inline-block;
+  list-style: none;
+  width: calc(100% / 6.5);
+}
+.mainmenu ul li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+  -webkit-transition: all .10s ease;
+  transition: all .10s ease;
+}
+.mainmenu ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 a.icon_menu {
@@ -1519,10 +1558,6 @@ i.icon-blog:hover {
   padding-top: 5px;
 }
 
-.mainmenu li {
-  position: relative;
-}
-
 .new {
   margin-top: 80px;
   line-height: 50px;
@@ -1578,18 +1613,6 @@ i.icon-blog:hover {
     width: 100%;
   }
 
-  ul {
-    padding: 0;
-  }
-  ul li {
-    width: 100% !important;
-    font-size: 1em;
-    margin: 20px auto;
-  }
-  ul.height400 li {
-    height: inherit !important;
-  }
-
   .height400 {
     height: inherit !important;
   }
@@ -1609,24 +1632,6 @@ i.icon-blog:hover {
 
   #content {
     padding: 0;
-  }
-
-  .mainmenu {
-    position: relative;
-    height: 140px;
-    background: #000;
-    right: 0px;
-    font-size: 180%;
-  }
-  .mainmenu li {
-    width: 49% !important;
-    margin: 0 !important;
-    border-bottom: 1px dotted #000;
-    padding: 10px !important;
-  }
-  .mainmenu a {
-    display: block;
-    text-align: center;
   }
 
   .mainbox {

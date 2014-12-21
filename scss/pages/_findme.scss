@@ -95,10 +95,6 @@ i {
   }
 }
 
-.mainmenu li {
-  position: relative;
-}
-
 .new {
   margin-top: 80px;
   line-height: 50px;
@@ -157,17 +153,6 @@ i {
   .size1of2 {
     width: 100%;
   }
-  ul {
-    padding: 0;
-    li {
-      width: 100% !important;
-      font-size: 1em;
-      margin: 20px auto;
-    }
-    &.height400 li {
-      height: inherit !important;
-    }
-  }
   .height400 {
     height: inherit !important;
   }
@@ -185,23 +170,6 @@ i {
   }
   #content {
     padding: 0;
-  }
-  .mainmenu {
-    position: relative;
-    height: 140px;
-    background: #000;
-    right: 0px;
-    font-size: 180%;
-    li {
-      width: 49% !important;
-      margin: 0 !important;
-      border-bottom: 1px dotted #000;
-      padding: 10px !important;
-    }
-    a {
-      display: block;
-      text-align: center;
-    }
   }
   .mainbox {
     background-size: cover;

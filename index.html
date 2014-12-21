@@ -105,19 +105,19 @@
 
             <!--<p> <a href="onClick" class="icon_menu"> <em>&nbsp;</em><span>Menú</span></a> 
 </p>-->
-            <ul class="horiz ">
-                <li class=" mam bgopaque pas"><a href="#subir" class="smoothScroll">home</a>
+            <ul>
+                <li><a href="#subir" class="smoothScroll">home</a>
                 </li>
-                <li class=" mam bgopaque pas"><a href="#bio" class="smoothScroll">bio</a>
+                <li><a href="#bio" class="smoothScroll">bio</a>
                 </li>
-                <li class=" mam bgopaque pas"><a href="#cv" class="smoothScroll">CV</a>
+                <li><a href="#cv" class="smoothScroll">CV</a>
                 </li>
-                <li class=" mam bgopaque pas"><a href="#projects" class="smoothScroll">works</a>
+                <li><a href="#projects" class="smoothScroll">works</a>
                 </li>
-                <li class=" mam bgopaque pas"><a href="#find" class="smoothScroll">find me at...</a>
+                <li><a href="#find" class="smoothScroll">find me at...</a>
                     <!--<span class="new bgfirm opaque"><i class="icon-star opaque"></i>New</span>-->
                 </li>
-                <li class=" mam bgopaque pas"><a href="#about" class="smoothScroll">about</a>
+                <li><a href="#about" class="smoothScroll">about</a>
                 </li>
             </ul>
         </nav>
@@ -212,12 +212,12 @@
                         <article class="">
                             <h1 class="abel contrast txtac text size100">cv</h1>
                             <h2 class="contrast txtac abel size300 mtxl ">I <span class="icon-heart disblin sharp"></span> sharing</h2>
-                            <ul class="horiz mtxl txtac ">
+                            <ul class="horizontal rwd mtxl txtac ">
 
                                 <li><a href="http://www.linkedin.com/in/naiaraabaroa/en" target="_blank"><i class="icon-linkedin  size700"></i><em class="disb">&nbsp;</em></a> </li>
                                 <li><a href="https://github.com/nabaroa" target="_blank"><i class="icon-github  size700"></i></a> </li>
 
-                                <li class="size1of6 "><a href="https://twitter.com/#!/nabaroa" target="_blank"><i class="icon-twitter  size700"></i></a>
+                                <li><a href="https://twitter.com/#!/nabaroa" target="_blank"><i class="icon-twitter  size700"></i></a>
                                 </li>
                                 <li><a href="https://github.com/nabaroa" target="_blank"><i class="icon-codepen  size700"></i></a> </li>
                                 <li><a href="http://pinterest.com/nabaroa/" target="_blank"><i class="icon-pinterest  size700"></i></a>
@@ -976,15 +976,45 @@
    <!-- script src="pre_js/query.masonry.min.js"></script>-->
     <script src="js/main.min.js"></script>
     <script>
-    $(function() {
 
-        $('#container').masonry({
-            itemSelector: '.box',
-            columnWidth: 100,
-            isAnimated: !Modernizr.csstransitions
-        });
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $(".mainmenu").outerHeight();
 
-    });
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 0);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('.mainmenu').css("top", -navbarHeight);
+    } else { 
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('.mainmenu').css("top", "0px");
+        }
+    }
+    
+    lastScrollTop = st;
+}
     </script>
     <script type="text/javascript">
     var _gaq = _gaq || [];
