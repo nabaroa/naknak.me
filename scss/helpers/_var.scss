@@ -29,3 +29,35 @@ $tablet-width: 850px;
 $tablet-width-min: 851px;
 $l-screensize: 1440px;
 $xl-screensize: 1900px;
+
+/*----------------------------
+BREAKPOINTS
+-----------------------------*/
+
+@mixin respond-to($point) {
+  @if $point == wide {
+    @media (min-width: 70em) {
+      @content;
+    }
+  }
+  @else if $point == desktop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
+  @else if $point == tablet {
+    @media (min-width: 50em) {
+      @content;
+    }
+  }
+  @else if $point == phablet {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  }
+  @else if $point == mobileonly {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+}

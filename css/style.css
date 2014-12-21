@@ -8,6 +8,9 @@ Created by NAK: @nabaroa
 /* --------------------------------------------------------------------*/
 /* Media queries
 /* --------------------------------------------------------------------*/
+/*----------------------------
+BREAKPOINTS
+-----------------------------*/
 /*Reset:
 Copyright (c) 2008, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
@@ -323,8 +326,32 @@ ul.fll li {
   float: right;
 }
 
-ul.horiz li {
-  display: inline-block;
+.horiz {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+}
+@media (min-width: 37.5em) {
+  .horiz {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 50em) {
+  .horiz {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .mara {
@@ -2061,6 +2088,9 @@ h1.logo em {
   }
 }
 
+.cv a {
+  text-decoration: none;
+}
 .cv a:hover {
   color: #222222;
 }

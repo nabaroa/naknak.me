@@ -40,9 +40,20 @@ ul.fll li {
   float: right;
 }
 
-ul.horiz li {
-  // float: left;
-  display: inline-block;
+// ul.horiz li {
+//   // float: left;
+//   display: inline-block;
+// }
+.horiz {
+  display: flex;
+  justify-content: space-around;
+  @include respond-to(phablet) {
+    flex-direction: column;
+  }
+
+  @include respond-to(tablet) {
+    flex-direction: row;
+  }
 }
 
 .mara {

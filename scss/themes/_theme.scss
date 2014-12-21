@@ -403,8 +403,11 @@ h1.logo {
 }
 
 .cv {
-  a:hover {
-    color: $darker;
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $darker;
+    }
   }
 }
 
