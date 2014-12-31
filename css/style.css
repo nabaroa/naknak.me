@@ -2119,6 +2119,11 @@ h1.logo em {
   display: block;
 }
 
+.collage {
+  background: url(../assets/collage.jpg) 0 0 no-repeat;
+  background-size: cover;
+}
+
 .icon-lea:before {
   font-size: 12rem;
   color: #666;
