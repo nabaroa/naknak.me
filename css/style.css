@@ -363,6 +363,9 @@ ul.fll li {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
 }
 
 .mara {
@@ -554,6 +557,10 @@ ul.height400 li {
 
   .size300 {
     font-size: 150%;
+  }
+
+  .size600 {
+    font-size: 300%;
   }
 
   .height1000 {

@@ -47,6 +47,7 @@ ul.fll li {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  flex-wrap: wrap;
   &.rwd {
     @extend %phablet-vertical;
   }
@@ -233,6 +234,9 @@ ul.height400 li {
   }
   .size300 {
     font-size: 150%;
+  }
+  .size600 {
+    font-size: 300%;
   }
   .height1000 {
     height: 600px;
