@@ -629,6 +629,11 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
   text-align: center;
   transition: all 0.1s ease;
   background: rgba(17, 17, 17, 0.8); }
+  @media all and (max-width: 480px) {
+    .mainmenu {
+      width: 35%;
+      right: 0;
+      left: inherit; } }
   .mainmenu ul {
     margin: 0;
     padding: 0;
@@ -637,6 +642,9 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
       display: inline-block;
       list-style: none;
       width: calc(100% / 7.5); }
+      @media all and (max-width: 480px) {
+        .mainmenu ul li {
+          display: block; } }
       .mainmenu ul li a {
         display: block;
         padding: 15px;

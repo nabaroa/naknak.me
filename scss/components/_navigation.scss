@@ -21,6 +21,11 @@
   text-align: center;
   transition: all .10s ease;
   background: rgba($opaque, 0.8);
+  @media all and (max-width: $mobile-width) {
+    width: 35%;
+    right: 0;
+    left: inherit;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -29,6 +34,9 @@
       display: inline-block;
       list-style: none;
       width: calc(100% / 7.5);
+      @media all and (max-width: $mobile-width) {
+        display: block;
+      }
       a {
         display: block;
         padding: 15px;
