@@ -1490,12 +1490,13 @@ h1.logo {
 .credits {
   position: relative; }
 
-.csswinner a {
+.csswinner {
   width: 81px;
   height: 59px;
   text-indent: -9000px;
   display: block;
-  background: url(../assets/nominee-white-right.png) no-repeat; }
+  background: url(../assets/nominee-white-right.png) no-repeat;
+  margin-left: 30px; }
 
 .awards {
   display: -webkit-flex;
@@ -1504,13 +1505,36 @@ h1.logo {
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around; }
+  @media all and (max-width: 480px) {
+    .awards {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  .awards > a {
+    width: 150px; }
+    @media all and (max-width: 480px) {
+      .awards > a {
+        margin: 20px 0; } }
+    .awards > a img:first-of-type {
+      height: 70px;
+      max-width: 170px;
+      margin-bottom: 20px; }
+    .awards > a img:last-of-type {
+      height: 70px; }
+    @media all and (max-width: 480px) {
+      .awards > a:first-of-type img:nth-of-type(2) {
+        margin-bottom: 30px; } }
 
 .laurel {
   width: 80px;
   height: 76px;
   margin-top: -4px;
   background: url(../assets/ico-laurel.svg) no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  padding: 15px; }
   .laurel span {
     display: block; }
   .laurel .type {

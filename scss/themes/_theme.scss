@@ -363,22 +363,46 @@ h1.logo {
 }
 
 .csswinner {
-  // position: absolute;
-  // top: 400px;
-  // right: 0;
-  // z-index: 10;
-  a {
-    width: 81px;
-    height: 59px;
-    text-indent: -9000px;
-    display: block;
-    background: url(../assets/nominee-white-right.png) no-repeat;
-  }
+  width: 81px;
+  height: 59px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../assets/nominee-white-right.png) no-repeat;
+  margin-left: 30px;
 }
 
 .awards {
   display: flex;
   justify-content: space-around;
+  @media all and (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+  > a {
+    width: 150px;
+    @media all and (max-width: $mobile-width) {
+      margin: 20px 0;
+    }
+    img {
+      &:first-of-type {
+        height: 70px;
+        max-width: 170px;
+        margin-bottom: 20px;
+      }
+      &:last-of-type {
+        height: 70px;
+      }
+    }
+    &:first-of-type {
+      img {
+        &:nth-of-type(2) {
+          @media all and (max-width: $mobile-width) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 .awwwards {
