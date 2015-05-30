@@ -115,6 +115,7 @@ a.negative, .negative a {
 
 .bgfirm {
   background: #f4b408;
+  padding: 0 10px;
 }
 
 .bgpositive {
@@ -300,6 +301,12 @@ ul.boxshadow2 li {
 
 .bio_bg {
   background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+  @media all and (max-width: $mobile-width) {
+    > * {
+      width: 80%;
+      margin: auto;
+    }
+  }
 }
 
 .top_n {
@@ -469,9 +476,9 @@ h1.logo {
   }
 }
 
-.findme, .find {
+.find {
   @media all and (max-width: 810px) {
-    padding-left: 20px;
+    padding: 0 20px;
   }
 }
 

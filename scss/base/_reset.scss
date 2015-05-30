@@ -95,6 +95,9 @@ article {
 
 ul, ol {
   padding-left: 1.3em;
+  @media all and (max-width: $mobile-width) {
+    padding-left: 0;
+  }
 }
 
 //

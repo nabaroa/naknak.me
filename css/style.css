@@ -94,6 +94,9 @@ article {
 
 ul, ol {
   padding-left: 1.3em; }
+  @media all and (max-width: 480px) {
+    ul, ol {
+      padding-left: 0; } }
 
 body {
   font: 13px/1.231 arial, helvetica, clean, sans-serif;
@@ -1157,6 +1160,9 @@ i.icon-blog {
     text-align: left; }
     .find ul {
       background: none; }
+      @media all and (max-width: 480px) {
+        .find ul {
+          padding: 0; } }
       .find ul li i {
         display: none; }
       .find ul ul li i {
@@ -1171,6 +1177,9 @@ i.icon-blog {
     height: inherit !important; }
   .mainbox.cv {
     height: 1300px; }
+    @media all and (max-width: 480px) {
+      .mainbox.cv {
+        height: 700px; } }
   #container img {
     max-width: 100%; }
   .col4, .col3, .col2 {
@@ -1348,7 +1357,8 @@ a.negative, .negative a {
   background: #fff; }
 
 .bgfirm {
-  background: #f4b408; }
+  background: #f4b408;
+  padding: 0 10px; }
 
 .bgpositive {
   background: #73ab00; }
@@ -1446,6 +1456,10 @@ ul.boxshadow2 li {
 
 .bio_bg {
   background: url(../assets/bio_bg.jpg) bottom right no-repeat; }
+  @media all and (max-width: 480px) {
+    .bio_bg > * {
+      width: 80%;
+      margin: auto; } }
 
 .top_n {
   width: 53px;
@@ -1575,8 +1589,8 @@ h1.logo {
   color: #f4b408; }
 
 @media all and (max-width: 810px) {
-  .findme, .find {
-    padding-left: 20px; } }
+  .find {
+    padding: 0 20px; } }
 
 .cv a {
   text-decoration: none; }
