@@ -358,17 +358,66 @@ h1.logo {
   }
 }
 
+.credits {
+  position: relative;
+}
+
 .csswinner {
-  position: fixed;
-  top: 400px;
-  right: 0;
-  z-index: 10;
+  // position: absolute;
+  // top: 400px;
+  // right: 0;
+  // z-index: 10;
   a {
     width: 81px;
     height: 59px;
     text-indent: -9000px;
     display: block;
     background: url(../assets/nominee-white-right.png) no-repeat;
+  }
+}
+
+.awards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.awwwards {
+  // position: absolute;
+  // right: 0;
+  // top: 200px;
+  // z-index: 2;
+}
+
+.laurel {
+  // float: right;
+  width: 80px;
+  height: 76px;
+  margin-top: -4px;
+  background: url(../assets/ico-laurel.svg) no-repeat;
+  background-size: 100% 100%;
+  padding: 15px;
+  span {
+    display: block;
+  }
+  .type {
+    margin-top: 17px;
+    font-size: 11px;
+  }
+  .day {
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-family: 'MuseoSans_Fat';
+  }
+  .month {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .special {
+    float: right;
+    width: 100px;
+    margin: 0;
+    color: #a6abab;
   }
 }
 
@@ -396,7 +445,7 @@ h1.logo {
   }
 }
 
-.findme,.find {
+.findme, .find {
   @media all and (max-width: 810px) {
     padding-left: 20px;
   }
@@ -425,7 +474,7 @@ h1.logo {
   height: 200px;
   margin: 1rem auto 2rem auto;
   text-align: center;
-  >span {
+  > span {
     display: block;
   }
 }
