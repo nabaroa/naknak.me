@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'naknak';
-  src: url("../fonts/naknak.eot?-fmiee1");
-  src: url("../fonts/naknak.eot?#iefix-fmiee1") format("embedded-opentype"), url("../fonts/naknak.woff?-fmiee1") format("woff"), url("../fonts/naknak.ttf?-fmiee1") format("truetype"), url("../fonts/naknak.svg?-fmiee1#naknak") format("svg");
+  src: url("../fonts/naknak.eot?2uiuta");
+  src: url("../fonts/naknak.eot?#iefix2uiuta") format("embedded-opentype"), url("../fonts/naknak.ttf?2uiuta") format("truetype"), url("../fonts/naknak.woff?2uiuta") format("woff"), url("../fonts/naknak.svg?2uiuta#naknak") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -74,6 +74,10 @@
 
 .icon-pinterest:before {
   content: "\e607";
+}
+
+.icon-volume:before {
+  content: "\e617";
 }
 
 .icon-heart:before {
