@@ -1,0 +1,130 @@
+<svg width="800" height="350" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .background {
+            fill-opacity: 1;
+            rx: 0px;
+            ry: 0px;
+            fill: none;
+        }
+
+        line {
+            stroke: #fff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-dasharray: 10 10;
+        }
+
+        .implicit {
+            stroke: red;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: inconsolata;
+            text-anchor: middle;
+            fill:#f2b806;
+        }
+
+        rect {
+            fill-opacity: 0.8;
+            rx: 10px;
+            ry: 10px;
+            stroke-width: 5;
+        }
+
+        .item-1 {
+            fill: #f2b806;
+            stroke: #f2c438;
+        }
+
+        .item-2 {
+            fill: #62CDD9;
+            stroke: #62CDD9;
+        }
+
+        .item-3 {
+            fill: #75BF06;
+            stroke: #75BF06;
+        }
+
+        .item-4 {
+            fill: #F2E205;
+            stroke: #F2E205;
+        }
+
+        .item-5 {
+            fill: #F2360C;
+            stroke: #F2360C;
+        }
+
+        .bold {
+            font-weight: bold;
+            fill:#000;
+        }
+
+        .small {
+            font-size: 15px;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+
+        .linename {
+            font-size: 19px;
+        }
+
+        .end {
+            text-anchor: end;
+        }
+
+        .start {
+            text-anchor: start;
+        }
+
+        .implicit-text {
+            fill: red;
+        }
+
+    </style>
+
+    <rect class="background" x="0" y="0" width="800" height="350" />
+
+    <g transform="translate(50, 50)">
+        <text class="linename" x="0" y="0">[col]</text>
+        <text class="linename" x="200" y="0">[gap]</text>
+        <text class="linename" x="250" y="0">[col]</text>
+        <text class="linename" x="450" y="0">[gap]</text>
+        <text class="linename" x="500" y="0">[col]</text>
+        <text class="linename" x="700" y="0">[gap]</text>
+    </g>
+
+    <g transform="translate(50, 80)">
+        <line class="dashed" x1="0" y1="0" x2="700" y2="0" />
+        <line class="dashed" x1="0" y1="100" x2="700" y2="100" />
+        <line class="dashed" x1="0" y1="200" x2="700" y2="200" />
+        <line class="dashed" x1="0" y1="0" x2="0" y2="200" />
+        <line class="dashed" x1="200" y1="0" x2="200" y2="200" />
+        <line class="dashed" x1="250" y1="0" x2="250" y2="200" />
+        <line class="dashed" x1="450" y1="0" x2="450" y2="200" />
+        <line class="dashed" x1="500" y1="0" x2="500" y2="200" />
+        <line class="dashed" x1="700" y1="0" x2="700" y2="200" />
+
+        <g transform="translate(250, 0)">
+            <rect class="item-1" x="5" y="5" width="190" height="90" />
+            <text class="bold" x="100" y="40">grid-column:</text>
+            <text class="bold" x="100" y="70">col 2;</text>
+        </g>
+
+        <g transform="translate(0, 100)">
+            <rect class="item-2" x="5" y="5" width="440" height="90" />
+            <text class="bold" x="225" y="50">grid-column: col 1 / gap 2;</text>
+        </g>
+
+        <g transform="translate(500, 100)">
+            <rect class="item-3" x="5" y="5" width="190" height="90" />
+            <text class="bold" x="100" y="40">grid-column:</text>
+            <text class="bold" x="100" y="70">col -1;</text>
+        </g>
+    </g>
+</svg>

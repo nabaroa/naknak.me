@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Properties cascade example
+    </title>
+    <style>
+body {
+        font-family: lato;
+        font-size: 3em;
+        text-align: center;
+        background: #222;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    div,p,strong,span{
+    	display: block;
+    	border:1px dotted #666;
+    	padding: 10px;
+    	margin: 10px;
+    }
+
+    /*----------------------------*/
+    
+    :root {
+        --color: gold;
+    }
+    
+    div {
+        --color: deepPink;
+    }
+
+	p{
+		--color:greenYellow; 
+	}
+    #alert {
+        --color: Turquoise;
+    }
+    
+	
+
+    * {
+        color: var(--color); 
+    }
+
+    .white{
+    	color:white;
+    }
+    
+   
+}
+    </style>
+</head>
+
+<body>
+    <span>I inherited yellow from the root element!</span> 
+    <a href="">Also links from de root</a>
+    <div>I got pink set directly on me!</div>
+    <div id='alert'>
+        While I got turquoise set directly on me!
+        <span>I’m turquoise too, because of inheritance!</span>
+        <p>I’m green, setted directly</p>
+    </div>
+    <div class="white">I am white
+    	<span>But my son is pink </span>
+    	
+    	<p>and I should be green, but I'm pink ;(</p>
+    </div>
+   <p>Same for me</p>
+
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<svg width="750" height="550" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        .background {
+            fill-opacity: 1;
+            rx: 0px;
+            ry: 0px;
+            fill: none;
+        }
+
+        line {
+            stroke: #fff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-dasharray: 10 10;
+        }
+
+        .implicit {
+            stroke: red;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: inconsolata;
+            text-anchor: middle;
+            fill:#f2b806;
+        }
+
+        rect {
+            fill-opacity: 0.8;
+            rx: 10px;
+            ry: 10px;
+            stroke-width: 5;
+        }
+
+        .item-1 {
+            fill: #f2b806;
+            stroke: #f2c438;
+        }
+
+        .item-2 {
+            fill: #62CDD9;
+            stroke: #62CDD9;
+        }
+
+        .item-3 {
+            fill: #75BF06;
+            stroke: #75BF06;
+        }
+
+        .item-4 {
+            fill: #F2E205;
+            stroke: #F2E205;
+        }
+
+        .item-5 {
+            fill: #F2360C;
+            stroke: #F2360C;
+        }
+
+        .bold {
+            font-weight: bold;
+            fill:#fff;
+        }
+        .white {
+            fill:#fff;
+        }
+        .black{
+            fill:#000;
+        }
+        .small {
+            font-size: 15px;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+
+        .linename {
+            font-size: 19px;
+        }
+
+        .end {
+            text-anchor: end;
+        }
+
+        .start {
+            text-anchor: start;
+        }
+
+        .implicit-text {
+            fill: red;
+        }
+    </style>
+
+    <rect class="background" x="0" y="0" width="750" height="550" />
+
+    <g transform="translate(150, 30)">
+        <text class="small" x="0" y="0">[title-start]</text>
+        <text class="small" x="0" y="20">[nav-start]</text>
+        <text class="small" x="0" y="40">[footer-start]</text>
+    </g>
+
+    <g transform="translate(250, 30)">
+        <text class="small bold white" x="0" y="20">[main-start]</text>
+        <text class="small" x="0" y="40">[nav-end]</text>
+    </g>
+
+    <g transform="translate(550, 30)">
+        <text class="small" x="0" y="0">[aside-start]</text>
+        <text class="small" x="0" y="20">[title-end]</text>
+        <text class="small" x="0" y="40">[main-end]</text>
+    </g>
+
+    <g transform="translate(650, 30)">
+        <text class="small bold white" x="0" y="20">[aside-end]</text>
+        <text class="small" x="0" y="40">[footer-end]</text>
+    </g>
+
+    <g transform="translate(75, 105)">
+        <text class="small bold white" x="0" y="-10">[title-start]</text>
+        <text class="small" x="0" y="10">[aside-start]</text>
+    </g>
+
+    <g transform="translate(75, 205)">
+        <text class="small" x="0" y="-20">[nav-start]</text>
+        <text class="small" x="0" y="0">[main-start]</text>
+        <text class="small" x="0" y="20">[title-end]</text>
+    </g>
+
+    <g transform="translate(75, 405)">
+        <text class="small" x="0" y="-30">[footer-start]</text>
+        <text class="small bold white" x="0" y="-10">[nav-end]</text>
+        <text class="small" x="0" y="10">[main-end]</text>
+        <text class="small" x="0" y="30">[aside-end]</text>
+    </g>
+
+    <g transform="translate(75, 505)">
+        <text class="small" x="0" y="0">[footer-end]</text>
+    </g>
+
+    <g transform="translate(150, 100)">
+        <line class="dashed" x1="0" y1="0" x2="500" y2="0" />
+        <line class="dashed" x1="0" y1="100" x2="500" y2="100" />
+        <line class="dashed" x1="0" y1="200" x2="500" y2="200" />
+        <line class="dashed" x1="0" y1="300" x2="500" y2="300" />
+        <line class="dashed" x1="0" y1="400" x2="500" y2="400" />
+        <line class="dashed" x1="0" y1="0" x2="0" y2="400" />
+        <line class="dashed" x1="100" y1="0" x2="100" y2="400" />
+        <line class="dashed" x1="200" y1="0" x2="200" y2="400" />
+        <line class="dashed" x1="300" y1="0" x2="300" y2="400" />
+        <line class="dashed" x1="400" y1="0" x2="400" y2="400" />
+        <line class="dashed" x1="500" y1="0" x2="500" y2="400" />
+
+        <g transform="translate(100, 0)">
+            <rect class="item-1" x="5" y="5" width="390" height="290" />
+            <text class="black bold linename" x="200" y="110">grid-column:</text>
+            <text class="black bold linename" x="200" y="140">main-start / aside-end;</text>
+            <text class="black bold linename" x="200" y="170">grid-row:</text>
+            <text class="black bold linename" x="200" y="200">title-start / nav-end;</text>
+        </g>
+
+    </g>
+</svg>
