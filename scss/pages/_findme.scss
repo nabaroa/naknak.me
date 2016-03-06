@@ -1,7 +1,6 @@
 //--------------------------------//
 //  Find me
 //--------------------------------//
-
 .calendar {
   font-family: abel;
   position: relative;
@@ -82,13 +81,6 @@ i {
 }
 
 .new span {
- /* position: absolute;
-  left: 0;
-  font-size: 1em;
-  top: 30px;
-  line-height: 20px;
-  padding: 5px;
-*/
   i {
     font-size: 1em;
     padding-top: 5px;
@@ -126,7 +118,7 @@ i {
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media all and (max-width: 800px) {
   * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -147,7 +139,9 @@ i {
       }
     }
   }
-  .upcoming, .past, .today {
+  .upcoming,
+  .past,
+  .today {
     display: none;
   }
   .text.size100 {
@@ -162,7 +156,7 @@ i {
   .mainbox.cv {
     height: 1300px;
     @media all and (max-width: $mobile-width) {
-      height: 700px;
+      height: 900px;
     }
   }
   #container img {
@@ -170,7 +164,9 @@ i {
     // height: inherit;
  
   }
-  .col4, .col3, .col2 {
+  .col4,
+  .col3,
+  .col2 {
     width: 95%;
     margin: auto;
   }
@@ -180,7 +176,15 @@ i {
   .mainbox {
     background-size: cover;
   }
-  .index1, .index2, .index3, .index4, .index5, .index6, .index7, .index8, .inspire {
+  .index1,
+  .index2,
+  .index3,
+  .index4,
+  .index5,
+  .index6,
+  .index7,
+  .index8,
+  .inspire {
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
@@ -194,7 +198,15 @@ i {
     -o-transition: background-size 2s linear;
     transition: background-size 2s linear;
   }
-  .index1:hover, .index2:hover, .index3:hover, .index4:hover, .index5:hover, .index6:hover, .index7:hover, .index8:hover, .inspire {
+  .index1:hover,
+  .index2:hover,
+  .index3:hover,
+  .index4:hover,
+  .index5:hover,
+  .index6:hover,
+  .index7:hover,
+  .index8:hover,
+  .inspire {
     -moz-background-position: 0px 0px;
     -o-background-position: 0px 0px;
     -webkit-background-position: 0px 0px;
@@ -218,7 +230,8 @@ i {
   .text.size100 {
     font-size: 6em;
   }
-  ul.ch-grid, .new {
+  ul.ch-grid,
+  .new {
     display: none;
   }
   .find {
@@ -228,7 +241,16 @@ i {
 
 @media only screen and (min-width: 1900px) {
   .mainbox {
-    &.index1, &.index2, &.pattern2, &.index3, &.index4, &.index5, &.index6, &.index7, &.index8, &.inspire {
+    &.index1,
+    &.index2,
+    &.pattern2,
+    &.index3,
+    &.index4,
+    &.index5,
+    &.index6,
+    &.index7,
+    &.index8,
+    &.inspire {
       height: 1300px;
     }
   }

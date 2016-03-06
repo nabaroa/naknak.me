@@ -84,6 +84,9 @@ a.size50 {
 
 .text.size100 {
   font-size: 10em;
+  @media all and (max-width: 500px) {
+    font-size: 5em;
+  }
 }
 
 .size120 {
@@ -122,6 +125,9 @@ h2,
   font-weight: normal;
   font-style: normal;
   color: #f4b408;
+  @media all and (max-width: 500px) {
+    font-size: 300%;
+  }
 }
 
 h3,
