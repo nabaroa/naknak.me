@@ -5,6 +5,10 @@
   font-family: abel;
   position: relative;
   ul {
+    font-size: 1.3em;
+    float: left;
+    background: url(../assets/marra.png) 36px 0 repeat-y;
+    width: 100%;
     li i {
       float: left;
       margin-top: 20px;
@@ -20,9 +24,6 @@
       }
       background: none;
     }
-    font-size: 1.3em;
-    float: left;
-    background: url(../assets/marra.png) 36px 0 repeat-y;
     li {
       clear: both;
       margin: 10px 0;
