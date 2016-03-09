@@ -3,7 +3,7 @@
   "version": "1.0.10",
   "description": "This is my personal portfolio. Enjoy.",
   "homepage": "http://naknak.me",
-     "author": {
+  "author": {
     "name": "Naiara Abaroa",
     "email": "naiaraabaroa@gmail.com",
     "web": "http://naknak.me"
@@ -12,12 +12,11 @@
     "type": "git",
     "url": "https://github.com/nabaroa/naknak.me.git"
   },
-
   "bugs": {
     "url": "https://github.com/nabaroa/naknak.me/issues"
   },
-
   "devDependencies": {
+    "all-promises": "^1.2.0",
     "browser-sync": "",
     "cssnano": "^3.5.2",
     "gulp": "^3.9.0",
@@ -26,7 +25,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "6.1.0",
     "postcss-cssnext": "^2.4.0",
-    "precss": "^1.4.0",
+    "precss": "^1.4.0", 
     "run-sequence": "^1.1.5"
   },
   "license": "MIT"
