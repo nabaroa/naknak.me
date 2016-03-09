@@ -1,8 +1,7 @@
-.sass-cache
-ariketak_pribatua/
-pre_assets/
-pre_js/
-css/style.min.css 
+
+app/ariketak_pribatua/
+app/css/style.min.css 
+dest/
 .BridgeSort
 .DS_Store
 # Logs
