@@ -1,49 +1,50 @@
 var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    sourcemaps = require('gulp-sourcemaps'),
-    minifycss = require('gulp-minify-css'),
-    rename = require('gulp-rename'),
+    postcss = require('gulp-postcss'),
+    cssnext = require('postcss-cssnext'),
+    precss = require('precss'),
     notify = require('gulp-notify'),
-    livereload = require('gulp-livereload');
+    plumber = require('gulp-plumber'),
+    nano = require('gulp-cssnano'),
+    browserSync = require('browser-sync'),
+    runSequence = require('run-sequence');;
 
-gulp.task('default', function() {
-    return gulp.src('scss/style.scss')
-        .pipe(sass({
-            sourcemap: true
-        }))
-        // Catch any SCSS errors and prevent them from crashing gulp
-        .on('error', function(error) {
-            console.error(error);
-            this.emit('end');
-        })
-        .pipe(sourcemaps.init({
-            loadMaps: true
-        }))
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions']
-        }))
-        .pipe(gulp.dest('./css'))
-        .pipe(sourcemaps.write())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(minifycss())
-        .pipe(gulp.dest('./css'))
-        .pipe(notify({
-            message: 'Sass task complete'
-        }));
+gulp.task('css', function() {
+    var processors = [
+        cssnext,
+        precss
+    ];
+    var configNano = {
+      autoprefixer: { browsers: 'last 2 versions' },
+      discardComments: { removeAll: true },
+      safe: true
+    };
+    return gulp.src('./src/*.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dest'))
+        .pipe(plumber())
+        .pipe(nano(configNano))
+        .pipe(gulp.dest('./app/css'))
+        .pipe( browserSync.stream() )
+        .pipe(notify({ message: 'Your CSS is ready ;)' }));
 });
+
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync({
+        server: {
+            baseDir: './app/'
+        }
+    });
+});
+
 // Watch
 gulp.task('watch', function() {
+    // Watch .css files
+    gulp.watch('src/**/*.css', ['css']);
 
-    // Watch .scss files
-    gulp.watch('scss/**/*.scss', ['default']);
+});
 
-    // Create LiveReload server
-    livereload.listen();
-
-    // Watch any files in dist/, reload on change
-    gulp.watch(['css/']).on('change', livereload.changed);
-
+// Default
+gulp.task('default', function() {
+  runSequence(['css', 'browser-sync', 'watch']);
 });
