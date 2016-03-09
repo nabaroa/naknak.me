@@ -8,9 +8,7 @@
     <meta name="viewport" content="width=device-width, inicial-scale=1.0" />
     <link href="css/style.min.css" rel="stylesheet" type="text/css">
     <link rel="author" href="https://plus.google.com/106783201431526527457/posts">
-    <script src="../js/modernizr-transitions.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link href='http://fonts.googleapis.com/css?family=Abel|Wire+One|Mr+Dafoe' rel='stylesheet' type='text/css'>
     <link rel="shortcut icon" href="assets/favicon.ico">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
@@ -25,74 +23,6 @@
         $('#home').each(function(i, val) {
             $(this).addClass(klasses[i]);
         });
-    });
-    </script>
-    <script>
-    $(function() {
-
-        function filterPath(string) {
-            return string
-                .replace(/^\//, '')
-                .replace(/(index|default).[a-zA-Z]{3,4}$/, '')
-                .replace(/\/$/, '');
-        }
-
-        var locationPath = filterPath(location.pathname);
-        var scrollElem = scrollableElement('html', 'body');
-
-        // Any links with hash tags in them (can't do ^= because of fully qualified URL potential)
-        $('a[href*=#]').each(function() {
-
-            // Ensure it's a same-page link
-            var thisPath = filterPath(this.pathname) || locationPath;
-            if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
-
-                // Ensure target exists
-                var $target = $(this.hash),
-                    target = this.hash;
-                if (target) {
-
-                    // Find location of target
-                    var targetOffset = $target.offset().top;
-                    $(this).click(function(event) {
-
-                        // Prevent jump-down
-                        event.preventDefault();
-
-                        // Animate to target
-                        $(scrollElem).animate({
-                            scrollTop: targetOffset
-                        }, 400, function() {
-
-                            // Set hash in URL after animation successful
-                            location.hash = target;
-
-                        });
-                    });
-                }
-            }
-
-        });
-
-        // Use the first element that is "scrollable"  (cross-browser fix?)
-        function scrollableElement(els) {
-            for (var i = 0, argLength = arguments.length; i < argLength; i++) {
-                var el = arguments[i],
-                    $scrollElement = $(el);
-                if ($scrollElement.scrollTop() > 0) {
-                    return el;
-                } else {
-                    $scrollElement.scrollTop(1);
-                    var isScrollable = $scrollElement.scrollTop() > 0;
-                    $scrollElement.scrollTop(0);
-                    if (isScrollable) {
-                        return el;
-                    }
-                }
-            }
-            return [];
-        }
-
     });
     </script>
 </head>
@@ -433,7 +363,7 @@
                                     <h2 class="abel">Teaching</h2>
                                     <!-- <div class="rotate90 ab upcoming">Upcoming</div> -->
                                     <ul>
-                                    <!--     <li>
+                                        <!--     <li>
                                             <i class="icon-circle "></i>
                                             <ul>
                                                <li><span class="firm">18/04/2016-22/04/2016 </span>
@@ -441,7 +371,7 @@
                                                     <br>for <a href="http://escuela.it/" target="_blank">Escuela IT</a></li>
                                                 <li>SassWoman vs PostCSSman</li>
                                                 <li> -->
-                                                    <!--  <a href="http://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa" target="_blank">
+                                        <!--  <a href="http://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa" target="_blank">
                                                         <i class="icon-link"></i>
                                                     </a>
                                                     <a href="http://learncss.info/index.html#/" target="_blank">
@@ -450,7 +380,7 @@
                                                 </li>
                                             </ul>
                                         </li> -->
-                                     <!--         <li>
+                                        <!--         <li>
                                             <i class="icon-circle firm"></i> <span class="today firm">Today</span>
                                         </li> -->
                                         <li>
@@ -715,7 +645,6 @@
                                 </div>
                             </div>
                             <div class="size1of2 flr calendar find">
-                                
                                 <h2 class="abel clear fll size1of1 pr">Speaking <span class="contrast"></span></h2>
                                 <!-- <div class="rotate90 ab upcoming">Upcoming</div> -->
                                 <ul>
@@ -1050,10 +979,8 @@
         pinterest board: "kristaletik begira"</a>
         </p>
     </div>
-    <script src="pre_js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery-1.7.1.min.js"></script>
     <script src="js/smoothscroll.js"></script>
-    <!-- script src="pre_js/query.masonry.min.js"></script>-->
-    <script src="js/main.min.js"></script>
     <script>
     // Hide Header on on scroll down
     var didScroll;

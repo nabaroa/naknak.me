@@ -166,6 +166,9 @@ a.size50 {
 
 .text.size100 {
   font-size: 10em; }
+  @media all and (max-width: 500px) {
+    .text.size100 {
+      font-size: 5em; } }
 
 .size120 {
   font-size: 120%; }
@@ -197,6 +200,10 @@ h2,
   font-weight: normal;
   font-style: normal;
   color: #f4b408; }
+  @media all and (max-width: 500px) {
+    h2,
+    .h2 {
+      font-size: 300%; } }
 
 h3,
 .h3 {
@@ -1186,7 +1193,8 @@ header {
   .calendar ul {
     font-size: 1.3em;
     float: left;
-    background: url(../assets/marra.png) 36px 0 repeat-y; }
+    background: url(../assets/marra.png) 36px 0 repeat-y;
+    width: 100%; }
     .calendar ul li i {
       float: left;
       margin-top: 20px;
@@ -1235,17 +1243,9 @@ i.icon-blog {
   bottom: 0px;
   left: -15px; }
 
-.new span {
-  /* position: absolute;
-  left: 0;
+.new span i {
   font-size: 1em;
-  top: 30px;
-  line-height: 20px;
-  padding: 5px;
-*/ }
-  .new span i {
-    font-size: 1em;
-    padding-top: 5px; }
+  padding-top: 5px; }
 
 .new {
   margin-top: 80px;
@@ -1269,13 +1269,91 @@ i.icon-blog {
     border-bottom: 13px solid transparent;
     margin: 13px 0 0 -25px; }
 
-@media only screen and (min-width: 0px) and (max-width: 800px) {
+@media all and (max-width: 800px) {
   * {
     box-sizing: border-box; }
   .find {
     text-align: left; }
     .find ul {
       background: none; } }
+    @media all and (max-width: 800px) and (max-width: 480px) {
+      .find ul {
+        padding: 0; } }
+
+@media all and (max-width: 800px) {
+      .find ul li i {
+        display: none; }
+      .find ul ul li i {
+        display: block; }
+  .upcoming,
+  .past,
+  .today {
+    display: none; }
+  .text.size100 {
+    font-size: 8em; }
+  .size1of2 {
+    width: 100%; }
+  .height400 {
+    height: inherit !important; }
+  .mainbox.cv {
+    height: 1300px; } }
+  @media all and (max-width: 800px) and (max-width: 480px) {
+    .mainbox.cv {
+      height: 900px; } }
+
+@media all and (max-width: 800px) {
+  #container img {
+    max-width: 100%; }
+  .col4,
+  .col3,
+  .col2 {
+    width: 95%;
+    margin: auto; }
+  #content {
+    padding: 0; }
+  .mainbox {
+    background-size: cover; }
+  .index1,
+  .index2,
+  .index3,
+  .index4,
+  .index5,
+  .index6,
+  .index7,
+  .index8,
+  .inspire {
+    background-size: cover;
+    transition: background-position 2s ease;
+    transition: background-size 2s linear; }
+  .index1:hover,
+  .index2:hover,
+  .index3:hover,
+  .index4:hover,
+  .index5:hover,
+  .index6:hover,
+  .index7:hover,
+  .index8:hover,
+  .inspire {
+    -moz-background-position: 0px 0px;
+    -o-background-position: 0px 0px;
+    -webkit-background-position: 0px 0px;
+    background-position: 0px 0px;
+    background-size: cover; }
+  .bio_bg {
+    background-image: none !important;
+    text-align: center; }
+  .cooking {
+    display: none; }
+  .box {
+    margin-bottom: 10px;
+    clear: both; }
+  .text.size100 {
+    font-size: 6em; }
+  ul.ch-grid,
+  .new {
+    display: none; }
+  .find {
+    margin-top: 70px; } }
 
 @media only screen and (min-width: 1900px) {
   .mainbox.index1, .mainbox.index2, .mainbox.pattern2, .mainbox.index3, .mainbox.index4, .mainbox.index5, .mainbox.index6, .mainbox.index7, .mainbox.index8, .mainbox.inspire {
