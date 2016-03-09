@@ -1,6 +1,13 @@
-.sass-cache
-ariketak_pribatua/
-pre_assets/
-pre_js/
-css/style.min.css 
+
+app/ariketak_pribatua/
+app/css/style.min.css 
+dest/
 .BridgeSort
+.DS_Store
+# Logs
+logs
+*.log
+
+# Dependency directory
+# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
+node_modules

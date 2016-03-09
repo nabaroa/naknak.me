@@ -1,7 +1,0 @@
-/*@media only screen and (min-width : 320px)  {
-
-.size1of2{ 
-width:100%;
-}*/
-.line,.lastUnit{overflow:hidden;*overflow:visible;*zoom:1}.unit{float:left}.unitRight{float:right}.size1of1{float:none;width:100%}.size1of2,ul.li2 li{width:50%}.size1of3,ul.li3 li{width:33.33333%}.size2of3{width:66.66666%}.size1of4,ul.li4 li{width:25%}.size3of4{width:75%}.size1of5{width:20%}.size2of5{width:40%}.size3of5{width:60%}.size4of5{width:80%}.size1of6,ul.li6 li{width:16.6666666%}.size5of6{width:83.3333333%}ul.li8 li{width:12.5%}.lastUnit{float:none;width:auto;_position:relative;_left:-3px;_margin-right:-3px}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
