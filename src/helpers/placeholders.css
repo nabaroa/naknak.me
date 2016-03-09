@@ -1,0 +1,9 @@
+%color {
+  color: $color;
+}
+
+%titlecolor {
+  color: $white;
+  font-family: "Love Ya Like A Sister", cursive;
+  // text-shadow: 6px 6px 0px $white, -3px -3px 0px $white;
+}

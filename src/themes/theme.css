@@ -1,0 +1,516 @@
+/*//--------------------------------//
+//  Theme
+//--------------------------------//*/
+
+a {
+  color: #666666;
+  text-decoration: none;
+  &:visited {
+    color: #666666;
+  }
+  &:focus, &:hover {
+    text-decoration: underline;
+  }
+}
+
+/*//--------------------------------//
+//  //Colors
+//--------------------------------//*/
+
+.bare {
+  color: #bbb;
+}
+
+.pale {
+  color: #999;
+}
+
+.neutral {
+  color: #666;
+}
+
+.opaque {
+  color: #333;
+}
+
+.sharp {
+  color: #000;
+}
+
+.contrast {
+  color: #fff !important;
+}
+
+.firm, a.firm {
+  color: #f4b408 !important;
+}
+
+.positive {
+  color: #73ab00;
+}
+
+.negative {
+  color: #c20000;
+}
+
+a.bare, .bare a {
+  color: #bbb;
+}
+
+a.pale, .pale a {
+  color: #999;
+}
+
+a.neutral, .neutral a {
+  color: #666;
+}
+
+a.opaque, .opaque a {
+  color: #333;
+}
+
+a.sharp, .sharp a {
+  color: #000;
+}
+
+a.contrast, .contrast a {
+  color: #fff;
+}
+
+a.firm, .firm a {
+  color: #f4b408;
+}
+
+a.positive, .positive a {
+  color: #73ab00;
+}
+
+a.negative, .negative a {
+  color: #c20000;
+}
+
+.bgbare {
+  background: #bbb !important;
+}
+
+.bgpale {
+  background: #999;
+}
+
+.bgneutral {
+  background: #666;
+}
+
+.bgopaque, header.bgopaque {
+  background: #333333;
+}
+
+.bgsharp {
+  background: #000;
+}
+
+.bgcontrast {
+  background: #fff;
+}
+
+.bgfirm {
+  background: #f4b408;
+  padding: 0 10px;
+}
+
+.bgpositive {
+  background: #73ab00;
+}
+
+.bgnegative {
+  background: #c20000;
+}
+
+.bobare {
+  border-color: #bbb;
+}
+
+.bopale {
+  border-color: #999;
+}
+
+.boneutral {
+  border-color: #666;
+}
+
+.boopaque {
+  border-color: #333;
+}
+
+.bosharp {
+  border-color: #000;
+}
+
+.bocontrast {
+  border-color: #fff;
+}
+
+.bofirm {
+  border-color: #f4b408;
+}
+
+.bopositive {
+  border-color: #73ab00;
+}
+
+.bonegative {
+  border-color: #c20000;
+}
+
+.bothin {
+  border: 1px solid;
+}
+
+.bg_zen {
+  background: url(../assets/bg4.jpg) 0 0 no-repeat;
+}
+
+/*//--------------------------------//
+//  //icons
+//--------------------------------//*/
+
+/*// .icon_heart {
+//   width: 40px;
+//   height: 40px;
+//   background: url(/plugins/icons/skin/heart.svg) no-repeat center center;
+//   background-size: 80%;
+//   color: #000;
+// }
+
+// .icon_heart_firm {
+//   width: 20px;
+//   height: 20px;
+//   background: url(/plugins/icons/skin/noun_project_822_heart_firm.png) no-repeat center center;
+//   background-size: 80%;
+//   color: #000;
+// }
+
+// .twitter {
+//   background: url(/plugins/icons/skin/twitter.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .google {
+//   background: url(/plugins/icons/skin/google_plus.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .linkedin {
+//   background: url(/plugins/icons/skin/linkedin.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .pinterest {
+//   background: url(/plugins/icons/skin/pinterest.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .wordpress {
+//   background: url(/plugins/icons/skin/wordpress.png) no-repeat top center;
+//   background-size: 40%;
+//   position: relative;
+// }
+
+// .twitter span, .google span, .linkedin span, .pinterest span, .nak span, .wordpress span {
+//   position: absolute;
+//   text-indent: -9999px;
+// }
+
+// .twitter em, .google em, .linkedin em, .pinterest em, .wordpress em {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+// }*/
+
+.nak {
+  background: url(../assets/nak.png) no-repeat top center;
+  background-size: 100%;
+  position: relative;
+}
+
+.underline {
+  background: url(../assets/underline.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.underline_contrast {
+  background: url(../assets/underline_contrast.png) bottom right no-repeat;
+  padding-bottom: 10px;
+}
+
+.coming_soon {
+  background: url(../assets/comming-soon.png) 0 0 no-repeat;
+  position: absolute;
+  right: -100px;
+  bottom: -100px;
+  width: 271px;
+  height: 130px;
+}
+
+.cooking {
+  background: url(../assets/cooking.png) 0 0 no-repeat;
+  width: 103px;
+  height: 92px;
+  position: absolute;
+  top: -100px;
+  left: 130px;
+}
+
+.notfinished {
+  font-family: "Mr Dafoe";
+  float: right;
+  right: 20px;
+  color: #666;
+  position: absolute;
+  bottom: 50px;
+  font-size: 4em;
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+  @media all and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.tshadow {
+  text-shadow: 0 1px 0 black, 0 -1px 0 white;
+}
+
+.boxshadowl {
+  box-shadow: 5px 5px 30px #999;
+}
+
+.bora10 {
+  border-radius: 0px 10px 0px 10px;
+}
+
+ul.boxshadow2 li {
+  box-shadow: 3px 3px 5px #000;
+}
+
+.bio_bg {
+  background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+  @media all and (max-width: $mobile-width) {
+    > * {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+.top_n {
+  width: 53px;
+  height: 80px;
+  margin: auto;
+  background: url(../assets/top_deco_n.png) no-repeat;
+}
+
+.top_a {
+  width: 53px;
+  height: 80px;
+  margin: auto;
+  background: url(../assets/top_deco_a.png) no-repeat;
+}
+
+.top_k {
+  width: 53px;
+  height: 80px;
+  position: absolute;
+  left: calc(50% - 26px);
+  margin: auto;
+  background: url(../assets/top_deco_k.png) no-repeat;
+}
+
+.top_nak {
+  width: 47px;
+  height: 195px;
+  margin: auto;
+  background: url(../assets/nak.png) no-repeat;
+  @media all and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.ank {
+  margin: 0;
+}
+
+h1.logo {
+  width: 47px;
+  height: 196px;
+  margin: auto;
+  position: relative;
+  span {
+    position: absolute;
+    text-indent: -9999px;
+  }
+  em {
+    background: url(../assets/naknak.png) no-repeat top center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+.credits {
+  position: relative;
+}
+
+.csswinner {
+  width: 81px;
+  height: 59px;
+  text-indent: -9000px;
+  display: block;
+  background: url(../assets/nominee-white-right.png) no-repeat;
+  margin-left: 30px;
+}
+
+.awards {
+  display: flex;
+  justify-content: space-around;
+  @media all and (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+  > a {
+    width: 150px;
+    @media all and (max-width: $mobile-width) {
+      margin: 20px 0;
+    }
+    img {
+      &:first-of-type {
+        height: 70px;
+        max-width: 170px;
+        margin-bottom: 20px;
+      }
+      &:last-of-type {
+        height: 70px;
+      }
+    }
+    &:first-of-type {
+      img {
+        &:nth-of-type(2) {
+          @media all and (max-width: $mobile-width) {
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.awwwards {
+  // position: absolute;
+  // right: 0;
+  // top: 200px;
+  // z-index: 2;
+}
+
+.laurel {
+  // float: right;
+  width: 80px;
+  height: 76px;
+  margin-top: -4px;
+  background: url(../assets/ico-laurel.svg) no-repeat;
+  background-size: 100% 100%;
+  padding: 15px;
+  span {
+    display: block;
+  }
+  .type {
+    margin-top: 17px;
+    font-size: 11px;
+  }
+  .day {
+    font-size: 18px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    font-family: 'MuseoSans_Fat';
+  }
+  .month {
+    font-size: 11px;
+    line-height: 11px;
+  }
+  .special {
+    float: right;
+    width: 100px;
+    margin: 0;
+    color: #a6abab;
+  }
+}
+
+.pattern2 {
+  background: url(../assets/pattern2.png);
+}
+
+.pattern3 {
+  background: url(../assets/bg5.png);
+}
+
+.size1of6 {
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.findme {
+  a {
+    &:hover {
+      i {
+        color: #f4b408;
+      }
+    }
+  }
+}
+
+.find {
+  @media all and (max-width: 810px) {
+    padding: 0 20px;
+  }
+}
+
+.cv {
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $darker;
+    }
+  }
+}
+
+.nabaroa {
+  background: url(https://pbs.twimg.com/profile_images/700698991147634688/3sZVhxBf.jpg) 0 0 no-repeat;
+  width: 200px;
+  height: 200px;
+  border-radius: 500rem;
+  margin: 1rem auto;
+  background-size: cover;
+}
+
+.icon-lea {
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  > span {
+    display: block;
+  }
+}
+
+.collage {
+  background: url(../assets/collage.jpg) 0 0 no-repeat;
+  background-size: cover;
+}

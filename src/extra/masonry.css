@@ -1,0 +1,311 @@
+/* screens smaller than 640 */
+
+#content {
+  padding: 10px 10px 40px 10px;
+}
+
+@media screen and (max-width: 640px) {
+  #site-nav {
+    width: auto;
+    position: relative;
+    left: auto;
+    top: auto;
+    padding-top: 0;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  #content {
+    padding-left: 10px;
+  }
+}
+
+.copy h2 {
+  clear: both;
+}
+
+a img {
+  border: 0;
+}
+
+ul, ol {
+  // padding-left: 1.3em;
+}
+
+.hidden {
+  display: none;
+}
+
+.copy {
+  width: 600px;
+  line-height: 1.55em;
+}
+
+blockquote {
+  margin: 0;
+  font: italic 18px Georgia,serif;
+}
+
+dt {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+dd {
+  + dt {
+    margin-top: .5em;
+  }
+  margin-left: 1.0em;
+}
+
+button {
+  -webkit-appearance: push-button;
+}
+
+#container {
+  padding: 5px;
+  margin-bottom: 20px;
+  clear: both;
+  width: 100%;
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.box {
+  margin: 5px 5px 20px 5px;
+  padding: 5px;
+  background: #131313;
+  font-size: 13px;
+  line-height: 1.4em;
+  float: left;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #000;
+  h2 {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 5px;
+  }
+  p {
+    margin: 5px;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
+#tumblelog img {
+  display: block;
+  width: 100%;
+}
+
+.rtl .box {
+  float: right;
+  text-align: right;
+  direction: rtl;
+}
+
+.col1 {
+  width: 80px;
+}
+
+.col2 {
+  width: 180px;
+}
+
+.col3 {
+  width: 280px;
+}
+
+.col4 {
+  width: 380px;
+  height: 400px;
+  @media all and (max-width: 400px) {
+    width: 100%;
+    height: inherit;
+  }
+}
+
+.col5 {
+  width: 480px;
+}
+
+.col1 img {
+  max-width: 80px;
+}
+
+.col2 img {
+  max-width: 180px;
+}
+
+.col3 img {
+  max-width: 280px;
+}
+
+.col4 img {
+  max-width: 380px;
+}
+
+.col5 img {
+  max-width: 480px;
+}
+
+.has-gutters {
+  .box {
+    margin: 5px 0;
+  }
+  .col1 {
+    width: 90px;
+  }
+  .col2 {
+    width: 230px;
+  }
+  .col3 {
+    width: 370px;
+  }
+  .col4 {
+    width: 550px;
+  }
+}
+
+.transitions-enabled {
+  &.masonry {
+    -webkit-transition-duration: .7s;
+    -moz-transition-duration: .7s;
+    -o-transition-duration: .7s;
+    transition-duration: .7s;
+    .masonry-brick {
+      -webkit-transition-duration: .7s;
+      -moz-transition-duration: .7s;
+      -o-transition-duration: .7s;
+      transition-duration: .7s;
+      -webkit-transition-property: left,right,top;
+      -moz-transition-property: left,right,top;
+      -o-transition-property: left,right,top;
+      transition-property: left,right,top;
+    }
+    -webkit-transition-property: height,width;
+    -moz-transition-property: height,width;
+    -o-transition-property: height,width;
+    transition-property: height,width;
+  }
+  &.infinite-scroll.masonry {
+    -webkit-transition-property: none;
+    -moz-transition-property: none;
+    -o-transition-property: none;
+    transition-property: none;
+  }
+}
+
+#comparison {
+  overflow: auto;
+  .example {
+    width: 420px;
+    float: left;
+    margin-right: 20px;
+  }
+  .box h5 {
+    float: left;
+    margin-bottom: 0;
+    font-size: 30px;
+    margin-right: 4px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #FFF;
+  }
+}
+
+#container.fluid {
+  padding: 5px 0;
+}
+
+.fluid .box {
+  margin: 5px .9% 5px 1%;
+  padding: 5px 1%;
+  &.col1 {
+    width: 16%;
+  }
+  &.col2 {
+    width: 36%;
+  }
+  &.col3 {
+    width: 56%;
+  }
+}
+
+.corner-stamp {
+  width: 280px;
+  height: 340px;
+  padding: 10px;
+  margin: 10px;
+  float: right;
+  background: red;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+code {
+  .s1, .s {
+    color: #78BD55;
+  }
+  .mi, .cp, .kc {
+    color: #5298D4;
+  }
+  .k {
+    color: #E39B79;
+  }
+  .kd, .na {
+    color: #A9D866;
+  }
+  .p {
+    color: #EDB;
+  }
+  .o {
+    color: #F63;
+  }
+  .nb {
+    color: #AA97AC;
+  }
+  .c, .c1 {
+    color: #666;
+    font-style: italic;
+  }
+  .nt {
+    color: #A0C8FC;
+  }
+  .nf {
+    color: #9EA8B8;
+  }
+  .nc {
+    color: #A78352;
+  }
+  .m {
+    color: #DE8E50;
+  }
+  .nd {
+    color: #9FAD7E;
+  }
+}
+
+.clearfix {
+  &:before {
+    content: "";
+    display: table;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  zoom: 1;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
