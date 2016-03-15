@@ -4,20 +4,24 @@
 .calendar {
   font-family: abel;
   position: relative;
-  ul {
+  > ul {
     font-size: 1.3em;
     float: left;
     background: url(../assets/marra.png) 36px 0 repeat-y;
     width: 100%;
+    > li {
+      display: flex;
+    }
     li i {
       float: left;
-      margin-top: 20px;
-      margin-right: 0px;
+      /*    margin-top: 20px;
+          margin-right: 0px;*/
       margin-left: 5px;
       color: #666;
       font-size: 1.5em;
     }
     ul {
+      font-size: 1.3em;
       i {
         margin-top: 5px;
         margin-right: 15px;
