@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="220">
+    <style type="text/css">
+                     .background {
+            fill-opacity: 1;
+            rx: 0px;
+            ry: 0px;
+            fill: none;
+        }
+
+        line {
+            stroke: #fff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-dasharray: 10 10;
+        }
+
+        .implicit {
+            stroke: #ee1466;
+             
+        }
+
+        text {
+            font-size: 20px;
+            font-family: inconsolata;
+            text-anchor: middle;
+            fill:#f2b806;
+        }
+
+        rect {
+            fill-opacity: 0.8;
+            rx: 10px;
+            ry: 10px;
+            stroke-width: 5;
+        }
+
+        .item-1 {
+            fill: #f2b806;
+            stroke: #f2c438;
+        }
+
+        .item-2 {
+            fill: #62CDD9;
+            stroke: #62CDD9;
+        }
+
+        .item-3 {
+            fill: #75BF06;
+            stroke: #75BF06;
+        }
+
+        .item-4 {
+            fill: #F2E205;
+            stroke: #F2E205;
+        }
+
+        .item-5 {
+            fill: #F2360C;
+            stroke: #F2360C;
+        }
+
+        .bold {
+            font-weight: bold;
+            fill:#000;
+        }
+
+        .small {
+            font-size: 15px;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+
+        .linename {
+            font-size: 19px;
+        }
+
+        .end {
+            text-anchor: end;
+        }
+
+        .start {
+            text-anchor: start;
+        }
+
+        .implicit-text {
+            fill: #ee1466;
+        }
+    </style>
+
+    <rect class="background" x="0" y="0" width="320" height="220"/>
+
+
+
+    <g transform="translate(10,10)">
+        <line class="dashed" x1="0" y1="0" x2="300" y2="0"/>
+        <line class="dashed " x1="0" y1="100" x2="300" y2="100"/>
+        <line class="dashed" x1="0" y1="200" x2="300" y2="200"/>
+        <line class="dashed" x1="0" y1="0" x2="0" y2="200"/>
+        <line class="dashed " x1="100" y1="0" x2="100" y2="200"/>
+        <line class="dashed " x1="200" y1="0" x2="200" y2="200"/>
+        <line class="dashed" x1="300" y1="0" x2="300" y2="200"/>
+        <g transform="translate(0, 0)">
+            <rect class="item-1" x="5" y="5" width="290" height="90" />
+            
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,120 @@
+<svg width="750" height="300" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+         .background {
+            fill-opacity: 1;
+            rx: 0px;
+            ry: 0px;
+            fill: none;
+        }
+
+        line {
+            stroke: #fff;
+            stroke-width: 3;
+            stroke-linecap: round;
+            stroke-dasharray: 10 10;
+        }
+
+        .implicit {
+            stroke: red;
+        }
+
+        text {
+            font-size: 20px;
+            font-family: inconsolata;
+            text-anchor: middle;
+            fill:#f2b806;
+        }
+
+        rect {
+            fill-opacity: 0.8;
+            rx: 10px;
+            ry: 10px;
+            stroke-width: 5;
+        }
+
+        .item-1 {
+            fill: #f2b806;
+            stroke: #f2c438;
+        }
+
+        .item-2 {
+            fill: #62CDD9;
+            stroke: #62CDD9;
+        }
+
+        .item-3 {
+            fill: #75BF06;
+            stroke: #75BF06;
+        }
+
+        .item-4 {
+            fill: #F2E205;
+            stroke: #F2E205;
+        }
+
+        .item-5 {
+            fill: #F2360C;
+            stroke: #F2360C;
+        }
+
+        .bold {
+            font-weight: bold;
+            fill:#000;
+        }
+
+        .small {
+            font-size: 15px;
+        }
+
+        .big {
+            font-size: 30px;
+        }
+
+        .linename {
+            font-size: 19px;
+        }
+
+        .end {
+            text-anchor: end;
+        }
+
+        .start {
+            text-anchor: start;
+        }
+
+        .implicit-text {
+            fill: red;
+        }
+    </style>
+
+    <rect class="background" x="0" y="0" width="750" height="300" />
+
+    <g transform="translate(90, 50)">
+        <text x="0" y="0">1</text>
+        <text x="300" y="0">2</text>
+        <text x="500" y="0">3</text>
+        <text x="600" y="0">4</text>
+    </g>
+
+    <g transform="translate(50, 85)">
+        <text x="0" y="0">1</text>
+        <text x="0" y="100">2</text>
+        <text x="0" y="150">3</text>
+    </g>
+
+    <g transform="translate(90, 80)">
+        <line class="dashed" x1="0" y1="0" x2="600" y2="0" />
+        <line class="dashed" x1="0" y1="100" x2="600" y2="100" />
+        <line class="dashed" x1="0" y1="150" x2="600" y2="150" />
+        <line class="dashed" x1="0" y1="0" x2="0" y2="150" />
+        <line class="dashed" x1="300" y1="0" x2="300" y2="150" />
+        <line class="dashed" x1="500" y1="0" x2="500" y2="150" />
+        <line class="dashed" x1="600" y1="0" x2="600" y2="150" />
+
+        <g transform="translate(300, 0)">
+            <rect class="item-1" x="5" y="5" width="290" height="90" />
+            <text class="bold" x="150" y="40">grid-column: 2 / span 2;</text>
+            <text class="bold" x="150" y="70">grid-row: 1;</text>
+        </g>
+    </g>
+</svg>
