@@ -16,6 +16,7 @@
     "url": "https://github.com/nabaroa/naknak.me/issues"
   },
   "devDependencies": {
+    "autoprefixer": "^6.3.6",
     "all-promises": "^1.2.0",
     "browser-sync": "",
     "cssnano": "^3.5.2",
@@ -25,7 +26,7 @@
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "6.1.0",
     "postcss-cssnext": "^2.4.0",
-    "precss": "^1.4.0", 
+    "precss": "^1.4.0",
     "run-sequence": "^1.1.5"
   },
   "license": "MIT"

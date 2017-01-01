@@ -45,7 +45,7 @@ body {
 }
 
 .js {
-  .slider-header, .slider-top {
+  .slider-header, .slider-top {  
     position: fixed;
     z-index: 1000;
   }
