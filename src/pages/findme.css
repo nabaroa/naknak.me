@@ -1,6 +1,6 @@
-/*//--------------------------------//
-//  Find me
-//--------------------------------//*/
+/*--------------------------------
+  Find me
+--------------------------------*/
 .calendar {
   font-family: abel;
   position: relative;
@@ -47,14 +47,6 @@
 }
 
 i {
-  /*  // &.icon-slides {
-    //   background: url(../assets/icon-slides.png) 0 0 no-repeat;
-    //   width: 33px;
-    //   height: 30px;
-    //   &:hover {
-    //     background: url(../assets/icon-slides-hover.png) 0 0 no-repeat;
-    //   }
-    // }*/
   &.icon-blog {
     background: url(../assets/icon-blog.png) 0 0 no-repeat;
     width: 33px;
@@ -166,8 +158,7 @@ i {
   }
   #container img {
     max-width: 100%;
-    // height: inherit;
- 
+
   }
   .col4,
   .col3,

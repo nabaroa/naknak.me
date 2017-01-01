@@ -1,62 +1,56 @@
 /*
 
 Created by NAK: @nabaroa
-2016 
+2016
 
 */
-/*// SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/*/
+/* SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/*/
 
-/*//--------------------------------//
-//  helpers/ 
-//--------------------------------//*/
+/*--------------------------------
+  helpers/
+--------------------------------*/
 
 @import "helpers/var.css";
 @import "helpers/mixins.css";
 @import "helpers/placeholders.css";
 
-/*//--------------------------------//
-//  base
-//--------------------------------//*/
+/*--------------------------------
+  base
+--------------------------------*/
 @import "base/reset.css";
 @import "base/typography.css";
 @import "base/oocss.css";
 
-/*//--------------------------------//
-//  components/  
-//--------------------------------//*/
+/*--------------------------------
+  components/
+--------------------------------*/
 
 @import "components/navigation.css";
 
-/*//--------------------------------//
-//   layout/ 
-//--------------------------------//*/
+/*--------------------------------
+   layout/
+--------------------------------*/
 
 @import "layout/layout.css";
 
-/*//--------------------------------//
-//    pages/ 
-//--------------------------------//*/
+/*--------------------------------
+    pages/
+--------------------------------*/
 
 @import "pages/home.css";
 @import "pages/works.css";
 @import "pages/findme.css";
 @import "pages/work_file.css";
 
-/*//--------------------------------//
-//     themes/ 
-//--------------------------------//*/
+/*--------------------------------
+     themes/
+--------------------------------*/
 
 @import "themes/theme.css";
 @import "themes/icons.css";
 
-/*//--------------------------------//
-//     extra/  
-//--------------------------------//*/
-/*// @import "extra/circle/common.css";
-// @import "extra/circle/style6";.css*/
-@import "extra/icomoon.css";
+/*--------------------------------
+     extra/
+--------------------------------*/
 
-/*// @import "extra/masonry.css";
-@import "extra/horizontal_nabigation/component.css";
-@import "extra/horizontal_nabigation/dragdealer.css";
-@import "extra/horizontal_nabigation/demo";.css*/
+@import "extra/icomoon.css";

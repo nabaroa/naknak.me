@@ -45,9 +45,7 @@ html.js {
     }
   }
   h2 {
-    // font-family: 'Playfair Display', serif;
     font-size: 8em;
-    // font-weight: 700;
     margin: 0 auto;
     line-height: 1;
     position: relative;
@@ -63,11 +61,6 @@ html.js {
   font-size: 27%;
   font-family: 'Lato', sans-serif;
   font-weight: 100;
-  // .handle & {
-  //   background: $opaque;
-  //   padding: 5px;
-  //   width: inherit;
-  // }
 }
 
 /* Switch button */
@@ -157,10 +150,8 @@ button.slider-switch {
   display: inline-block;
   position: relative;
   height: 100%;
-  // background: $color;
   /*background: #567076;*/
   font-size: 16px;
-  // background-size: 100% 100%;
   white-space: normal;
   cursor: -webkit-grab;
   cursor: -moz-grab;
@@ -201,7 +192,6 @@ button.slider-switch {
     display: block;
     height: calc(100% + 0.2px);
     transition: 1s;
-    // opacity: 0.5;
     .switch-min & {
       &:nth-of-type(2) {
         opacity: 0;
@@ -220,7 +210,6 @@ button.slider-switch {
 
 .js {
   .slide h2 {
-    // color: #fff;
     position: absolute;
     transition: opacity 0.3s;
     z-index: 2;
@@ -244,8 +233,6 @@ button.slider-switch {
     width: 100%;
     text-align: center;
     color: rgba($neutral, 0.5);
-    // color: rgba($color, 0.5);
-    // color: #34495e;
     -webkit-animation: slideUpFade 0.4s 0.1s;
     >span {
       font-size: 0.35em;
@@ -397,7 +384,6 @@ button.content-switch {
     padding: 0.5em 2em;
     line-height: 1.5;
     text-align: left;
-    // font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
     font-family: 'Lato', sans-serif;
     &:last-child {
       padding: 5em 1em 8em;
@@ -431,9 +417,7 @@ button.content-switch {
     }
   }
   a {
-    // color: #3c89d5;
     color: $color;
-    // display: block;
     &:hover {
       color: #545b61;
     }

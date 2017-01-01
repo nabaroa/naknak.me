@@ -43,7 +43,7 @@ ul.fll li {
   }*/
 }
 
-.horizontal { 
+.horizontal {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -268,7 +268,7 @@ ul.li2 li {
 .size1of3,
 ul.li3 li {
   width: 33%;
-  /* // width: 33.33333%;*/
+
 }
 
 .size2of3 {
@@ -303,7 +303,7 @@ ul.li4 li {
 .size1of6,
 ul.li6 li {
   width: 16%;
-  // width: 16.6666666%;
+
 }
 
 .size5of6 {
@@ -314,7 +314,7 @@ ul.li8 li {
   width: 12.5%;
 }
 
-/*//spacing*/
+/*spacing*/
 /* spacing helpers
 p,m = padding,margin
 a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical

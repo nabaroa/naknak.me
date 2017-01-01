@@ -3,7 +3,6 @@
     content: "";
     background: url(../assets/naknak.png) 0 0 no-repeat;
     background-size: contain;
-    // transform: rotate(-30deg);
     width: 47px;
     height: 196px;
     position: fixed;

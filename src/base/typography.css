@@ -1,6 +1,6 @@
-/*//--------------------------------//
-//  typography
-//--------------------------------//*/
+/*--------------------------------
+  typography
+--------------------------------*/
 body {
   font: 13px/1.231 arial, helvetica, clean, sans-serif;
   font-family: "Myriad Pro", "Segoe UI", Helvetica, Arial, sans-serif;
@@ -22,7 +22,7 @@ table {
 
 a > i {
   text-decoration: none;
-  // color: #000 !important;
+
 }
 
 pre,
@@ -172,7 +172,6 @@ h6,
   }
   h2,
   .h2 {
-    // font-size: 200%;
     font-weight: normal;
     font-style: normal;
     color: #f4b408;
