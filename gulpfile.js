@@ -19,7 +19,7 @@ gulp.task('css', function() {
         .pipe(postcss(processors))
         .pipe(gulp.dest('./dest'))
         .pipe(plumber())
-        .pipe(gulp.dest('./app/css'))
+        .pipe(gulp.dest('./docs/css'))
         .pipe( browserSync.stream() )
         .pipe(notify({ message: 'Your CSS is ready ;)' }));
 });
@@ -28,7 +28,7 @@ gulp.task('css', function() {
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: './app/'
+            baseDir: './docs/'
         }
     });
 });
