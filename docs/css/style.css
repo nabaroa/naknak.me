@@ -674,6 +674,9 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .opacity100 {
     opacity: 1;
 }
+strong {
+    font-weight: bold;
+}
 
 /*--------------------------------
   components/
@@ -769,43 +772,10 @@ a.icon_menu em {
 
 /* **************** TEMPLATE ***************** */
 
-/* ====== Page Head, Body, and Foot ====== */
-
-body {
-    text-align: center;
-}
-
-/* IE5.5 */
-
-.main {/*display: table-cell;*/
-    display: block;
-    width: auto;
-}
-
-.body, .main {
-    zoom: 1;
-}
-
-.body:after, .main:after {
-    clear: both;
-    display: block;
-    visibility: hidden;
-    overflow: hidden;
-    height: 0 !important;
-    line-height: 0;
-    font-size: xx-large;
-    content: " x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";
-}
-
 .page {
     margin: 0 auto;
     width: 950px;
-    text-align: left;
 }
-
-/* wraps other template elems to set width */
-
-/* text-align IE5.5 */
 
 .mainbox {
     width: 100%;
@@ -829,57 +799,12 @@ body {
     padding: 0 !important;
 }
 
-/* "old school" and "liquid" extend page to allow for different page widths */
-
-.oldSchool {
-    width: 750px;
-}
-
-.gs960, article.gs960 {
-    width: 960px;
-}
-
 .liquid {
     width: 100%;
     margin: 0;
 }
 
-/* ====== Columns ====== */
-
-.leftCol {
-    float: left;
-    width: 250px;
-    margin-right: -3px;
-}
-
-.rightCol {
-    float: right;
-    width: 300px;
-    margin-left: -3px;
-}
-
-/* extend columns to allow for common column widths */
-
-.gMail {
-    width: 160px;
-}
-
-.gCal {
-    width: 180px;
-}
-
-.yahoo {
-    width: 240px;
-}
-
-.myYahoo {
-    width: 300px;
-}
-
 @media all and (max-width: 1000px) {
-    .gs960, article.gs960 {
-        width: 100%;
-    }
     .mainbox {
         width: 100%;
         height: 750px;
@@ -887,28 +812,6 @@ body {
     .mainbox.foot {
         height: 500px;
     }
-}
-
-.line, .lastUnit {
-    overflow: hidden;
-    overflow: visible;
-    zoom: 1;
-}
-
-.unit {
-    float: left;
-}
-
-.unitRight {
-    float: right;
-}
-
-.lastUnit {
-    float: none;
-    width: auto;
-    position: relative;
-    left: -3px;
-    margin-right: -3px;
 }
 
 header {
@@ -1177,7 +1080,7 @@ header {
 }
 .box {
     margin: 5px;
-    padding: 0px;
+    padding: 0 0 25px;
     background: #131313;
     font-size: 13px;
     line-height: 1.4em;
@@ -1191,14 +1094,29 @@ header {
 .box h2 {
     font-size: 20px;
     font-weight: 200;
-    margin: 5px;
+    margin: 20px 15px 20px;
+}
+.box h2 a {
+    text-decoration: none;
 }
 .box p {
-    margin: 5px;
+    margin: 5px 15px;
 }
 .box img {
     display: block;
     width: 100%;
+}
+.box .data {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: .4;
+}
+@media all and (min-width: 800px) {
+    .box img {
+        height: 228px;
+        object-fit: cover;
+    }
 }
 #tumblelog img {
     display: block;

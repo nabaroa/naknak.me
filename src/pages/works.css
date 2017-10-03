@@ -190,7 +190,7 @@
 
 .box {
   margin: 5px;
-  padding: 0px;
+  padding: 0 0 25px;
   background: #131313;
   font-size: 13px;
   line-height: 1.4em;
@@ -203,14 +203,27 @@
   h2 {
     font-size: 20px;
     font-weight: 200;
-    margin: 5px;
+    margin: 20px 15px 20px;
+    a{
+      text-decoration: none;
+    }
   }
   p {
-    margin: 5px;
+    margin: 5px 15px;
   }
   img {
     display: block;
     width: 100%;
+    @media all and (min-width: 800px){
+    height: 228px;
+    object-fit: cover;
+    }
+  }
+  .data{
+    position: absolute;
+    right: 0px;
+    bottom:0px;
+    opacity: .4;
   }
 }
 
