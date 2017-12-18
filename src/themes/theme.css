@@ -115,7 +115,7 @@ a.negative, .negative a {
 
 .bgfirm {
   background: #f4b408;
-  padding: 0 10px;
+
 }
 
 .bgpositive {
@@ -253,13 +253,14 @@ ul.boxshadow2 li {
   width: 53px;
   height: 80px;
   margin: auto;
+    margin: -40px auto 0;
   background: url(../assets/top_deco_n.png) no-repeat;
 }
 
 .top_a {
   width: 53px;
   height: 80px;
-  margin: auto;
+  margin: -40px auto 0;
   background: url(../assets/top_deco_a.png) no-repeat;
 }
 

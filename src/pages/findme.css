@@ -150,12 +150,7 @@ i {
   .height400 {
     height: inherit !important;
   }
-  .mainbox.cv {
-    height: 1300px;
-    @media all and (max-width: $mobile-width) {
-      height: 900px;
-    }
-  }
+
   #container img {
     max-width: 100%;
 

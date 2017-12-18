@@ -1,6 +1,11 @@
 /*--------------------------------
   Home
 --------------------------------*/
+.home{
+  @media all and (max-width: 1000px){
+    min-height: 140vh;
+  }
+}
 
 .index1 {
   background: url(../assets/1.jpg) no-repeat;
