@@ -1,6 +1,6 @@
 {
   "name": "naknak.me",
-  "version": "1.1.1",
+  "version": "1.2.1",
   "description": "This is my personal portfolio. Enjoy.",
   "homepage": "http://naknak.me",
   "author": {
@@ -16,18 +16,17 @@
     "url": "https://github.com/nabaroa/naknak.me/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "all-promises": "^1.2.0",
-    "browser-sync": "",
-    "cssnano": "^3.5.2",
+    "autoprefixer": "^7.2.3",
+    "browser-sync": "^2.21.0",
+    "cssnano": "^3.10.0",
     "gulp": "^3.9.0",
     "gulp-cssnano": "^2.1.1",
-    "gulp-notify": "^2.2.0",
+    "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "6.1.0",
-    "postcss-cssnext": "^2.4.0",
-    "precss": "^1.4.0",
-    "run-sequence": "^1.1.5"
+    "gulp-postcss": "^7.0.0",
+    "postcss-cssnext": "^3.0.2",
+    "precss": "^2.0.0",
+    "run-sequence": "^2.2.0"
   },
-  "license": "MIT"
+  "license": "none"
 }
