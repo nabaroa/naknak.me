@@ -12,19 +12,6 @@
   <link href='http://fonts.googleapis.com/css?family=Abel|Wire+One|Mr+Dafoe' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="assets/favicon.ico">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-  <script>
-    function randOrd() {
-      return (Math.round(Math.random()) - 0.5);
-    }
-
-    $(document).ready(function() {
-      var klasses = ['index1', 'index2', 'index3', 'index4', 'index5'];
-      klasses.sort(randOrd);
-      $('#home').each(function(i, val) {
-        $(this).addClass(klasses[i]);
-      });
-    });
-  </script>
 </head>
 
 <body>
@@ -51,11 +38,11 @@
         </li>
       </ul>
     </nav>
-    <div id="home" class="home mainbox boxshadowl pvn">
+    <div id="home" class="home index0 mainbox boxshadowl pvn">
       <!-- <div class="mainbox index<?= mt_rand(1,8); ?> boxshadowl"> -->
-      <div class="mainbox home pattern2 pvn">
+      <div class="mainbox home pvn">
         <div class="size1of4 height100pc contrast txtac mara">
-          <div class="size1of4 poa top0 bgopaque contrast txtac mara opacity70">
+          <div class="card size1of4 poa top0 bgopaque contrast txtac mara opacity70">
           </div>
           <header class="size1of4 bgopaque ptxx poa">
             <h1 class="logo"><a href="index.html"><em>&nbsp;</em><span>NAK</span></a></h1>
@@ -72,7 +59,11 @@
     </div>
     <div class="body">
       <div class="main">
-        <div class="mainbox boxshadowl bio_bg">
+        <div class="mainbox contrast pattern3 d-flex align-items-center justify-content-center">
+          <h1 class="txtac wire white contrast huge d-flex flex-column"> <span>Live <span class="firm">local</span>.</span>
+            <span>Work <span class="firm">global</span>.</span></h1>
+        </div>
+        <div class="mainbox boxshadowl">
           <a name="bio"></a>
           <div class="top_n">&nbsp;</div>
           <div class="gs960 mara">
@@ -81,9 +72,7 @@
               <div class="line">
                 <div class="unit size1of1 mara size300 ">
                   <code class="abel">
-
 <span class="firm">&lt;dl&gt;</span><br>
-
   &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dt&gt;</span>Egun 1<span class="firm">&lt;/dt&gt;</span><br>
   &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dd&gt;</span>8 lan ordu pozik <a href="http://transferwise.com" target="_blank"><span class="underline">TransferWise</span></a>n<span class="firm">&lt;/dd&gt;</span><br>
   <!-- &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dd&gt;</span>124 kilometro <span class="firm">&lt;/dd&gt;</span><br> -->
@@ -267,7 +256,7 @@
                   <h2 class="abel contrast"><a href="http://learncss.info/">learnCSS.info</a></h2>
                   <p>Online study material about <span class="firm">CSS</span>
                   </p>
-                    <p class="data">2015</p>
+                  <p class="data">2015</p>
                 </div>
                 <div class="box col4">
                   <a href="http://areyousassy.zz.mu/"><img src="assets/areyousassy_cover.jpg"></a>
@@ -1187,6 +1176,20 @@
       lastScrollTop = st;
     }
   </script>
+  <!-- <script>
+    function randOrd() {
+      return (Math.round(Math.random()) - 0.5);
+    }
+
+    $(document).ready(function() {
+      var klasses = ['index0', 'index0'];
+      // var klasses = ['index1', 'index2', 'index3', 'index4', 'index5'];
+      klasses.sort(randOrd);
+      $('#home').each(function(i, val) {
+        $(this).addClass(klasses[i]);
+      });
+    });
+  </script> -->
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-32740256-1']);

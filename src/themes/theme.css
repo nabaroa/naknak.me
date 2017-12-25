@@ -115,7 +115,6 @@ a.negative, .negative a {
 
 .bgfirm {
   background: #f4b408;
-
 }
 
 .bgpositive {
@@ -170,54 +169,49 @@ a.negative, .negative a {
   background: url(../assets/bg4.jpg) 0 0 no-repeat;
 }
 
-
 .nak {
+  position: relative;
   background: url(../assets/nak.png) no-repeat top center;
   background-size: 100%;
-  position: relative;
 }
 
 .underline {
-  background: url(../assets/underline.png) bottom right no-repeat;
   padding-bottom: 10px;
+  background: url(../assets/underline.png) bottom right no-repeat;
 }
 
 .underline_contrast {
-  background: url(../assets/underline_contrast.png) bottom right no-repeat;
   padding-bottom: 10px;
+  background: url(../assets/underline_contrast.png) bottom right no-repeat;
 }
 
 .coming_soon {
-  background: url(../assets/comming-soon.png) 0 0 no-repeat;
   position: absolute;
   right: -100px;
   bottom: -100px;
   width: 271px;
   height: 130px;
+  background: url(../assets/comming-soon.png) 0 0 no-repeat;
 }
 
 .cooking {
-  background: url(../assets/cooking.png) 0 0 no-repeat;
-  width: 103px;
-  height: 92px;
   position: absolute;
   top: -100px;
   left: 130px;
+  width: 103px;
+  height: 92px;
+  background: url(../assets/cooking.png) 0 0 no-repeat;
 }
 
 .notfinished {
-  font-family: "Mr Dafoe";
-  float: right;
-  right: 20px;
-  color: #666;
   position: absolute;
+  right: 20px;
   bottom: 50px;
-  font-size: 4em;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
+  float: right;
   transform: rotate(20deg);
+  color: #666;
+  font-family: "Mr Dafoe";
+  font-size: 4em;
   @media all and (max-width: 1000px) {
     display: none;
   }
@@ -241,6 +235,7 @@ ul.boxshadow2 li {
 
 .bio_bg {
   background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+  background-attachment: fixed;
   @media all and (max-width: $mobile-width) {
     > * {
       width: 80%;
@@ -253,7 +248,7 @@ ul.boxshadow2 li {
   width: 53px;
   height: 80px;
   margin: auto;
-    margin: -40px auto 0;
+  margin: -40px auto 0;
   background: url(../assets/top_deco_n.png) no-repeat;
 }
 
@@ -265,10 +260,10 @@ ul.boxshadow2 li {
 }
 
 .top_k {
-  width: 53px;
-  height: 80px;
   position: absolute;
   left: calc(50% - 26px);
+  width: 53px;
+  height: 80px;
   margin: auto;
   background: url(../assets/top_deco_k.png) no-repeat;
 }
@@ -288,21 +283,21 @@ ul.boxshadow2 li {
 }
 
 h1.logo {
+  position: relative;
   width: 47px;
   height: 196px;
   margin: auto;
-  position: relative;
   span {
     position: absolute;
     text-indent: -9999px;
   }
   em {
-    background: url(../assets/naknak.png) no-repeat top center;
     position: absolute;
-    width: 100%;
-    height: 100%;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/naknak.png) no-repeat top center;
   }
 }
 
@@ -311,12 +306,12 @@ h1.logo {
 }
 
 .csswinner {
+  display: block;
   width: 81px;
   height: 59px;
-  text-indent: -9000px;
-  display: block;
-  background: url(../assets/nominee-white-right.png) no-repeat;
   margin-left: 30px;
+  background: url(../assets/nominee-white-right.png) no-repeat;
+  text-indent: -9000px;
 }
 
 .awards {
@@ -326,15 +321,15 @@ h1.logo {
     flex-direction: column;
     align-items: center;
   }
-  > a {
+  >a {
     width: 150px;
     @media all and (max-width: $mobile-width) {
       margin: 20px 0;
     }
     img {
       &:first-of-type {
-        height: 70px;
         max-width: 170px;
+        height: 70px;
         margin-bottom: 20px;
       }
       &:last-of-type {
@@ -353,18 +348,13 @@ h1.logo {
   }
 }
 
-.awwwards {
-
-}
-
 .laurel {
-
   width: 80px;
   height: 76px;
   margin-top: -4px;
+  padding: 15px;
   background: url(../assets/ico-laurel.svg) no-repeat;
   background-size: 100% 100%;
-  padding: 15px;
   span {
     display: block;
   }
@@ -373,19 +363,19 @@ h1.logo {
     font-size: 11px;
   }
   .day {
-    font-size: 18px;
-    line-height: 19px;
-    letter-spacing: 1px;
     font-family: 'MuseoSans_Fat';
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 19px;
   }
   .month {
     font-size: 11px;
     line-height: 11px;
   }
   .special {
-    float: right;
     width: 100px;
     margin: 0;
+    float: right;
     color: #a6abab;
   }
 }
@@ -430,11 +420,11 @@ h1.logo {
 }
 
 .nabaroa {
-  background: url(https://s-media-cache-ak0.pinimg.com/564x/7e/12/e7/7e12e73a7a2f2b34d64241a90134915d.jpg) 0 0 no-repeat;
   width: 200px;
   height: 200px;
-  border-radius: 500rem;
   margin: 1rem auto;
+  border-radius: 500rem;
+  background: url(https://s-media-cache-ak0.pinimg.com/564x/7e/12/e7/7e12e73a7a2f2b34d64241a90134915d.jpg) 0 0 no-repeat;
   background-size: cover;
 }
 
@@ -443,7 +433,7 @@ h1.logo {
   height: 200px;
   margin: 1rem auto 2rem auto;
   text-align: center;
-  > span {
+  >span {
     display: block;
   }
 }
@@ -451,4 +441,7 @@ h1.logo {
 .collage {
   background: url(../assets/collage.jpg) 0 0 no-repeat;
   background-size: cover;
+}
+.huge{
+  font-size: 12em;
 }

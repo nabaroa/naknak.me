@@ -26,12 +26,14 @@ Created by NAK: @nabaroa
 --------------------------------*/
 
 @import "components/navigation.css";
+@import "components/cards.css";
 
 /*--------------------------------
    layout/
 --------------------------------*/
 
 @import "layout/layout.css";
+@import "layout/flex.css";
 
 /*--------------------------------
     pages/
