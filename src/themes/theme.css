@@ -1,21 +1,23 @@
-/*--------------------------------
+/* --------------------------------
   Theme
---------------------------------*/
+-------------------------------- */
 
 a {
-  color: #666666;
+  color: #666;
   text-decoration: none;
+
   &:visited {
-    color: #666666;
+    color: #666;
   }
+
   &:focus, &:hover {
     text-decoration: underline;
   }
 }
 
-/*--------------------------------
+/* --------------------------------
   Colors
---------------------------------*/
+-------------------------------- */
 
 .bare {
   color: #bbb;
@@ -102,7 +104,7 @@ a.negative, .negative a {
 }
 
 .bgopaque, header.bgopaque {
-  background: #333333;
+  background: #333;
 }
 
 .bgsharp {
@@ -210,8 +212,9 @@ a.negative, .negative a {
   float: right;
   transform: rotate(20deg);
   color: #666;
-  font-family: "Mr Dafoe";
+  font-family: "Mr Dafoe", sans-serif;
   font-size: 4em;
+
   @media all and (max-width: 1000px) {
     display: none;
   }
@@ -226,7 +229,7 @@ a.negative, .negative a {
 }
 
 .bora10 {
-  border-radius: 0px 10px 0px 10px;
+  border-radius: 0 10px 0 10px;
 }
 
 ul.boxshadow2 li {
@@ -236,6 +239,7 @@ ul.boxshadow2 li {
 .bio_bg {
   background: url(../assets/bio_bg.jpg) bottom right no-repeat;
   background-attachment: fixed;
+
   @media all and (max-width: $mobile-width) {
     > * {
       width: 80%;
@@ -273,6 +277,7 @@ ul.boxshadow2 li {
   height: 195px;
   margin: auto;
   background: url(../assets/nak.png) no-repeat;
+
   @media all and (max-width: 1000px) {
     display: none;
   }
@@ -287,10 +292,12 @@ h1.logo {
   width: 47px;
   height: 196px;
   margin: auto;
+
   span {
     position: absolute;
     text-indent: -9999px;
   }
+
   em {
     position: absolute;
     top: 0;
@@ -317,25 +324,31 @@ h1.logo {
 .awards {
   display: flex;
   justify-content: space-around;
+
   @media all and (max-width: $mobile-width) {
     flex-direction: column;
     align-items: center;
   }
-  >a {
+
+  > a {
     width: 150px;
+
     @media all and (max-width: $mobile-width) {
       margin: 20px 0;
     }
+
     img {
       &:first-of-type {
         max-width: 170px;
         height: 70px;
         margin-bottom: 20px;
       }
+
       &:last-of-type {
         height: 70px;
       }
     }
+
     &:first-of-type {
       img {
         &:nth-of-type(2) {
@@ -355,23 +368,28 @@ h1.logo {
   padding: 15px;
   background: url(../assets/ico-laurel.svg) no-repeat;
   background-size: 100% 100%;
+
   span {
     display: block;
   }
+
   .type {
     margin-top: 17px;
     font-size: 11px;
   }
+
   .day {
-    font-family: 'MuseoSans_Fat';
+    font-family: 'MuseoSans_Fat', sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 19px;
   }
+
   .month {
     font-size: 11px;
     line-height: 11px;
   }
+
   .special {
     width: 100px;
     margin: 0;
@@ -413,6 +431,7 @@ h1.logo {
 .cv {
   a {
     text-decoration: none;
+
     &:hover {
       color: $darker;
     }
@@ -433,7 +452,8 @@ h1.logo {
   height: 200px;
   margin: 1rem auto 2rem auto;
   text-align: center;
-  >span {
+
+  > span {
     display: block;
   }
 }
@@ -442,6 +462,7 @@ h1.logo {
   background: url(../assets/collage.jpg) 0 0 no-repeat;
   background-size: cover;
 }
-.huge{
+
+.huge {
   font-size: 12em;
 }

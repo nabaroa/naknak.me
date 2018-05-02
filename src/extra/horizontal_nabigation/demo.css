@@ -9,17 +9,17 @@
 
 * {
   box-sizing: border-box;
-  &:after, &:before {
+  &::after, &::before {
     box-sizing: border-box;
   }
 }
 
 .clearfix {
-  &:before {
+  &::before {
     content: '';
     display: table;
   }
-  &:after {
+  &::after {
     content: '';
     display: table;
     clear: both;

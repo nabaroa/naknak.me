@@ -1,14 +1,15 @@
-/*--------------------------------
+/* --------------------------------
   Reset
---------------------------------*/
-/*Reset:
+-------------------------------- */
+
+/* Reset:
 Copyright (c) 2008, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
 http://developer.yahoo.net/yui/license.txt
 version: 3.0.0pr2
 Modified by NAK: @nabaroa
 
-*/
+ */
 
 * {
   box-sizing: border-box;
@@ -16,10 +17,34 @@ Modified by NAK: @nabaroa
 
 html {
   color: #000;
-  background: #FFF;
+  background: #fff;
 }
 
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
   margin: 0;
   padding: 0;
 }
@@ -52,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 q {
-  &:before, &:after {
+  &::before, &::after {
     content: '';
   }
 }
@@ -76,10 +101,6 @@ input, textarea, select {
   font-weight: inherit;
 }
 
-input, textarea, select {
-  *font-size: 100%;
-}
-
 legend {
   color: #000;
 }
@@ -95,6 +116,7 @@ article {
 
 ul, ol {
   padding-left: 1.3em;
+
   @media all and (max-width: $mobile-width) {
     padding-left: 0;
   }

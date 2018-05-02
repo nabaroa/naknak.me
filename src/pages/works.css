@@ -1,11 +1,13 @@
-/*--------------------------------
+/*  --------------------------------
   Works
---------------------------------*/
+--------------------------------  */
 
 .works {
   background: #222;
+
   a {
     text-decoration: underline;
+
     &:hover {
       color: $color;
     }
@@ -14,6 +16,7 @@
 
 .esoft {
   background: url(../assets/esoft1.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/esoft1.jpg);
     cursor: hand;
@@ -22,6 +25,7 @@
 
 .koop {
   background: url(../assets/koopelektrik.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/koopelektrik.jpg);
     cursor: hand;
@@ -30,6 +34,7 @@
 
 .esoft2 {
   background: url(../assets/esoft2.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/esoft2.jpg) 0 0;
     cursor: hand;
@@ -38,6 +43,7 @@
 
 .sinpel {
   background: url(../assets/sinpel.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/sinpel.jpg);
     cursor: hand;
@@ -46,6 +52,7 @@
 
 .bolidismo {
   background: url(../assets/bolidismo.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/bolidismo.jpg);
     cursor: hand;
@@ -54,6 +61,7 @@
 
 .eguiluz {
   background: url(../assets/eguiluz.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/eguiluz.jpg);
     cursor: hand;
@@ -62,6 +70,7 @@
 
 .izarbidean {
   background: url(../assets/izarbidean.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/izarbidean.jpg);
     cursor: hand;
@@ -70,6 +79,7 @@
 
 .boga {
   background: url(../assets/boga.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/boga.jpg);
     cursor: hand;
@@ -78,6 +88,7 @@
 
 .iaran {
   background: url(../assets/iaran.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/iaran.jpg);
     cursor: hand;
@@ -86,6 +97,7 @@
 
 .iaran2 {
   background: url(../assets/iaran2.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/iaran2.jpg);
     cursor: hand;
@@ -94,6 +106,7 @@
 
 .aguirreoa {
   background: url(../assets/aguirreoa.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/aguirreoa.jpg);
     cursor: hand;
@@ -102,6 +115,7 @@
 
 .walk {
   background: url(../assets/walk.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/walk.jpg);
     cursor: hand;
@@ -110,6 +124,7 @@
 
 .visio {
   background: url(../assets/visio.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/visio.jpg);
     cursor: hand;
@@ -118,6 +133,7 @@
 
 .katafora {
   background: url(../assets/katafora.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/katafora.jpg);
     cursor: hand;
@@ -126,6 +142,7 @@
 
 .launa {
   background: url(../assets/launa.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/launa.jpg);
     cursor: hand;
@@ -134,6 +151,7 @@
 
 .carlton {
   background: url(../assets/carlton.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/carlton.jpg);
     cursor: hand;
@@ -142,6 +160,7 @@
 
 .epaia {
   background: url(../assets/epaia.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/epaia.jpg);
     cursor: hand;
@@ -150,6 +169,7 @@
 
 .urline {
   background: url(../assets/urline.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/urline.jpg);
     cursor: hand;
@@ -158,6 +178,7 @@
 
 .estudio3 {
   background: url(../assets/estudio3.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/estudio3.jpg);
     cursor: hand;
@@ -166,13 +187,14 @@
 
 .janire {
   background: url(../assets/janire.jpg) 0 -150px;
+
   &:hover {
     background: url(../assets/janire.jpg);
     cursor: hand;
   }
 }
 
-/*Masonry*/
+/* Masonry */
 
 #container {
   padding: 5px;
@@ -197,33 +219,39 @@
   float: left;
   margin-bottom: 20px;
   position: relative;
+
   /*
   border-radius: 5px;
-  box-shadow: 3px 3px 5px #000;*/
+  box-shadow: 3px 3px 5px #000; */
   h2 {
     font-size: 20px;
     font-weight: 200;
     margin: 20px 15px 20px;
-    a{
+
+    a {
       text-decoration: none;
     }
   }
+
   p {
     margin: 5px 15px;
   }
+
   img {
     display: block;
     width: 100%;
-    @media all and (min-width: 800px){
-    height: 228px;
-    object-fit: cover;
+
+    @media all and (min-width: 800px) {
+      height: 228px;
+      object-fit: cover;
     }
   }
-  .data{
+
+  .data {
     position: absolute;
-    right: 0px;
-    bottom:0px;
-    opacity: .4;
+    right: 0;
+    bottom: 0;
+    opacity: 0.4;
   }
 }
 
@@ -278,7 +306,7 @@
   max-width: 480px;
 }
 
-/**** Transitions ****/
+/* *** Transitions *** */
 
 .transitions-enabled {
   &.masonry {
@@ -286,6 +314,7 @@
     -moz-transition-duration: 0.7s;
     -o-transition-duration: 0.7s;
     transition-duration: 0.7s;
+
     .masonry-brick {
       -webkit-transition-duration: 0.7s;
       -moz-transition-duration: 0.7s;
@@ -296,11 +325,13 @@
       -o-transition-property: left, right, top;
       transition-property: left, right, top;
     }
+
     -webkit-transition-property: height, width;
     -moz-transition-property: height, width;
     -o-transition-property: height, width;
     transition-property: height, width;
   }
+
   &.infinite-scroll.masonry {
     -webkit-transition-property: none;
     -moz-transition-property: none;
@@ -309,4 +340,4 @@
   }
 }
 
-/* disable transitions on container */
+/*  disable transitions on container  */

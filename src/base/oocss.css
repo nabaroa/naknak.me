@@ -38,9 +38,10 @@ ul.fll li {
 
 .flr {
   float: right;
-  /*@include respond-to(tablet) {
+
+  /* @include respond-to(tablet) {
     color: nak;
-  }*/
+  } */
 }
 
 .horizontal {
@@ -48,9 +49,6 @@ ul.fll li {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  /*&.rwd {
-    @extend %phablet-vertical;
-  }*/
 }
 
 .mara {
@@ -61,7 +59,7 @@ ul.fll li {
   position: absolute;
 }
 
-/*hau kentzeko begiratu ia erabiltxen dan*/
+/* hau kentzeko begiratu ia erabiltxen dan */
 .posa {
   position: absolute;
 }
@@ -74,7 +72,7 @@ ul.fll li {
   top: 0;
 }
 
-/*hau kentzeko begiratu ia erabiltxen dan*/
+/* hau kentzeko begiratu ia erabiltxen dan */
 .t0 {
   top: 0;
 }
@@ -185,6 +183,7 @@ ul.height100 li {
 .height120,
 ul.height120 li {
   height: 120px;
+
   @media all and (max-width: 801px) {
     height: inherit;
   }
@@ -209,35 +208,38 @@ ul.height400 li {
   height: 1000px;
 }
 
-/*pre{position:relative;width:100%;padding:10%;background:#969384;color:#fff; border-radius: 10px;
+/* pre{position:relative;width:100%;padding:10%;background:#969384;color:#fff; border-radius: 10px;
   text-align:left;font-size:30px !important;line-height:150%;word-wrap:break-word; font-family: Arial, Helvetica, sans-serif !important;}
-*/
+ */
 @media all and (max-width: 1000px) {
   .size90 {
     font-size: 100%;
   }
-  /**/
+
   .size70 {
     font-size: 100%;
   }
-  /**/
+
   .size50 {
     font-size: 100%;
   }
-  /**/
+
   .size120 {
     font-size: 100%;
   }
-  /**/
+
   .size150 {
     font-size: 120%;
   }
+
   .size300 {
     font-size: 150%;
   }
+
   .size600 {
     font-size: 300%;
   }
+
   .height1000 {
     height: 600px;
   }
@@ -247,9 +249,11 @@ ul.height400 li {
   .size90 {
     font-size: 100%;
   }
+
   .size70 {
     font-size: 100%;
   }
+
   .size50 {
     font-size: 100%;
   }
@@ -268,7 +272,6 @@ ul.li2 li {
 .size1of3,
 ul.li3 li {
   width: 33%;
-
 }
 
 .size2of3 {
@@ -303,7 +306,6 @@ ul.li4 li {
 .size1of6,
 ul.li6 li {
   width: 16%;
-
 }
 
 .size5of6 {
@@ -314,16 +316,17 @@ ul.li8 li {
   width: 12.5%;
 }
 
-/*spacing*/
-/* spacing helpers
+/* spacing */
+
+/*  spacing helpers
 p,m = padding,margin
 a,t,r,b,l,h,v = all,top,right,bottom,left,horizontal,vertical
 s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
-*/
+ */
 .ptn,
 .pvn,
 .pan {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }
 
 .pts,
@@ -359,7 +362,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .prn,
 .phn,
 .pan {
-  padding-right: 0px !important;
+  padding-right: 0 !important;
 }
 
 .prs,
@@ -383,7 +386,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .pbn,
 .pvn,
 .pan {
-  padding-bottom: 0px !important;
+  padding-bottom: 0 !important;
 }
 
 .pbs,
@@ -407,7 +410,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .pln,
 .phn,
 .pan {
-  padding-left: 0px !important;
+  padding-left: 0 !important;
 }
 
 .pls,
@@ -431,7 +434,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .mtn,
 .mvn,
 .man {
-  margin-top: 0px !important;
+  margin-top: 0 !important;
 }
 
 .mts,
@@ -461,7 +464,7 @@ s,m,l,n = small(5px),medium(10px),large(20px),none(0px)
 .mrn,
 .mhn,
 .man {
-  margin-right: 0px !important;
+  margin-right: 0 !important;
 }
 
 .mrs,
@@ -487,7 +490,7 @@ ul.mrl li {
 .mbn,
 .mvn,
 .man {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
 }
 
 .mbs,
@@ -511,7 +514,7 @@ ul.mrl li {
 .mln,
 .mhn,
 .man {
-  margin-left: 0px !important;
+  margin-left: 0 !important;
 }
 
 .mls,
@@ -571,24 +574,25 @@ ul.mrl li {
 }
 
 .opacity10 {
-  opacity: 0.10;
+  opacity: 0.1;
 }
 
 .opacity30 {
-  opacity: 0.30;
+  opacity: 0.3;
 }
 
 .opacity50 {
-  opacity: 0.50;
+  opacity: 0.5;
 }
 
 .opacity70 {
-  opacity: 0.70;
+  opacity: 0.7;
 }
 
 .opacity100 {
   opacity: 1;
 }
-strong{
+
+strong {
   font-weight: bold;
 }

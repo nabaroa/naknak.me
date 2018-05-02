@@ -1,5 +1,5 @@
 .switch-min {
-  &:before {
+  &::before {
     content: "";
     background: url(../assets/naknak.png) 0 0 no-repeat;
     background-size: contain;
@@ -8,7 +8,7 @@
     position: fixed;
     left: 50px;
     top: 50px;
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -16,7 +16,7 @@
   max-width: 100%;
 }
 
-.slide h2>span {
+.slide h2 > span {
   background: $opaque;
   padding: 5px;
   display: inline-block;
@@ -27,15 +27,19 @@ a {
   [data-content="content-1"] & {
     color: $color !important;
   }
+
   [data-content="content-2"] & {
     color: $content2color !important;
   }
+
   [data-content="content-3"] & {
     color: $content3color !important;
   }
+
   [data-content="content-4"] & {
     color: $content4color !important;
   }
+
   [data-content="content-5"] & {
     color: $content5color !important;
   }
@@ -45,15 +49,19 @@ h2 > span {
   [data-content="content-1"] & {
     color: $color;
   }
+
   [data-content="content-2"] & {
     color: $content2color;
   }
+
   [data-content="content-3"] & {
     color: $content3color;
   }
+
   [data-content="content-4"] & {
     color: $content4color;
   }
+
   [data-content="content-5"] & {
     color: $content5color;
   }
@@ -63,15 +71,19 @@ button.slider-switch,button.content-switch {
   [data-content="content-1"] & {
     background: $color;
   }
+
   [data-content="content-2"] & {
     background: $content2color;
   }
+
   [data-content="content-3"] & {
     background: $content3color;
   }
+
   [data-content="content-4"] & {
     background: $content4color;
   }
+
   [data-content="content-5"] & {
     background: $content5color;
   }

@@ -14,6 +14,7 @@
     height: auto;
     margin-bottom: 20px;
   }
+
   #content {
     padding-left: 10px;
   }
@@ -27,7 +28,6 @@ a img {
   border: 0;
 }
 
-
 .hidden {
   display: none;
 }
@@ -39,7 +39,7 @@ a img {
 
 blockquote {
   margin: 0;
-  font: italic 18px Georgia,serif;
+  font: italic 18px Georgia, serif;
 }
 
 dt {
@@ -49,9 +49,10 @@ dt {
 
 dd {
   + dt {
-    margin-top: .5em;
+    margin-top: 0.5em;
   }
-  margin-left: 1.0em;
+
+  margin-left: 1em;
 }
 
 button {
@@ -69,7 +70,7 @@ button {
   margin: 0 auto;
 }
 
-.box {  
+.box {
   margin: 5px 5px 20px 5px;
   padding: 5px;
   background: #131313;
@@ -80,18 +81,22 @@ button {
   -moz-border-radius: 5px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #000;
+
   h2 {
     font-size: 20px;
     font-weight: 200;
-    margin: 0 5px 2px ;
+    margin: 0 5px 2px;
   }
+
   p {
     margin: 5px;
   }
+
   img {
     display: block;
     width: 100%;
   }
+
   a {
     text-decoration: underline;
   }
@@ -123,6 +128,7 @@ button {
 .col4 {
   width: 380px;
   height: 400px;
+
   @media all and (max-width: 400px) {
     width: 100%;
     height: inherit;
@@ -157,15 +163,19 @@ button {
   .box {
     margin: 5px 0;
   }
+
   .col1 {
     width: 90px;
   }
+
   .col2 {
     width: 230px;
   }
+
   .col3 {
     width: 370px;
   }
+
   .col4 {
     width: 550px;
   }
@@ -173,25 +183,28 @@ button {
 
 .transitions-enabled {
   &.masonry {
-    -webkit-transition-duration: .7s;
-    -moz-transition-duration: .7s;
-    -o-transition-duration: .7s;
-    transition-duration: .7s;
+    -webkit-transition-duration: 0.7s;
+    -moz-transition-duration: 0.7s;
+    -o-transition-duration: 0.7s;
+    transition-duration: 0.7s;
+
     .masonry-brick {
-      -webkit-transition-duration: .7s;
-      -moz-transition-duration: .7s;
-      -o-transition-duration: .7s;
-      transition-duration: .7s;
-      -webkit-transition-property: left,right,top;
-      -moz-transition-property: left,right,top;
-      -o-transition-property: left,right,top;
-      transition-property: left,right,top;
+      -webkit-transition-duration: 0.7s;
+      -moz-transition-duration: 0.7s;
+      -o-transition-duration: 0.7s;
+      transition-duration: 0.7s;
+      -webkit-transition-property: left, right, top;
+      -moz-transition-property: left, right, top;
+      -o-transition-property: left, right, top;
+      transition-property: left, right, top;
     }
-    -webkit-transition-property: height,width;
-    -moz-transition-property: height,width;
-    -o-transition-property: height,width;
-    transition-property: height,width;
+
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    -o-transition-property: height, width;
+    transition-property: height, width;
   }
+
   &.infinite-scroll.masonry {
     -webkit-transition-property: none;
     -moz-transition-property: none;
@@ -202,11 +215,13 @@ button {
 
 #comparison {
   overflow: auto;
+
   .example {
     width: 420px;
     float: left;
     margin-right: 20px;
   }
+
   .box h5 {
     float: left;
     margin-bottom: 0;
@@ -214,7 +229,7 @@ button {
     margin-right: 4px;
     line-height: 28px;
     font-weight: 700;
-    color: #FFF;
+    color: #fff;
   }
 }
 
@@ -223,14 +238,17 @@ button {
 }
 
 .fluid .box {
-  margin: 5px .9% 5px 1%;
+  margin: 5px 0.9% 5px 1%;
   padding: 5px 1%;
+
   &.col1 {
     width: 16%;
   }
+
   &.col2 {
     width: 36%;
   }
+
   &.col3 {
     width: 56%;
   }
@@ -251,57 +269,71 @@ button {
 
 code {
   .s1, .s {
-    color: #78BD55;
+    color: #78bd55;
   }
+
   .mi, .cp, .kc {
-    color: #5298D4;
+    color: #5298d4;
   }
+
   .k {
-    color: #E39B79;
+    color: #e39b79;
   }
+
   .kd, .na {
-    color: #A9D866;
+    color: #a9d866;
   }
+
   .p {
-    color: #EDB;
+    color: #edb;
   }
+
   .o {
-    color: #F63;
+    color: #f63;
   }
+
   .nb {
-    color: #AA97AC;
+    color: #aa97ac;
   }
+
   .c, .c1 {
     color: #666;
     font-style: italic;
   }
+
   .nt {
-    color: #A0C8FC;
+    color: #a0c8fc;
   }
+
   .nf {
-    color: #9EA8B8;
+    color: #9ea8b8;
   }
+
   .nc {
-    color: #A78352;
+    color: #a78352;
   }
+
   .m {
-    color: #DE8E50;
+    color: #de8e50;
   }
+
   .nd {
-    color: #9FAD7E;
+    color: #9fad7e;
   }
 }
 
 .clearfix {
-  &:before {
+  &::before {
     content: "";
     display: table;
   }
-  &:after {
+
+  &::after {
     content: "";
     display: table;
     clear: both;
   }
+
   zoom: 1;
 }
 
