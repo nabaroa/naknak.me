@@ -439,12 +439,12 @@ h1.logo {
 }
 
 .nabaroa {
-  width: 200px;
-  height: 200px;
-  margin: 1rem auto;
+  width: 300px;
+  height: 300px;
+  margin: 5rem auto;
   border-radius: 500rem;
-  background: url(https://s-media-cache-ak0.pinimg.com/564x/7e/12/e7/7e12e73a7a2f2b34d64241a90134915d.jpg) 0 0 no-repeat;
-  background-size: cover;
+  background: url(../assets/naiara-abaroa-x.jpg) center left no-repeat;
+  background-size: 400px;
 }
 
 .icon-lea {
