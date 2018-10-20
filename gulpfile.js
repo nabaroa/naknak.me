@@ -1,46 +1,50 @@
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
-    cssnext = require('postcss-cssnext'),
-    precss = require('precss'),
-    notify = require('gulp-notify'),
-    plumber = require('gulp-plumber'),
+    cssimport = require('postcss-import'),
+    customproperties = require('postcss-custom-properties'),
+    apply = require('postcss-apply'),
+    mixins = require('postcss-mixins'),
+    nested = require('postcss-nested'),
+    customMedia = require("postcss-custom-media")
+    nano = require('gulp-cssnano'),
     browserSync = require('browser-sync'),
-    runSequence = require('run-sequence');;
+    notify = require('gulp-notify');
 
-gulp.task('css', function() {
-    var processors = [
+gulp.task('css', () =>{
+    const processors = [
+      cssimport,
       autoprefixer,
-        cssnext,
-        precss
+      customproperties,
+      apply,
+      mixins,
+      nested,
+      customMedia
     ];
-
+    const configNano = {
+      autoprefixer: { browsers: 'last 2 versions' },
+      discardComments: { removeAll: true },
+      safe: true
+    };
     return gulp.src('./src/*.css')
         .pipe(postcss(processors))
-        .pipe(gulp.dest('./dest'))
-        .pipe(plumber())
+        .pipe(nano(configNano))
         .pipe(gulp.dest('./docs/css'))
-        .pipe( browserSync.stream() )
-        .pipe(notify({ message: 'Your CSS is ready ;)' }));
+        .pipe(notify({ message: 'Your CSS is ready ♡' }));
 });
 
-// Static server
-gulp.task('browser-sync', function() {
-    browserSync({
-        server: {
-            baseDir: './docs/'
-        }
-    });
+
+gulp.task('browser-sync', () => {
+  browserSync({
+    server: {
+      baseDir: './docs/'
+    }
+  });
 });
 
-// Watch
-gulp.task('watch', function() {
-    // Watch .css files
+gulp.task('watch', () => {
     gulp.watch('src/**/*.css', ['css']);
 
 });
 
-// Default
-gulp.task('default', function() {
-  runSequence(['css', 'browser-sync', 'watch']);
-});
+gulp.task('default', ['css', 'browser-sync', 'watch',]);
