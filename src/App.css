@@ -1,0 +1,22 @@
+:root {
+  --color :#e84d7a;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #222;
+  font-weight: bold;
+}
+
+.logo {
+  height: 20px;
+  margin-right: 8px;
+}
