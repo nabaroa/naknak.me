@@ -1,20 +1,24 @@
-import React, { Component } from 'react';
-import logo from './n.svg';
-import './App.css';
+import React from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="logo" alt="logo" />
-            <p>
-              Reloaded<span className="dot"></span>
-            </p>
-        </header>
-      </div>
-    );
-  }
-}
+import './css/App.css';
+import Hero from './components/Hero';
+import Navigation from './components/Navigation';
+import Bio from './components/Bio';
+import Social from './components/Social';
+import Works from './components/Works';
+import Agenda from './components/Agenda';
+import Credits from './components/Credits';
+
+const App = () => (
+  <div className="App">
+    <Hero />
+    <Navigation />
+    <Bio />
+    <Social />
+    <Works />
+    <Agenda />
+    <Credits />
+  </div>
+);
 
 export default App;
