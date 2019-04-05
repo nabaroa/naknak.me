@@ -1,0 +1,8 @@
+.agenda {
+  max-width: 500px;
+}
+
+.icon-list {
+  display: flex;
+  align-items: center;
+}

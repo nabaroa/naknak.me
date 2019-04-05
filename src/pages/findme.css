@@ -22,6 +22,14 @@
       font-size: 1.5em;
     }
 
+    .icon {
+      float: left;
+      margin-right: 5px;
+      margin-top: 8px;
+      color: #666;
+      width: 28px;
+    }
+
     ul {
       font-size: 1.3em;
 
