@@ -10,6 +10,10 @@
   min-height: 100vh;
   position: relative;
   padding: 40px 0;
+
+  &.bio {
+    background: white;
+  }
 }
 
 .gs960 {
