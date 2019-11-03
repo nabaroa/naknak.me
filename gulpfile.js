@@ -47,4 +47,4 @@ gulp.task('watch', () => {
 
 });
 
-gulp.task('default', ['css', 'browser-sync', 'watch',]);
+gulp.task('default', gulp.series('css', 'browser-sync', 'watch'));
