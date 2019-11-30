@@ -1,6 +1,8 @@
 @import "../node_modules/nakds/dist/css/nakDS.css";
 
-
+:root {
+  --color: #d5ad26;
+}
 
 .index0 {
   background: url(../assets/randommatches_115.jpg) no-repeat;
