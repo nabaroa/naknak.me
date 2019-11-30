@@ -1,4 +1,6 @@
 # TODO list
 
-- Add JSday Canarias on agenda
-- Add Animation slides cover
+- Fix https://learncss.info/ link
+- Change all the markup with nakDS
+
+
