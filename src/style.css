@@ -3,7 +3,7 @@
 @import "./components/timeline.css";
 
 :root {
-  --color: #d5ad26;
+  --color: #f4b408;
 }
 
 /* -- */
@@ -37,8 +37,7 @@
 }
 
 .nk-timeline {
-
-   [class^=nk-icon] {
+  [class^="nk-icon"] {
     fill: var(--color--k-4);
   }
 }
