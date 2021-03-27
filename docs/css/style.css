@@ -1582,40 +1582,26 @@ strong {
 
 .card {
   height: 100vh;
+  z-index: 1;
 }
 
-.nav_bottom {
-  position: absolute !important;
-  z-index: 10000;
-  left: 50% !important;
-  bottom: 5px !important;
-  width: inherit !important;
-  margin-left: inherit !important;
+html {
+  scroll-behavior: smooth;
 }
 
 .mainmenu {
-  display: block;
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
   text-align: center;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
-  background: rgba(0, 0, 0, 0.7)
-}
-
-@media all and (max-width: $mobile-width) {
-
-.mainmenu {
-    width: 35%;
-    right: 0;
-    left: inherit
-}
-  }
-
-.mainmenu {
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
 
   ul {
     margin: 0;
@@ -2554,11 +2540,26 @@ a.icon_menu {
   Home
 -------------------------------- */
 
-/* .home {
-  @media all and (max-width: 1000px) {
-    min-height: 140vh;
+h1.logo {
+  position: relative;
+  width: 47px;
+  height: 196px;
+  margin: auto
+}
+
+h1.logo em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../assets/naknak.png) no-repeat top;
   }
-} */
+
+h1.logo span {
+    position: absolute;
+    text-indent: -9999px;
+  }
 
 .index0 {
   background: url(../assets/randommatches_115.jpg) no-repeat;
@@ -2611,29 +2612,31 @@ a.icon_menu {
   background-attachment: fixed;
 }
 
-.index1, .index2, .index3, .index4, .index5, .index6, .index7, .index8, .inspire {
+.index1,
+.index2,
+.index3,
+.index4,
+.index5,
+.index6,
+.index7,
+.index8,
+.inspire {
   background-size: 110% 110%;
   -webkit-transition: background-size 2s linear;
   transition: background-size 2s linear;
 }
 
-.index1:hover, .index2:hover, .index3:hover, .index4:hover, .index5:hover, .index6:hover, .index7:hover, .index8:hover, .inspire:hover {
-  -moz-background-position: 0 0;
-  -o-background-position: 0 0;
-  -webkit-background-position: 0 0;
+.index1:hover,
+.index2:hover,
+.index3:hover,
+.index4:hover,
+.index5:hover,
+.index6:hover,
+.index7:hover,
+.index8:hover,
+.inspire:hover {
   background-position: 0 0;
   background-size: 100% 100%;
-}
-
-@media all and (max-width: 360px) {
-  background-image: none;
-  background-size: 100% 100%;
-
-  /* Gecko 1.9.2 (Firefox 3.6) */
-
-  /* Opera 9.5 */
-
-  /* Safari 3.0 */
 }
 
 /*  --------------------------------

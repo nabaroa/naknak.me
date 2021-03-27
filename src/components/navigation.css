@@ -1,28 +1,18 @@
-.nav_bottom {
-  position: absolute !important;
-  z-index: 10000;
-  left: 50% !important;
-  bottom: 5px !important;
-  width: inherit !important;
-  margin-left: inherit !important;
+html {
+  scroll-behavior: smooth;
 }
 
 .mainmenu {
-  display: block;
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
   text-align: center;
   transition: all 0.1s ease;
   background: rgba(0, 0, 0, 0.7);
-
-  @media all and (max-width: $mobile-width) {
-    width: 35%;
-    right: 0;
-    left: inherit;
-  }
+  z-index: 2;
 
   ul {
     margin: 0;
