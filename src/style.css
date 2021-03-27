@@ -1,9 +1,14 @@
 /*
 
 Created by NAK: @nabaroa
-2016
+First commit 2012
+Migration to nakDS.io 2021
+
+
 
 */
+
+@import "../node_modules/nakds/dist/css/nakDS.min.css";
 
 /* SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/ */
 
