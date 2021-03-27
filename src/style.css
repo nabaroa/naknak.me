@@ -4,8 +4,6 @@ Created by NAK: @nabaroa
 First commit 2012
 Migration to nakDS.io 2021
 
-
-
 */
 
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
@@ -40,6 +38,7 @@ Migration to nakDS.io 2021
 
 @import "layout/layout.css";
 @import "layout/flex.css";
+@import "layout/grid.css";
 
 /* --------------------------------
     pages/
