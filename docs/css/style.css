@@ -1,6 +1,6 @@
 /*
 
-Created by NAK: @nabaroa
+Created by Naiara Abaroa: @nabaroa
 First commit 2012
 Migration to nakDS.io 2021
 
@@ -738,8 +738,6 @@ ol,ul{list-style-position:inside}
 
 .nk-notify{position:fixed;bottom:38px;right:-50px;background:#c44f7a;background:#c44f7a;background:var(--color);color:#fff;font-size:.8em;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);padding:0 2.5rem;padding:0 2.5rem;padding:0 var(--spacer-large);pointer-events:none}
 
-/* SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/ */
-
 /* --------------------------------
   helpers/
 -------------------------------- */
@@ -944,207 +942,21 @@ ul, ol {
   typography
 -------------------------------- */
 
-body {
-  font: 13px/1.231 arial, helvetica, clean, sans-serif;
-  font-family: "Myriad Pro", "Segoe UI", Helvetica, Arial, sans-serif;
-}
-
-select,
-input,
-button,
-textarea {
-  font: 99% arial, helvetica, clean, sans-serif;
-}
-
-table {
-  font: 100%;
-  font-size: inherit;
-}
-
-a > i {
-  text-decoration: none;
-}
-
-pre,
-code,
-kbd,
-samp,
-tt {
-  font-family: monospace;
-  *font-size: 108%;
-  line-height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 /* general NAK */
 
 /* Fonts */
 
 .wire {
-  font-family: 'Wire One', sans-serif;
+  font-family: "Wire One", sans-serif;
 }
 
 .abel {
-  font-family: 'Abel', sans-serif;
+  font-family: "Abel", sans-serif;
 }
 
-.zeyada {
-  font-family: Zeyada, sans-serif;
+body {
+  font-family: "Abel", sans-serif;
 }
-
-.syncopate {
-  font-family: Syncopate, sans-serif;
-}
-
-.size10 {
-  font-size: 10%;
-}
-
-.size20,
-a.size20 {
-  font-size: 20%;
-}
-
-.size40 {
-  font-size: 40%;
-}
-
-.size50,
-a.size50 {
-  font-size: 50% !important;
-}
-
-.size70 {
-  font-size: 70% !important;
-}
-
-.size90 {
-  font-size: 90%;
-}
-
-.text.size100 {
-  font-size: 10em
-}
-
-@media all and (max-width: 500px) {
-
-.text.size100 {
-    font-size: 5em
-}
-  }
-
-.size120 {
-  font-size: 120%;
-}
-
-.size150 {
-  font-size: 150%;
-}
-
-.size200 {
-  font-size: 200%;
-}
-
-.size300 {
-  font-size: 300%;
-}
-
-.size700 {
-  font-size: 700%;
-}
-
-/* ====== Headings ====== */
-
-/* .h1-.h6 classes should be used to maintain the semantically appropriate heading levels - NOT for use on non-headings */
-
-h1,
-.h1 {
-  font-size: 500%;
-  font-weight: normal;
-  font-style: normal;
-  color: #f4b408;
-}
-
-h2,
-.h2 {
-  font-size: 400%;
-  font-weight: normal;
-  font-style: normal;
-  color: #f4b408
-}
-
-@media all and (max-width: 500px) {
-
-h2,
-.h2 {
-    font-size: 300%
-}
-  }
-
-h3,
-.h3 {
-  font-size: 146.5%;
-  font-weight: normal;
-  font-style: normal;
-  color: #f4b408;
-}
-
-h4,
-.h4 {
-  font-size: 123.1%;
-  font-weight: normal;
-  font-style: normal;
-  color: #333;
-}
-
-h5,
-.h5 {
-  font-size: 108%;
-  font-weight: bold;
-  font-style: normal;
-  color: #ae0345;
-}
-
-h6,
-.h6 {
-  font-size: 108%;
-  font-weight: normal;
-  font-style: italic;
-  color: #333;
-}
-
-@media all and (max-width: 1000px) {
-  h1,
-  .h1 {
-    font-size: 500%;
-    font-weight: normal;
-    font-style: normal;
-    color: #f4b408;
-  }
-
-  h2,
-  .h2 {
-    font-weight: normal;
-    font-style: normal;
-    color: #f4b408;
-  }
-}
-
-.text {
-  .works_file & {
-    display: inline-block;
-  }
-}
-
-.text.small {
-    font-size: 0.8em;
-  }
-
-.text.caption {
-    font-size: 0.9rem;
-    line-height: 1.4;
-  }
 
 .width100 {
   width: 100px;
@@ -1865,70 +1677,6 @@ a.icon_menu {
 /* --------------------------------
    layout/
 -------------------------------- */
-
-/* **************** TEMPLATE ***************** */
-
-.page {
-  margin: 0 auto;
-  width: 950px;
-}
-
-.mainbox {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 40px 0
-}
-
-.mainbox.bio {
-    background: white;
-  }
-
-.gs960 {
-  max-width: 960px
-}
-
-@media all and (max-width: 1000px) {
-
-.gs960 {
-    max-width: 700px
-}
-  }
-
-.mainboxfree article, .mainbox #content {
-  padding: 0 !important;
-}
-
-.liquid {
-  width: 100%;
-  margin: 0;
-}
-
-header {
-  position: relative;
-}
-
-#content {
-  padding: 40px 10px 40px 10px;
-}
-
-/* screens smaller than 640 */
-
-@media screen and (max-width: 640px) {
-  #site-nav {
-    width: auto;
-    position: relative;
-    left: auto;
-    top: auto;
-    padding-top: 0;
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  #content {
-    padding-left: 10px;
-  }
-}
 
 .d-flex {
   display: -webkit-box !important;
@@ -3405,7 +3153,8 @@ a:visited {
     color: #666;
   }
 
-a:focus, a:hover {
+a:focus,
+  a:hover {
     text-decoration: underline;
   }
 
@@ -3437,7 +3186,8 @@ a:focus, a:hover {
   color: #fff !important;
 }
 
-.firm, a.firm {
+.firm,
+a.firm {
   color: #f4b408 !important;
 }
 
@@ -3449,39 +3199,48 @@ a:focus, a:hover {
   color: #c20000;
 }
 
-a.bare, .bare a {
+a.bare,
+.bare a {
   color: #bbb;
 }
 
-a.pale, .pale a {
+a.pale,
+.pale a {
   color: #999;
 }
 
-a.neutral, .neutral a {
+a.neutral,
+.neutral a {
   color: #666;
 }
 
-a.opaque, .opaque a {
+a.opaque,
+.opaque a {
   color: #333;
 }
 
-a.sharp, .sharp a {
+a.sharp,
+.sharp a {
   color: #000;
 }
 
-a.contrast, .contrast a {
+a.contrast,
+.contrast a {
   color: #fff;
 }
 
-a.firm, .firm a {
+a.firm,
+.firm a {
   color: #f4b408;
 }
 
-a.positive, .positive a {
+a.positive,
+.positive a {
   color: #73ab00;
 }
 
-a.negative, .negative a {
+a.negative,
+.negative a {
   color: #c20000;
 }
 
@@ -3497,7 +3256,8 @@ a.negative, .negative a {
   background: #666;
 }
 
-.bgopaque, header.bgopaque {
+.bgopaque,
+header.bgopaque {
   background: #333;
 }
 
@@ -3634,18 +3394,11 @@ ul.boxshadow2 li {
   box-shadow: 3px 3px 5px #000;
 }
 
-.bio_bg {
-  background: url(../assets/bio_bg.jpg) bottom right no-repeat;
-  background-attachment: fixed
-}
-
-@media all and (max-width: $mobile-width) {
+@media (min-width: 1170px) {
 
 .bio_bg {
-    > * {
-      width: 80%;
-      margin: auto;
-    }
+    background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+    background-attachment: fixed
 }
   }
 
@@ -3794,7 +3547,7 @@ h1.logo {
   }
 
   .day {
-    font-family: 'MuseoSans_Fat', sans-serif;
+    font-family: "MuseoSans_Fat", sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 19px;

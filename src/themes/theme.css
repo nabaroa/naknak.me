@@ -10,7 +10,8 @@ a {
     color: #666;
   }
 
-  &:focus, &:hover {
+  &:focus,
+  &:hover {
     text-decoration: underline;
   }
 }
@@ -43,7 +44,8 @@ a {
   color: #fff !important;
 }
 
-.firm, a.firm {
+.firm,
+a.firm {
   color: #f4b408 !important;
 }
 
@@ -55,39 +57,48 @@ a {
   color: #c20000;
 }
 
-a.bare, .bare a {
+a.bare,
+.bare a {
   color: #bbb;
 }
 
-a.pale, .pale a {
+a.pale,
+.pale a {
   color: #999;
 }
 
-a.neutral, .neutral a {
+a.neutral,
+.neutral a {
   color: #666;
 }
 
-a.opaque, .opaque a {
+a.opaque,
+.opaque a {
   color: #333;
 }
 
-a.sharp, .sharp a {
+a.sharp,
+.sharp a {
   color: #000;
 }
 
-a.contrast, .contrast a {
+a.contrast,
+.contrast a {
   color: #fff;
 }
 
-a.firm, .firm a {
+a.firm,
+.firm a {
   color: #f4b408;
 }
 
-a.positive, .positive a {
+a.positive,
+.positive a {
   color: #73ab00;
 }
 
-a.negative, .negative a {
+a.negative,
+.negative a {
   color: #c20000;
 }
 
@@ -103,7 +114,8 @@ a.negative, .negative a {
   background: #666;
 }
 
-.bgopaque, header.bgopaque {
+.bgopaque,
+header.bgopaque {
   background: #333;
 }
 
@@ -237,14 +249,9 @@ ul.boxshadow2 li {
 }
 
 .bio_bg {
-  background: url(../assets/bio_bg.jpg) bottom right no-repeat;
-  background-attachment: fixed;
-
-  @media all and (max-width: $mobile-width) {
-    > * {
-      width: 80%;
-      margin: auto;
-    }
+  @media (--large) {
+    background: url(../assets/bio_bg.jpg) bottom right no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -379,7 +386,7 @@ h1.logo {
   }
 
   .day {
-    font-family: 'MuseoSans_Fat', sans-serif;
+    font-family: "MuseoSans_Fat", sans-serif;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 19px;
