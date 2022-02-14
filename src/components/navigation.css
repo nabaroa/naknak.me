@@ -3,7 +3,7 @@ html {
 }
 
 .menu {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
@@ -12,12 +12,20 @@ html {
   width: 100%;
   text-align: center;
   transition: all 0.1s ease;
-  background: rgba(0, 0, 0, 0.7);
+  background: var(--color--k-2);
+  /* opacity: .9; */
   z-index: 2;
+
+  @media (--small) {
+    display: flex;
+  }
 }
+
 .menu__item {
   display: block;
   padding: var(--small);
+  text-decoration: none;
+  color:var(--color--k-10);
 }
 
 a.icon_menu {
@@ -38,4 +46,14 @@ a.icon_menu {
     top: 0;
     left: 0;
   }
+}
+
+
+.nk-card {
+  /* background: black; */
+  /* border-radius: 4px; */
+}
+
+.nk-text-decoration--none {
+  text-decoration: none;
 }

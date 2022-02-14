@@ -1,4 +1,7 @@
+
 .card {
+  background: var(--color--k-9);
+  opacity: .7;
   position: absolute;
   top: 0;
   left: calc(50% - 25vw);
@@ -12,8 +15,9 @@
   padding: var(--medium);
   text-align: center;
   font-size: 1.5em;
+
   @media  (--medium){
-    width: 24vw;
-    left: calc(50% - 12vw);
+    width: 30vw;
+    left: calc(50% - 15vw);
   }
 }

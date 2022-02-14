@@ -2,11 +2,13 @@
 
 Created by Naiara Abaroa: @nabaroa
 First commit 2012
-Migration to nakDS.io 2021
+Migration to nakDS.io 2022
 
 */
 
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
+
+
 
 /* --------------------------------
   settings/
@@ -17,7 +19,7 @@ Migration to nakDS.io 2021
 /* --------------------------------
   base
 -------------------------------- */
-@import "base/reset.css";
+/* @import "base/reset.css"; */
 @import "base/typography.css";
 
 /* --------------------------------
@@ -33,8 +35,7 @@ Migration to nakDS.io 2021
    layout/
 -------------------------------- */
 
-@import "layout/flex.css";
-@import "layout/grid.css";
+
 
 /* --------------------------------
     pages/
@@ -49,11 +50,56 @@ Migration to nakDS.io 2021
      themes/
 -------------------------------- */
 
-@import "themes/theme.css";
-@import "themes/icons.css";
+
 
 /* --------------------------------
      extra/
 -------------------------------- */
 
-@import "extra/icomoon.css";
+@custom-media --small (min-width: 480px);
+@custom-media --small--max (max-width: 799px);
+@custom-media --medium (min-width: 800px);
+@custom-media --medium--max (max-width: 1169px);
+@custom-media --large (min-width: 1170px);
+@custom-media --large--max (max-width: 1439px);
+@custom-media --xlarge (min-width: 1440px);
+
+.pattern3 {
+  background: url(../assets/bg5.png);
+}
+
+.nk-color {
+  color: var(--color);
+}
+
+.date {
+  text-align: right;
+  font-size: var(--medium);
+  color: var(--color--k-7);
+}
+
+.nk-card {
+  background: #111;
+  border-radius: 4px;
+  color: var(--color--k-7);
+
+  & img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+  }
+
+  & a {
+    color: var(--color--k-5);
+  }
+
+  & .nk-card__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+   & .date {
+     margin-top: auto;
+   }
+}

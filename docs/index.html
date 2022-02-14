@@ -15,8 +15,8 @@
 </head>
 
 <body>
-  <nav id="top" class="contrast">
-    <ul class="menu">
+  <nav id="top" class="">
+    <ul class="menu nk-list">
       <li><a class="menu__item" href="#top">home</a>
       </li>
       <li><a class="menu__item" href="#bio">bio</a>
@@ -24,7 +24,7 @@
       <li><a class="menu__item" href="#projects">works</a>
       </li>
       <li><a class="menu__item" href="#find">agenda</a>
-        <!--<span class="new bgfirm opaque"><i class="icon-star opaque"></i>New</span>-->
+        <!--<span class="new bgnk-color opaque"><i class="icon-star opaque"></i>New</span>-->
       </li>
       <li><a class="menu__item" href="#about">about</a>
       </li>
@@ -33,386 +33,436 @@
     </ul>
   </nav>
 
-  <header id="home" class="nk-section nk-height-fullpage index<?= mt_rand(1,8); ?> contrast">
-    <div class="card bgopaque opacity70 wire">
+  <header id="home" class="nk-section nk-height-fullpage index<?= mt_rand(1,8); ?> ">
+    <div class="card nk-theme--dark wire">
       <h1 class="logo">
         <!-- <img src="assets/nak.svg" alt="nak"> -->
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="195">
           <title>nak</title>
-          <path fill="#fabada"
+          <path fill="var(--color)"
             d="M46.62 187.82v7.007H0v-64.533h46.62v6.908H9.52v50.617h37.1zm0-68.675v7.006H0V61.595h46.62v6.96H32.687v50.59H46.62zm-37.1 0h13.643V68.553H9.52v50.592zM.148 50.817h46.45v6.93H.147zM23.286 9.474h9.497v42.378h-9.497zM7.795 0h15.32v9.474H7.794zM32.61 0h14.16v9.474H32.61z" />
         </svg>
       </h1>
       <h2 class="nk-heading--2">Front-end designer</h2>
-      <p class="">I <span class="icon-heart firm disblin"></span> urban chaos</p>
-      <p class="">but I live in a <span class="firm">quiet</span> place</p>
+      <p class="">I <span class="icon-heart nk-color disblin"></span> urban chaos</p>
+      <p class="">but I live in a <span class="nk-color">quiet</span> place</p>
     </div>
   </header>
   <main>
-    <article class="pattern3 nk-cover wire contrast">
-      <h1 class="nk-heading--1 display-1"> <span>Live <span class="firm">local</span>.</span>
-        <span>Work <span class="firm">global</span>.</span>
+    <article class="pattern3 nk-theme--dark nk-cover wire ">
+      <h1 class="nk-heading--1 display-1"> <span>Live <span class="nk-color">local</span>.</span>
+        <span>Work <span class="nk-color">global</span>.</span>
       </h1>
     </article>
 
-    <article id="bio" class="nk-height-fullpage nk-section nk-container boxshadowl deco_n display-5">
+    <article id="bio" class="nk-height-fullpage nk-section nk-container--text boxshadowl deco_n display-5">
       <h2 class="nk-heading--1 nk-mtl">bio</h2>
-      <div class="nk-grid-2--md nk-align-items-center" lang="eu">
+      <div class="nk-align-items-center" lang="eu">
         <code class="">
-          <span class="firm">&lt;dl&gt;</span><br>
-          &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dt&gt;</span>Egun 1<span
-            class="firm">&lt;/dt&gt;</span><br>
-          &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dd&gt;</span>8 lan ordu pozik <a
-            href="https://transferwise.com" target="_blank" rel="noreferrer"><span
-              class="underline">Wise</span></a>n<span class="firm">&lt;/dd&gt;</span><br>
-          &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dd&gt;</span>Familia kontziliazioa gozatzen <span
-            class="firm">&lt;/dd&gt;</span><br>
-          &nbsp;&nbsp;&nbsp; <span class="firm">&lt;dd&gt;</span>Ama 2.0 <span class="firm">&lt;/dd&gt;
+          <span class="nk-color">&lt;dl&gt;</span><br>
+          &nbsp;&nbsp;&nbsp; <span class="nk-color">&lt;dt&gt;</span>Egun 1<span
+            class="nk-color">&lt;/dt&gt;</span><br>
+          &nbsp;&nbsp;&nbsp; <span class="nk-color">&lt;dd&gt;</span>8 lan ordu pozik
+          <a class="no-underline" href="https://transferwise.com" target="_blank" rel="noreferrer"><span
+              class="underline">Wise</span></a>n<span class="nk-color">&lt;/dd&gt;</span><br>
+          &nbsp;&nbsp;&nbsp; <span class="nk-color">&lt;dd&gt;</span>Familia kontziliazioaz gozatzen <span
+            class="nk-color">&lt;/dd&gt;</span><br>
+          &nbsp;&nbsp;&nbsp; <span class="nk-color">&lt;dd&gt;</span>Ama 2.0 <span class="nk-color">&lt;/dd&gt;
           </span><br>
-          <span class="firm">&lt;/dl&gt;</span><br>
+          <span class="nk-color">&lt;/dl&gt;</span><br>
         </code>
 
-        <div class="">
-          <h2 class="nk-heading--2">busy with...</h2>
-          <ul>
-            <li><a href="https://nakds.io">nakDS</a></li>
-            <li><a href="https://theAntievent.org">TheAntiEvent</a></li>
-            <li>#performance</li>
-            <li>#designSystems</li>
-            <li>#newCoolCSSfeatures</li>
-          </ul>
-        </div>
+        <h2 class="nk-heading--2 nk-mtx">busy with...</h2>
+        <ul class="nk-grid-2@md">
+          <li><a href="https://nakds.io">nakDS</a></li>
+          <li><a href="https://theAntievent.org">TheAntiEvent</a></li>
+          <li>#performance</li>
+          <li>#designSystems</li>
+          <li>#newCoolCSSfeatures</li>
+        </ul>
       </div>
     </article>
-    <article id="cv" class="nk-cover nk-section nk-container bgfirm contrast boxshadowl">
-      <h2 class="nk-heading--1 display-1 nk-flex nk-align-items-center">I <span class="icon-heart disblin sharp"></span>
+    <article id="cv" class="nk-cover nk-section nk-container nk-bg--y">
+      <h2 class="nk-heading--1 display-1">I <svg width="50" height="50" viewBox="0 0 50 50" fill="currentcolor"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M47.287 7.02294C42.523 -1.10706 29.869 2.05394 24.611 8.24594C22.778 6.67894 21.301 5.01994 18.717 4.42894C15.733 3.74594 12.931 3.84494 9.976 4.59894C4.199 6.07394 1.305 11.1849 0.982998 16.8449C0.247998 29.7799 15.916 38.6259 22.958 47.4629C23.613 48.2849 25.801 47.7129 26.479 46.7729C32.544 42.5559 37.643 36.4549 42.033 30.5749C46.729 24.2859 51.799 14.7239 47.287 7.02294ZM44.819 17.6369C43.952 24.0769 39.576 29.6249 35.59 34.4539C32.635 38.0349 29.555 41.7109 25.97 44.7239C25.801 44.6599 25.605 44.6239 25.391 44.6149C19.969 38.2869 13.17 33.2569 8.338 26.3899C5.509 22.3689 4.243 17.7279 5.322 12.8909C6.201 8.95094 8.824 6.25294 13.074 6.00994C17.223 5.77294 19.179 8.46394 22.132 10.6269C22.809 11.1229 24.463 10.6899 25.338 10.1209C26.154 9.98094 26.971 9.69694 27.217 9.26894C29.99 4.45894 35.119 2.67694 40.178 5.14494C44.927 7.46394 45.439 13.0229 44.819 17.6369Z"
+            fill="#1D1D1B"></path>
+        </svg></span>
         sharing</h2>
-      <ul class="nk-flex display-4">
-        <li class="nk-mrl"><a class="no-underline" href="https://github.com/nabaroa" target="_blank" rel="noreferrer"><i
-              class="icon-github"></i></a> </li>
-        <li class="nk-mrl"><a class="no-underline" href="https://twitter.com/nabaroa" target="_blank"
-            rel="noreferrer"><i class="icon-twitter"></i></a>
+      <ul class="nk-grid-2@md nk-grid-4@md nk-gap--large nk-list">
+        <li><a class="no-underline" href="https://github.com/nabaroa" target="_blank" rel="noreferrer"><svg
+              class="nk-icon--large" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path
+                d="M45.673 11.367c2.807-2.021 1.771-6.011 1.438-8.758-.079-.666-2.096-.304-2.452-.206-3.095.848-6.146 2.095-8.465 4.052-4.903-1.862-11.144-2.491-15.973-.66-2.011-1.966-4.716-3.513-7.36-4.698-1.275-.57-3.575-.085-3.991 1.222-.812 2.552-1.136 6.048.177 8.559a1.22 1.22 0 00-.323.373c-3 5.919-4.605 10.649-.934 16.706 2.546 4.199 7.122 7.004 12.464 7.58-1.131 1.854-1.156 4.135-1.042 6.184l.006.08-.16-.018c-.56-.131-1.078-.396-1.568-.654-1.014-.535-1.908-1.248-2.78-1.939-1.619-1.283-3.083-2.705-4.718-3.977-2.307-1.793-5.904-2.32-8.137-.027-.749.768 1.067.811 2.544.504.369.182.705.424 1.037.65.713.49 1.358 1.061 2.005 1.613 1.472 1.256 2.893 2.547 4.48 3.697 2.269 1.646 4.798 2.336 7.433 1.854.12 1.662.159 3.754-.603 4.525l.271-.064c-.509.287-.712.562-.205.691l.138.037c1.066.271 3.113-.148 3.852-.895 1.035-1.049.835-3.223.905-4.512.157-2.916-.706-6.1 1.152-8.732.129-.182-.213-.279-.755-.299.34-.539.126-1.047-1.204-1.119-5.771-.312-9.692-4.064-11.872-8.418-2.373-4.737-.326-8.827 1.897-13.214.032-.063.043-.119.064-.177.579-.322.908-.759.64-1.217-.894-1.523-1.08-3.403-.895-5.216 1.553.927 2.987 2.005 4.113 3.289.859.981 3.748.281 4.254-.766a5.72 5.72 0 00.707-.345c3.089-1.784 10.085.503 12.903 2.015 1.213.651 5.113-.914 4.171-1.42-.008-.004-.018-.008-.025-.013.98-1.241 2.393-2.239 3.955-2.961.363 2.109.947 5.343-.786 6.507-.613.313-1.006.739-.82 1.194 3.665 8.999 3.522 16.769-6.492 21.964-1.438-.574-4.816.666-3.733 1.795 2.33 2.434 1.174 4.906.913 7.707-.075.807.246 2.145.188 3.154-.583.311-.928.721-.689 1.131.684 1.178 2.167 1.172 3.469.682 1.529-.574 1.502-1.598 1.502-2.859.001-3.293 1.361-6.795-.146-9.795a2.72 2.72 0 00.534-.176c4.846-2.33 8.811-5.246 10.74-9.853 1.98-4.722 0-10.294-1.824-14.777z">
+              </path>
+            </svg></a> </li>
+        <li><a class="no-underline" href="https://twitter.com/nabaroa" target="_blank" rel="noreferrer">Twitter</a>
         </li>
-        <li class="nk-mrl"><a class="no-underline" href="https://www.linkedin.com/in/naiaraabaroa/en" target="_blank"
-            rel="noreferrer"><i class="icon-linkedin"></i><em class="disb">&nbsp;</em></a> </li>
-        <li class="nk-mrl"><a class="no-underline" href="https://codepen.io/nabaroa/" target="_blank"
-            rel="noreferrer"><i class="icon-codepen"></i></a> </li>
+        <li><a class="no-underline" href="https://www.linkedin.com/in/naiaraabaroa/en" target="_blank"
+            rel="noreferrer">Linkedin<em class="disb">&nbsp;</em></a> </li>
+        <li><a class="no-underline" href="https://codepen.io/nabaroa/" target="_blank" rel="noreferrer">Codepen</a>
+        </li>
       </ul>
     </article>
 
-    <article id="projects" class="nk-section nk-container pattern3 contrast boxshadowl">
-      <!-- <div class="top_k">&nbsp;</div> -->
-      <h1 class="nk-heading--1 display-1">works</h1>
-      <p class="nk-heading--1 display-4 nk-mbl">Most of these works are <span class="firm underline">side
+    <article id="projects" class="nk-section nk-container pattern3 nk-theme--dark">
+      <h1 class="nk-heading--1 display-1 nk-text-align--center">works</h1>
+      <p class="nk-heading--1 display-4 nk-mbl nk-text-align--center">Most of these works are <span
+          class="nk-color underline">side
           projects</span>. Fun stuff</p>
-      <div class="nk-grid-2--sm nk-grid-3--md nk-gap nk-section">
-        <div class="nk-grid__item">
+      <div class="nk-grid-2@sm nk-grid-3@md nk-gap--large nk-section">
+        <div class="nk-card">
           <!-- <div class="cooking">&nbsp;</div> -->
           <a class="has-tooltip" href="http://nakds.io" target="_blank" rel="noreferrer">
             <img alt="" src="assets/nakds.png">
           </a>
-          <h2 class=" contrast">
-            <a href="http://nakds.io">nakDS.io</a>
-          </h2>
-          <p><span class="firm">BETA</span> on Jun 2021</p>
-          <p class="data">2021</p>
+          <div class="nk-card__body">
+            <h2>
+              <a href="http://nakds.io">nakDS.io</a>
+            </h2>
+            <p><span class="nk-color">BETA</span> on mid 2022</p>
+            <p class="date">2022</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
+          <!-- <div class="cooking">&nbsp;</div> -->
+          <a class="has-tooltip" href="https://nabaroa.github.io/10-years-of-css/" target="_blank" rel="noreferrer">
+            <img alt="" src="assets/cover-hero.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>
+              <a href="http://nakds.io">10 años de CSS</a>
+            </h2>
+            <p>Slides presented at <span class="nk-color">Bilbostack</span> 2022</p>
+            <p class="date">2022</p>
+          </div>
+        </div>
+        <div class="nk-card">
           <!-- <div class="cooking">&nbsp;</div> -->
           <a href="https://nabaroa.github.io/the-gold-rush-reloaded/">
             <img alt="" src="assets/thegoldrush-reloaded.jpg">
           </a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/the-gold-rush-reloaded/"></a>The gold rush.
-            Realoaded: What's new on CSS?</a> </h2>
-          <p class="data">2019</p>
+          <div class="nk-card__body">
+            <h2>Slide presented at <span class="nk-color"> FabadaConf</span> <a
+                href="https://nabaroa.github.io/the-gold-rush-reloaded/"></a>The gold rush.
+              Realoaded: What's new on CSS?</a> </h2>
+            <p class="date">2019</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <img alt="" src="assets/izan-bagara.jpg">
-          <h2 class=" contrast" lang="eu">Izan bagara. Emakumea informatikan</h2>
-          <p class="data">2019</p>
+          <div class="nk-card__body">
+            <h2 lang="eu">Izan bagara. Emakumea informatikan</h2>
+            <p class="date">2019</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <!-- <a class="has-tooltip" href="#" target="_blank" rel="noreferrer"> -->
           <!-- <div class="cooking">&nbsp;</div> -->
           <img alt="" src="assets/cover-animate.gif">
-          <h2 class=" contrast">Web animation: The <span>new</span> generation</h2>
-          <p class="data">2018</p>
+          <div class="nk-card__body">
+
+            <h2>Web animation: The <span>new</span> generation</h2>
+            <p class="date">2018</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <img alt="" src="assets/grid-layout.jpg">
-          <h2 class=" contrast">CSS Grid Layout: En busca del fuego</h2>
-          </p>
-          <p class="data">2017</p>
+          <div class="nk-card__body">
+            <h2>CSS Grid Layout: En busca del fuego</h2>
+            </p>
+            <p class="date">2017</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <a class="has-tooltip" href="https://randommatches.live" target="_blank" rel="noreferrer">
+        <div class="nk-card">
+          <a class="has-tooltip" href="https://nabaroa.github.io/random-matches/" target="_blank" rel="noreferrer">
             <img alt="" src="assets/randomMatches.jpg">
           </a>
-          <h2 class=" contrast"><a href="https://randommatches.live">#randomMatches</a></h2>
-          <p><span class="firm">#randomMatches</span> is just a game, a way to express myself through images.
-            An
-            image compilation collected randomly from <a target="_blank" rel="noreferrer"
-              href="https://es.pinterest.com/nabaroa/">Pinterest</a> and published on
-            <a target="_blank" rel="noreferrer" href="https://twitter.com/nabaroa">Twitter</a> </span>
-          </p>
-          <p class="data">2017</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/random-matches/">#randomMatches</a></h2>
+            <p><span class="nk-color">#randomMatches</span> is just a game, a way to express myself through images.
+              An
+              image compilation collected randomly from <a target="_blank" rel="noreferrer"
+                href="https://es.pinterest.com/nabaroa/">Pinterest</a> and published on
+              <a target="_blank" rel="noreferrer" href="https://twitter.com/nabaroa">Twitter</a> </span>
+            </p>
+            <p class="date">2017</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://nabaroa.github.io/erase-una-vez-el-design-system/"><img src="assets/design-systems.jpg"></a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/erase-una-vez-el-design-system/">Erase
-              una vez... el Design System</a></h2>
-          <p>Web slides on <span class="firm">Design Systems</span> presented at <a class="firm"
-              href="https://bilbostack.com" target="_blank" rel="noreferrer">Bilbostack 2017</a></span>
-          </p>
-          <p class="data">2017</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/erase-una-vez-el-design-system/">Erase
+                una vez... el Design System</a></h2>
+            <p>Web slides on <span class="nk-color">Design Systems</span> presented at <a class="nk-color"
+                href="https://bilbostack.com" target="_blank" rel="noreferrer">Bilbostack 2017</a></span>
+            </p>
+            <p class="date">2017</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://nabaroa.github.io/postcss-beyond-treasure-map/"><img src="assets/postcss-beyond.jpg"></a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/postcss-beyond-treasure-map/">PostCSS.
-              Beyond the treasure map</a></h2>
-          <p>Web slides on <span class="firm">PostCSS</span> presented at <a class="firm"
-              href="https://2016.codemotion.es/agenda.html#5732408326356992/89254005" target="_blank"
-              rel="noreferrer">Codemotion
-              2016</a></span>
-          </p>
-          <p class="data">2016</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/postcss-beyond-treasure-map/">PostCSS.
+                Beyond the treasure map</a></h2>
+            <p>Web slides on <span class="nk-color">PostCSS</span> presented at <a class="nk-color"
+                href="https://2016.codemotion.es/agenda.html#5732408326356992/89254005" target="_blank"
+                rel="noreferrer">Codemotion
+                2016</a></span>
+            </p>
+            <p class="date">2016</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://wimi5.com/"><img alt="" src="assets/wimi5.jpg"></a>
-          <h2 class=" contrast"><a href="https://wimi5.com/">WiMi5</a></h2>
-          <p>I worked for two years and a half in this startup where we developed a cloud based editor to
-            create, publish and monetize <span class="firm"> HTML5 games</span>
-          </p>
-          <p>My task in this project was to <span class="firm">create and develop the UX/UI</span>
-          </p>
-          <p class="data">2016</p>
-          </p>
+          <div class="nk-card__body">
+            <h2><a href="https://wimi5.com/">WiMi5</a></h2>
+            <p>A cloud based editor to
+              create, publish and monetize <span class="nk-color"> HTML5 games</span>
+            </p>
+            <p>My task in this startup was to <span class="nk-color">create and develop the UX/UI</span>
+            </p>
+            <p class="date">2016</p>
+            </p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://nabaroa.github.io/postcss-treasure-map/#/"><img alt="" src="assets/postcss.jpg"></a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/postcss-treasure-map/#/">PostCSS. The
-              treasure map</a></h2>
-          <p>Web slides on <span class="firm">PostCSS</span>
-          </p>
-          <p>
-          <p class="data">2016</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/postcss-treasure-map/#/">PostCSS. The
+                treasure map</a></h2>
+            <p>Web slides on <span class="nk-color">PostCSS</span>
+            </p>
+            <p>
+            <p class="date">2016</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://nabaroa.github.io/IveSeenThings"><img alt="" src="assets/iveseenthings.jpg"></a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/IveSeenThings">I've seen things. CSS
-              upcoming awesome features</a></h2>
-          <p>Web slides on <span class="firm">CSS new features</span>
-          </p>
-          <p>
-          <p class="data">2016</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/IveSeenThings">I've seen things. CSS
+                upcoming awesome features</a></h2>
+            <p>Web slides on <span class="nk-color">CSS new features</span>
+            </p>
+            <p>
+            <p class="date">2016</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <a href="https://nabaroa.github.io/theGoldRush/#/"><img alt="" src="assets/thegoldrush.jpg"></a>
-          <h2 class=" contrast"><a href="https://nabaroa.github.io/theGoldRush/#/">The Gold rush. CSS gold
-              nuggets</a></h2>
-          <p>Web slides on <span class="firm">CSS new features</span>
-          </p>
-          <p>
-          <p class="data">2016</p>
+          <div class="nk-card__body">
+            <h2><a href="https://nabaroa.github.io/theGoldRush/#/">The Gold rush. CSS gold
+                nuggets</a></h2>
+            <p>Web slides on <span class="nk-color">CSS new features</span>
+            </p>
+            <p>
+            <p class="date">2016</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <a href="https://learncss.info/"><img alt="" src="assets/learnCSS.jpg"></a>
-          <h2 class=" contrast"><a href="https://learncss.info/">learnCSS.info</a></h2>
-          <p>Online study material about <span class="firm">CSS</span>
-          </p>
-          <p class="data">2015</p>
+        <div class="nk-card">
+          <a href="http://nabaroa.github.io/learnCSS.info/"><img alt="" src="assets/learnCSS.jpg"></a>
+          <div class="nk-card__body">
+            <h2><a href="http://nabaroa.github.io/learnCSS.info/">learnCSS.info</a></h2>
+            <p>Online study material about <span class="nk-color">CSS</span>
+            </p>
+            <p class="date">2015</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <a href="https://areyousassy.zz.mu/"><img alt="" src="assets/areyousassy_cover.jpg"></a>
-          <h2 class=" contrast"><a href="https://areyousassy.zz.mu/">Are you sassy?</a></h2>
-          <p>Web slides on <span class="firm">Sass</span> at <a href="https://devfestbilbao.org/" target="_blank"
-              rel="noreferrer">DevFestBilbao</a> organized by <a href="https://twitter.com/gdgbilbao" target="_blank"
-              rel="noreferrer">GDG Bilbao</a>.
-          </p>
-          <p class="data">2014</p>
-          </p>
+        <div class="nk-card">
+          <img alt="" src="assets/areyousassy_cover.jpg">
+          <div class="nk-card__body">
+            <h2><a href="https://areyousassy.zz.mu/">Are you sassy?</a></h2>
+            <p>Web slides on <span class="nk-color">Sass</span> at DevFestBilbao organized by <a href="https://twitter.com/gdgbilbao" target="_blank"
+                rel="noreferrer">GDG Bilbao</a>.
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="assets/especificacion.png">
-          <h2 class=" contrast" lang="es">La especificación CSS3</h2>
-          <p>Web slides for<span class="firm"> CSS3 </span>clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/EspecificacionCSS3.pdf" target="_blank"
-              rel="noreferrer">Go to slides</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/EspecificacionCSS3.pdf" target="_blank"
+            rel="noreferrer">
+            <img alt="" src="assets/especificacion.png"></a>
+          <div class="nk-card__body">
+            <h2 lang="es">La especificación CSS3</h2>
+            <p>Web slides for<span class="nk-color"> CSS3 </span>clases at #dessi @deusto
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="assets/animacion.png">
-          <h2 class=" contrast" lang="es">Animación y transición CSS3</h2>
-          <p>Web slides for <span class="firm">CSS3</span> clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Animation_transitionCSS.pdf"
-              target="_blank" rel="noreferrer">Go to slides</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Animation_transitionCSS.pdf"
+            target="_blank" rel="noreferrer">
+            <img alt="" src="assets/animacion.png">
+          </a>
+          <div class="nk-card__body">
+            <h2 lang="es">Animación y transición CSS3</h2>
+            <p>Web slides for <span class="nk-color">CSS3</span> clases at #dessi @deusto
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="assets/flexbox.jpg">
-          <h2 class=" contrast">Flexbox</h2>
-          <p>Web slides for <span class="firm">CSS3</span> clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Flexbox.pdf" target="_blank"
-              rel="noreferrer">Go
-              to slides</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Flexbox.pdf" target="_blank"
+            rel="noreferrer">
+            <img alt="" src="assets/flexbox.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>Flexbox</h2>
+            <p>Web slides for <span class="nk-color">CSS3</span> clases at <a
+                href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
+                target="_blank" rel="noreferrer">#dessi @deusto</a>
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <img alt="" src="assets/rwd.jpg">
-          <h2 class=" contrast">Responsive Web Design</h2>
-          <p>Web slides for <span class="firm">CSS3</span> clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://fliiby.com/file/v3e1u2o2h0c/" target="_blank" rel="noreferrer">Go to slides</a>
-          </p>
+          <div class="nk-card__body">
+            <h2>Responsive Web Design</h2>
+            <p>Web slides for <span class="nk-color">CSS3</span> clases at #dessi @deusto
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="assets/selectors.jpg">
-          <h2 class=" contrast">CSS selectors</h2>
-          <p>Web slides for <span class="firm">CSS3</span> clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/CSSselectors.pdf" target="_blank"
-              rel="noreferrer">Go to slides</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/CSSselectors.pdf" target="_blank"
+            rel="noreferrer">
+            <img alt="" src="assets/selectors.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>CSS selectors</h2>
+            <p>Web slides for <span class="nk-color">CSS3</span> clases at <a
+                href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
+                target="_blank" rel="noreferrer">#dessi @deusto</a>
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="https://raw.githubusercontent.com/nabaroa/naknak.me/master/docs/images/sass.jpg">
-          <h2 class=" contrast">Sass</h2>
-          <p>Web slides for <span class="firm">CSS3</span> clases at <a
-              href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
-              target="_blank" rel="noreferrer">#dessi @deusto</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Sass.pdf" target="_blank"
-              rel="noreferrer">Go to
-              slides</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://github.com/nabaroa/naknak.me/blob/master/docs/pdf/Sass.pdf" target="_blank" rel="noreferrer">
+            <img alt="" src="https://raw.githubusercontent.com/nabaroa/naknak.me/master/docs/images/sass.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>Sass</h2>
+            <p>Web slides for <span class="nk-color">CSS3</span> clases at <a
+                href="https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa"
+                target="_blank" rel="noreferrer">#dessi @deusto</a>
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <!-- <div class="cooking">&nbsp;</div> -->
-          <img alt="" src="assets/sassgirls.jpg">
-          <h2 class=" contrast">FrontGirls</h2>
-          <p>Study team to improve our <span class="firm">front-end</span> skills, focused on having more
-            superpowers.
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://frontgirls.io" target="_blank" rel="noreferrer">Go to site</a>
-          </p>
+          <a href="https://frontgirls.io" target="_blank" rel="noreferrer">
+            <img alt="" src="assets/sassgirls.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>FrontGirls</h2>
+            <p>Study team to improve our <span class="nk-color">front-end</span> skills, focused on having more
+              superpowers.
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="assets/theantievent.jpg">
-          <h2 class=" contrast">theAntiEvent 2014</h2>
-          <p>Web site of the <a href="https://theantievent.org/" target="_blank" rel="noreferrer">Event</a>
-          </p>
-          <p class="data">2014</p>
-          <p><a href="https://theantievent.org/" target="_blank" rel="noreferrer">Go to site</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://theantievent.org/" target="_blank" rel="noreferrer">
+            <img alt="" src="assets/theantievent.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>theAntiEvent 2014</h2>
+            <p>Web site of the <a href="https://theantievent.org/" target="_blank" rel="noreferrer">Event</a>
+            </p>
+            <p class="date">2014</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img alt="" src="https://raw.githubusercontent.com/nabaroa/naknak.me/master/docs/assets/concept.jpg">
-          <h2 class=" contrast">Practice safe design, use a concept</h2>
-          <p>Web slides for the online class of <a
-              href="https://escuela.it/cursos/curso-gratuito-de-iniciacion-al-desarrollo-web/" target="_blank"
-              rel="noreferrer">Escuela IT</a>
-          </p>
-          <p class="data">2013</p>
-          <p><a href="https://www.youtube.com/watch?v=LCBf0qh6LQI" target="_blank" rel="noreferrer">Go to
-              talk</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://www.youtube.com/watch?v=LCBf0qh6LQI" target="_blank" rel="noreferrer">
+            <img alt="" src="https://raw.githubusercontent.com/nabaroa/naknak.me/master/docs/assets/concept.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>Practice safe design, use a concept</h2>
+            <p>Web slides for the online class of <a
+                href="https://escuela.it/cursos/curso-gratuito-de-iniciacion-al-desarrollo-web/" target="_blank"
+                rel="noreferrer">Escuela IT</a>
+            </p>
+            <p class="date">2013</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <img
-            src="https://images.indiegogo.com/medias/958015/primary_pictures/full/20130731151522-anticamp_crowdfunding.jpg?1375308926">
-          <h2 class=" contrast">TheAntiCamp</h2>
-          <p class="data">2013</p>
-          <p><a href="https://naknak.me/theanticamp" target="_blank" rel="noreferrer">Go to site</a>
-          </p>
+        <div class="nk-card">
+          <a href="https://www.youtube.com/watch?v=WLNDykQpI9A" target="_blank" rel="noreferrer">
+            <img alt="" src="assets/cross.jpg">
+          </a>
+          <div class="nk-card__body">
+            <h2>
+              <3 the cross browser</h2>
+                <p>Web slides</p>
+                <p>Project created for <a href="https://www.html5-spain.com/html5-spain/fridaywebforward/landing.html"
+                    target="_blank" rel="noreferrer" class="nk-color">#FridayWebFordward</a>
+                </p>
+                <p class="date">2013</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
-          <!-- <div class="cooking">&nbsp;</div> -->
-          <img alt="" src="assets/cross.jpg">
-          <h2 class=" contrast">
-            <3 the cross browser</h2>
-              <p>Web slides</p>
-              <p class="data">2013</p>
-              <p>Project created for <a href="https://www.html5-spain.com/html5-spain/fridaywebforward/landing.html"
-                  target="_blank" rel="noreferrer" class="firm">#FridayWebFordward</a>
-              </p>
-              <p><a href="https://www.youtube.com/watch?v=WLNDykQpI9A" target="_blank" rel="noreferrer">Go to
-                  talk</a>
-              </p>
-        </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <img alt="" src="assets/placecolor.jpg">
-          <h2 class=" contrast">placeColor.in</h2>
-          <p>Web: Design and front-end development</p>
-          <p class="data">2013</p>
-          <p>Project created in the <a href="https://hackmite.elcomite.org/" target="_blank" rel="noreferrer"
-              class="firm">#hackmite</a>
-          </p>
-          <!-- <p><a href="#" target="_blank" rel="noreferrer">Go to site</a> -->
-          </p>
+          <div class="nk-card__body">
+            <h2>placeColor.in</h2>
+            <p>Web: Design and front-end development</p>
+
+            <p>Project created in the #hackmite
+            </p>
+            <p class="date">2013</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
+          <!-- <a href="https://www.youtube.com/watch?v=pDTmukK6kAY" target="_blank" rel="noreferrer"> -->
           <img alt="" src="assets/css.jpg">
-          <h2 class=" contrast">The CSS Preprocessor</h2>
-          <p>Web slides for the speech in Bilbostack </p>
-          <p class="data">2013</p>
-          <p><a href="https://www.youtube.com/watch?v=pDTmukK6kAY" target="_blank" rel="noreferrer">Go to
-              site</a>
-          </p>
+          <!-- </a> -->
+          <div class="nk-card__body">
+            <h2>The CSS Preprocessor</h2>
+            <p>Web slides for the speech in Bilbostack </p>
+            <p class="date">2013</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
+          <!-- <a href="https://naknak.me/emmet" target="_blank" rel="noreferrer"> -->
           <img alt="" src="assets/emmet.jpg">
-          <h2 class=" contrast">Emmet.io Improve your HTML & CSS workflow</h2>
-          <p>Web slides</p>
-          <p class="data">2012</p>
-          <p><a href="https://naknak.me/emmet" target="_blank" rel="noreferrer">Go to site</a>
-          </p>
+          <!-- </a> -->
+          <div class="nk-card__body">
+            <h2>Emmet.io Improve your HTML & CSS workflow</h2>
+            <p>Web slides</p>
+            <p class="date">2012</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
+          <!-- <a href="https://naknak.me/zencoding" target="_blank" rel="noreferrer"> -->
           <img alt="" src="assets/zen.jpg">
-          <h2 class=" contrast">Zen coding</h2>
-          <p>Web slides</p>
-          <p class="data">2012</p>
-          <p><a href="https://naknak.me/zencoding" target="_blank" rel="noreferrer">Go to site</a>
-          </p>
+          <!-- </a> -->
+          <div class="nk-card__body">
+            <h2>Zen coding</h2>
+            <p>Web slides</p>
+            <p class="date">2012</p>
+          </div>
         </div>
-        <div class="nk-grid__item">
+        <div class="nk-card">
           <img alt="" src="assets/nak_papel.jpg">
-          <h2 class=" contrast">Corporate image #nak</h2>
-          <p>Cards, steakers,...</p>
-          <p class="data">2012</p>
+          <div class="nk-card__body">
+            <h2>Corporate image #nak</h2>
+            <p>Cards, steakers,...</p>
+            <p class="date">2012</p>
+          </div>
         </div>
-      </div>
     </article>
-    <article id="find" class="nk-section nk-container pattern3 contrast">
-      <h1 class="nk-heading--1">Find me at...</h1>
-      <div class="nk-grid nk-grid-2--md nk-grid-3--lg nk-gap">
+    <article id="find" class="nk-section nk-container pattern3 nk-theme--dark ">
+      <h1 class="nk-heading--1 display-1 nk-text-align--center">Find me at...</h1>
+      <div class="nk-grid nk-grid-2@md nk-grid-3--lg nk-gap">
         <div class="">
-          <h2 class="nk-heading--2 display-1 firm">Teaching</h2>
+          <h2 class="nk-heading--2 display-1 nk-color">Teaching</h2>
           <ul id="agenda-teaching"></ul>
-          <!-- <h2 class="nk-heading--2 display-1 firm">Co-organize events</h2> -->
+          <!-- <h2 class="nk-heading--2 display-1 nk-color">Co-organize events</h2> -->
           <!-- <ul class="agenda__item">
             <ul>
-              <li><span class="firm">25-25/10/2018</span>
+              <li><span class="nk-color">25-25/10/2018</span>
               </li>
               <li>TheAntiEvent 2019</li>
               <li class="text small"><span>Software Open Space</span></li>
@@ -424,7 +474,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">5-6/10/2018</span>
+              <li><span class="nk-color">5-6/10/2018</span>
               </li>
               <li>TheAntiEvent 2018</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -439,7 +489,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">8-9/9/2017</span>
+              <li><span class="nk-color">8-9/9/2017</span>
               </li>
               <li>TheAntiEvent 2017</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -454,7 +504,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">7-8/10/2016</span>
+              <li><span class="nk-color">7-8/10/2016</span>
               </li>
               <li>TheAntiEvent 2016</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -470,7 +520,7 @@
             </li> class="agenda__item"
 
             <ul>
-              <li><span class="firm">6-7/11/2015</span>
+              <li><span class="nk-color">6-7/11/2015</span>
               </li>
               <li>TheAntiEvent 2015</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -488,7 +538,7 @@
             class="agenda__item"
 
             <ul>
-              <li><span class="firm">11-12/06/2014</span>
+              <li><span class="nk-color">11-12/06/2014</span>
               </li>
               <li>TheAntiEvent 2014</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -500,7 +550,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">25-26/07/2013</span>
+              <li><span class="nk-color">25-26/07/2013</span>
               </li>
               <li>TheAntiEvent</li>
               <li class="text small"><span>An open space event for developers</span></li>
@@ -517,7 +567,7 @@
           <!-- <div class="rotate90 ab upcoming">Upcoming</div> -->
           <ul class="agenda" class="agenda__item">
             <ul>
-              <li><span class="firm"></span>FrontGirls</li>
+              <li><span class="nk-color"></span>FrontGirls</li>
               <!-- <li>Djigbée</li> -->
               <li>
                 <a href="https://frontgirls.io/" target="_blank" rel="noreferrer">
@@ -532,10 +582,10 @@
               </li>
             </ul>
             </li>
-            <!-- <li><i class="icon-circle firm"></i><span class="today firm">Today</span> -->
+            <!-- <li><i class="icon-circle nk-color"></i><span class="today nk-color">Today</span> -->
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">07/03/2014 - 08/03/2014 </span>Post-hackathon:
+              <li><span class="nk-color">07/03/2014 - 08/03/2014 </span>Post-hackathon:
                 <br> Apps4health de Anesvad + Hirikilabs
               </li>
               <li> Djigbée</li>
@@ -553,7 +603,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">28/09/2013 </span>Hackathon: Apps4health de Anesvad</li>
+              <li><span class="nk-color">28/09/2013 </span>Hackathon: Apps4health de Anesvad</li>
               <li>Djigbée</li>
               <li>
                 <a href="https://apps4health.es/#/" target="_blank" rel="noreferrer">
@@ -567,7 +617,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">20/07/2013-21/07/2013 </span>TheAntiEvent</li>
+              <li><span class="nk-color">20/07/2013-21/07/2013 </span>TheAntiEvent</li>
               <li>Flexbox</li>
               <li>
                 <a href="https://theantievent.org/" target="_blank" rel="noreferrer">
@@ -580,7 +630,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">15/02/2013-17/02/2013 </span>Hackmité</li>
+              <li><span class="nk-color">15/02/2013-17/02/2013 </span>Hackmité</li>
               <li>Placecolor.in</li>
               <li>
                 <a href="https://hackmite.elcomite.org/" target="_blank" rel="noreferrer">
@@ -590,7 +640,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">17/11/2012 </span>Blackberry Jam Sesion. Bilbao</li>
+              <li><span class="nk-color">17/11/2012 </span>Blackberry Jam Sesion. Bilbao</li>
               <li>Biker Citizens</li>
               <li>
                 <a href="https://megathonwindows8.azurewebsites.net" target="_blank" rel="noreferrer"> <i
@@ -608,7 +658,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">8/09/2012 </span>Megathon Windows 8. Bilbao</li>
+              <li><span class="nk-color">8/09/2012 </span>Megathon Windows 8. Bilbao</li>
               <li>App para Windows 8: Emoticons</li>
               <li>
                 <a href="https://megathonwindows8.azurewebsites.net" target="_blank" rel="noreferrer"> <i
@@ -621,15 +671,15 @@
               </li>
             </ul>
             </li>
-          </ul> 
+          </ul>
         </div>
 
         <div class="">
-          <h2 class="nk-heading--2 display-1 firm">Speaking</h2>
-          <ul id="agenda-speaking"  class="agenda">
-            <li><i class="icon-circle firm"></i>
+          <h2 class="nk-heading--2 display-1 nk-color">Speaking</h2>
+          <ul id="agenda-speaking" class="agenda">
+            <li><i class="icon-circle nk-color"></i>
               <ul>
-                <li><span class="firm">05/2020</span> Pucela Tech Day</li>
+                <li><span class="nk-color">05/2020</span> Pucela Tech Day</li>
                 <li>A system to rule them all</li>
                 <li class="icon-list">
                   <a href="https://www.pucelatechday.com/" target="_blank" rel="noreferrer">
@@ -638,7 +688,7 @@
               </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">10/11/2019</span> FabadaConf <span>Gijón</span></li>
+              <li><span class="nk-color">10/11/2019</span> FabadaConf <span>Gijón</span></li>
               <li>The gold rush. Reloaded: What's new on CSS?</li>
               <li class="icon-list">
                 <a href="https://fabadaconf.com/" target="_blank" rel="noreferrer">
@@ -649,7 +699,7 @@
             </ul>
             </li class="agenda__item">
             <ul lang="es">
-              <li><span class="firm">30/03/2019</span> Congreso Internacional de la Lengua Española 2019.
+              <li><span class="nk-color">30/03/2019</span> Congreso Internacional de la Lengua Española 2019.
                 Cordoba, Argentina</li>
               <li>Cambios en la lectura y escritura: Una tecnología para el lenguaje emocional</li>
               <li class="icon-list">
@@ -669,7 +719,7 @@
             </ul>
             </li class="agenda__item">
             <ul lang="eu">
-              <li><span class="firm">11/02/2019</span> 11F. Ballonti Bigarren Hezkuntzako institutua.
+              <li><span class="nk-color">11/02/2019</span> 11F. Ballonti Bigarren Hezkuntzako institutua.
                 Portugalete. Bizkaia</li>
               <li>'Izan bagara. Emakumea informatikan'</li>
               <li>
@@ -680,7 +730,7 @@
             </ul>
             </li class="agenda__item">
             <ul lang="es">
-              <li><span class="firm">04/02/2017</span> Bilbostack</li>
+              <li><span class="nk-color">04/02/2017</span> Bilbostack</li>
               <li>'Erase una vez... el Design System'</li>
               <li>
                 <a href="https://bilbostack.com" target="_blank" rel="noreferrer"><i class="icon-link"></i></a>
@@ -688,7 +738,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">18/11/2016</span> Codemotion 2016. Madrid</li>
+              <li><span class="nk-color">18/11/2016</span> Codemotion 2016. Madrid</li>
               <li>'PostCSS. Beyond the treasure map'</li>
               <li>
                 <a href="https://youtu.be/7peIFggDH8M?list=PLKxa4AIfm4pUvMn4lZ8zin500bsp3oL2A" target="_blank"
@@ -707,7 +757,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">11/06/2016</span> WordCamp Bilbao</li>
+              <li><span class="nk-color">11/06/2016</span> WordCamp Bilbao</li>
               <li>'PostCSS. The treasure map'</li>
               <li>
                 <a href="https://2016.bilbao.wordcamp.org/" target="_blank" rel="noreferrer"><i
@@ -721,7 +771,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">15/04/2016</span> Tikitalka #3 in Bilbao</li>
+              <li><span class="nk-color">15/04/2016</span> Tikitalka #3 in Bilbao</li>
               <li>'I've seen things. CSS upcoming awesome features'</li>
               <li>
                 <a href="https://www.tikitalka.com/2016/04/15/tikitalka3.html" target="_blank" rel="noreferrer"><i
@@ -734,7 +784,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">04/03/2016</span> Webdev meetup in Bilbao</li>
+              <li><span class="nk-color">04/03/2016</span> Webdev meetup in Bilbao</li>
               <li>'The Gold Rush. CSS gold nuggets'</li>
               <li>
                 <a href="https://agenda.deusto.es/webdev-meetup-jornada-sobre-desarrollo-web/" target="_blank"
@@ -746,10 +796,10 @@
             </ul>
             </li>
             <!--            <li>
-                      <i class="icon-circle firm"></i> <span class="today firm">Today</span>
+                      <i class="icon-circle nk-color"></i> <span class="today nk-color">Today</span>
                   </li> -- class="agenda__item">
               <ul>
-                <li><span class="firm">20/11/2015</span> Hackathon in Santander (Spain)
+                <li><span class="nk-color">20/11/2015</span> Hackathon in Santander (Spain)
                   <br>organized by CIC Consulting
                 </li>
                 <li>'Workflow para volar con el CSS' Speach on CSS</li>
@@ -767,7 +817,7 @@
               </ul>
             </li class="agenda__item">
               <ul>
-                <li><span class="firm">07/11/2015</span> TheAntiEvent2015 in Bilbao
+                <li><span class="nk-color">07/11/2015</span> TheAntiEvent2015 in Bilbao
                 </li>
                 <li>Talk on the SmashingConf 2015</li>
                 <li>
@@ -778,7 +828,7 @@
               </ul>
             </li class="agenda__item">
               <ul>
-                <li><span class="firm">12/12/2014</span> DevFestBilbao 2014
+                <li><span class="nk-color">12/12/2014</span> DevFestBilbao 2014
                   <br>organized by Google Dev. Group of Bilbao
                 </li>
                 <li>'Are you sassy?' speach on Sass</li>
@@ -791,7 +841,7 @@
               </ul>
             </li class="agenda__item">
               <ul>
-                <li><span class="firm">07/08/2013</span> Desarrolloweb.com, clase <a href="https://escuela.it/"
+                <li><span class="nk-color">07/08/2013</span> Desarrolloweb.com, clase <a href="https://escuela.it/"
                     target="_blank" rel="noreferrer">Escuela IT</a> online</li>
                 <li>Practice safe design, use a concept</li>
                 <li>
@@ -804,7 +854,7 @@
               </ul>
             </li class="agenda__item">
               <ul>
-                <li><span class="firm">02/04/2013</span> Desarrolloweb.com, Hangout online</li>
+                <li><span class="nk-color">02/04/2013</span> Desarrolloweb.com, Hangout online</li>
                 <li>SASS. #devIO</li>
                 <li>
                   <a href="https://www.desarrolloweb.com/en-directo/preprocesadores-css-devio-8054.html" target="_blank"
@@ -819,7 +869,7 @@
           </li>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">22/03/2013</span> #FridayWebForward. Madrid</li>
+            <li><span class="nk-color">22/03/2013</span> #FridayWebForward. Madrid</li>
             <li>Love the Cross-browser</li>
             <li>
               <!--      <a href="https://www.html5-spain.com/html5-spain/fridaywebforward/landing.html" target="_blank" rel="noreferrer"><i class="icon-link"></i></a> -->
@@ -833,7 +883,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">1/03/2013 </span>Hack For Good Bilbao</li>
+            <li><span class="nk-color">1/03/2013 </span>Hack For Good Bilbao</li>
             <li>Emmet.io Improve your HTML & CSS workflow</li>
             <li>
               <!--     <a href="https://hackforgood.net/bilbao/" target="_blank" rel="noreferrer">
@@ -849,7 +899,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">28/02/2013</span> HTML5Spain. Hangout online</li>
+            <li><span class="nk-color">28/02/2013</span> HTML5Spain. Hangout online</li>
             <li>CSS Preprocessor. La revolución</li>
             <li>
               <a href="https://www.meetup.com/HTML5-Spain/events/105307612/" target="_blank" rel="noreferrer"><i
@@ -862,7 +912,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">26/01/2013</span> Bilbostack. Bilbao</li>
+            <li><span class="nk-color">26/01/2013</span> Bilbostack. Bilbao</li>
             <li>CSS Preprocessor. La revolución</li>
             <li>
               <a href="https://bilbostack.com/" target="_blank" rel="noreferrer"><i class="icon-link"></i></a>
@@ -875,7 +925,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">13/10/2012</span> Desarrolloweb.com. Hangout online</li>
+            <li><span class="nk-color">13/10/2012</span> Desarrolloweb.com. Hangout online</li>
             <li>Emmet.io Improve your HTML & CSS workflow</li>
             <li>
               <a href="https://www.desarrolloweb.com/en-directo/devio-emmet-new-zencoding-7639.html" target="_blank"
@@ -890,7 +940,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">11/10/2012</span> Tapcoders by Tapquo. Bilbao</li>
+            <li><span class="nk-color">11/10/2012</span> Tapcoders by Tapquo. Bilbao</li>
             <li>Zen Coding</li>
             <li>
               <a href="https://www.naknak.me/zenCoding" target="_blank" rel="noreferrer"> <i class="icon-slides"></i>
@@ -902,7 +952,7 @@
           </ul>
           </li class="agenda__item">
           <ul>
-            <li><span class="firm">8/09/2012 </span>Megathon Windows 8. Bilbao</li>
+            <li><span class="nk-color">8/09/2012 </span>Megathon Windows 8. Bilbao</li>
             <li>Diseño de apps Windows 8</li>
             <li>
               <a href="https://megathonwindows8.azurewebsites.net" target="_blank" rel="noreferrer"> <i
@@ -920,10 +970,10 @@
 
         </div>
         <div>
-          <h2 class="nk-heading--2 display-1 firm">Media</h2>
+          <h2 class="nk-heading--2 display-1 nk-color">Media</h2>
           <ul class="agenda" class="agenda__item">
             <ul>
-              <li><span class="firm">24/03/2019</span> La Nación. Argentina
+              <li><span class="nk-color">24/03/2019</span> La Nación. Argentina
               </li>
               <li>El español bajo ataque: una era de máxima tensión</li>
               <li>
@@ -935,7 +985,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">30/03/2019</span> Cadena 3. Cordoba, Argentina
+              <li><span class="nk-color">30/03/2019</span> Cadena 3. Cordoba, Argentina
               </li>
               <li>Las faltas ortográficas en el celular no afectan la lengua</li>
               <li>
@@ -947,7 +997,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">19/01/2019</span> Podcast WtFront!
+              <li><span class="nk-color">19/01/2019</span> Podcast WtFront!
               </li>
               <li>Edge usará Chromium como motor en su navegador. ¿Buenas o malas noticias?</li>
               <li>
@@ -959,7 +1009,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">12/09/2015</span> Radio interview at Onda Vasca
+              <li><span class="nk-color">12/09/2015</span> Radio interview at Onda Vasca
               </li>
               <li>WiMi5, TheAntiEvent and FrontGirls</li>
               <li>
@@ -971,7 +1021,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">23/11/2015</span> 'DevUse' online blog interview
+              <li><span class="nk-color">23/11/2015</span> 'DevUse' online blog interview
               </li>
               <li>Knowing how devs work</li>
               <li>
@@ -982,7 +1032,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">19/06/2015</span> 'Hiri Gorrian' radio show. Euskadi irratia
+              <li><span class="nk-color">19/06/2015</span> 'Hiri Gorrian' radio show. Euskadi irratia
               </li>
               <li>ReCaptcha</li>
               <li class="text small"><span>1:05 minute</span></li>
@@ -999,7 +1049,7 @@
             </ul>
             </li class="agenda__item">
             <ul lang="es">
-              <li><span class="firm">17/03/2014</span> 'El Mundo' Press
+              <li><span class="nk-color">17/03/2014</span> 'El Mundo' Press
               </li>
               <li> WiMi5: El Wordpress de los videojuegos</li>
               <li>
@@ -1011,7 +1061,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">06/03/2014</span> 'Airean' TV show. EITB
+              <li><span class="nk-color">06/03/2014</span> 'Airean' TV show. EITB
               </li>
               <li> Introducing WiMi5</li>
               <li>
@@ -1023,7 +1073,7 @@
             </ul>
             </li class="agenda__item">
             <ul>
-              <li><span class="firm">12/02/2014</span> Interview for 'Diseño Usandizaga Institutua'
+              <li><span class="nk-color">12/02/2014</span> Interview for 'Diseño Usandizaga Institutua'
               </li>
               <li> Personal Interview</li>
               <li>
@@ -1040,8 +1090,8 @@
     </article>
     <article id="inspiration" class="nk-container nk-section nk-height-fullpage inspire">
       <h1 class=" hole text size100 txtac ptx h1rwd">Inspiration</h1>
-      <div class="bgfirm pvl mtxxl">
-        <p class="size300 mtl tac contrast">"They didn't <strong>know it was impossible</strong>, so they <strong>did
+      <div class="bgnk-color pvl mtxxl">
+        <p class="size300 mtl tac ">"They didn't <strong>know it was impossible</strong>, so they <strong>did
             it</strong>!"</p>
         <p class="small tac">Mark Twain</p>
       </div>
@@ -1052,15 +1102,15 @@
       <p class="mtl txtac text size2">I am <strong>Naiara Abaroa</strong></p>
       <div class="nabaroa"></div>
       <p class="text size2 tac">If you want to contact me <a href="https://twitter.com/nabaroa" target="_blank"
-          rel="noreferrer"><span class="text bold firm">send me a DM </span>to @nabaroa</a> or <a
-          href="mailto:naiaraabaroa@gmail.com" class="firm">email me</a>
+          rel="noreferrer"><span class="text bold nk-color">send me a DM </span>to @nabaroa</a> or <a
+          href="mailto:naiaraabaroa@gmail.com" class="nk-color">email me</a>
       </p>
       <div class="notfinished">scroll down
         <br>to see the credits
       </div>
     </article>
   </main>
-  <footer id="credits" class=" credits bgopaque size1of1 pal tac contrast">
+  <footer id="credits" class=" credits bgopaque size1of1 pal tac ">
     <h1 class=" hole text size100 txtac mtx h1rwd">Credits</h1>
     <div class="awards">
       <a href="https://www.awwwards.com/best-websites/nak-ui-designer-developer-html5-css3-by-naiara-abaroa/"
@@ -1071,14 +1121,14 @@
         <div class="csswinner">Nominee CSS Winner </div>
       </a>
     </div>
-    <p class="mtl text size200 ">Find the <span class="firm">code</span> of this site: <a
+    <p class="mtl text size200 ">Find the <span class="nk-color">code</span> of this site: <a
         href="https://github.com/nabaroa/naknak.me" target="_blank" rel="noreferrer"><i
           class="icon-github size100 "></i></a>
     </p>
     <p class="mtl">Tools used on this work:</p>
     <ul>
-      <li><a href="https://postcss.org/" target="_blank" rel="noreferrer" class="firm">postCSS</a> </li>
-      <li><a href="https://gulpjs.com/" class="firm">Gulp</a>
+      <li><a href="https://postcss.org/" target="_blank" rel="noreferrer" class="nk-color">postCSS</a> </li>
+      <li><a href="https://gulpjs.com/" class="nk-color">Gulp</a>
       </li>
     </ul>
     <p> + my apportation ;)</p>
