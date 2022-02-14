@@ -9,18 +9,16 @@ Migration to nakDS.io 2021
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
 
 /* --------------------------------
-  helpers/
+  settings/
 -------------------------------- */
 
-@import "helpers/var.css";
-@import "helpers/placeholders.css";
+@import "settings/var.css";
 
 /* --------------------------------
   base
 -------------------------------- */
 @import "base/reset.css";
 @import "base/typography.css";
-@import "base/oocss.css";
 
 /* --------------------------------
   components/
@@ -29,6 +27,7 @@ Migration to nakDS.io 2021
 @import "components/agenda.css";
 @import "components/cards.css";
 @import "components/navigation.css";
+@import "components/utilities.css";
 
 /* --------------------------------
    layout/

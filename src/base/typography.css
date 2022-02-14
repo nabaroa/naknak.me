@@ -2,8 +2,6 @@
   typography
 -------------------------------- */
 
-/* general NAK */
-
 /* Fonts */
 .wire {
   font-family: "Wire One", sans-serif;
@@ -15,4 +13,28 @@
 
 body {
   font-family: "Abel", sans-serif;
+}
+
+.display-1 {
+  font-size: 6em;
+}
+
+.display-2 {
+  font-size: 5em;
+}
+
+.display-3 {
+  font-size: 4em;
+}
+
+.display-4 {
+  font-size: 3em;
+}
+
+.display-5 {
+  font-size: 1.5em;
+}
+
+[class^="nk-heading"] {
+  font-family: "Wire One", sans-serif;
 }

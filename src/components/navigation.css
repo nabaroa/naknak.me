@@ -2,8 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 
-.mainmenu {
+.menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
   top: 0;
@@ -13,35 +14,10 @@ html {
   transition: all 0.1s ease;
   background: rgba(0, 0, 0, 0.7);
   z-index: 2;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-
-    li {
-      display: inline-block;
-      list-style: none;
-      width: calc(100% / 7.5);
-
-      @media all and (max-width: $mobile-width) {
-        display: block;
-      }
-
-      a {
-        display: block;
-        padding: 15px;
-        color: #fff;
-        font-size: 1.2em;
-        text-decoration: none;
-        transition: all 0.1s ease;
-
-        &:hover {
-          background-color: rgba(255, 255, 255, 0.2);
-        }
-      }
-    }
-  }
+}
+.menu__item {
+  display: block;
+  padding: var(--small);
 }
 
 a.icon_menu {
@@ -49,12 +25,12 @@ a.icon_menu {
   height: 25px;
   margin: 10px;
 
-  span {
+  & span {
     position: absolute;
     text-indent: -9999px;
   }
 
-  em {
+  & em {
     background: url(../assets/icon_menu.png) no-repeat;
     position: absolute;
     width: 100%;

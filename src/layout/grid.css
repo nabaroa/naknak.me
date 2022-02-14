@@ -154,3 +154,7 @@
     }
   }
 }
+
+.nk-grid__item {
+  position: relative;
+}

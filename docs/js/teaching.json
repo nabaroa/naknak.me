@@ -1,0 +1,96 @@
+[
+  {
+    "id": "1",
+    "category":"teaching",
+    "time": "28/10/2016-12/11/2016",
+    "where": "Bilbao (Basque Country)",
+    "company": "Mondragon Unibertsitatea",
+    "companyUrl": "https://www.mondragon.edu/es/estudios/master/master-universitario-en-marketing-digital/",
+    "what": "Workshop",
+    "title": "HTML/CSS"
+  },
+  {
+    "id": "2",
+    "category":"teaching",
+    "time": "18/04/2016-22/04/2016",
+    "where": "",
+    "company": "Escuela IT",
+    "companyUrl": "https://escuela.it/",
+    "what": "Workshop online",
+    "title": "PostCSS",
+    "resourcesUrl": "https://escuela.it/cursos/postcss-mas-alla-del-css/",
+    "resourcesUrl2": "https://github.com/EscuelaIt/PostCSS-2016"
+  },
+  {
+    "id": "3",
+    "category":"teaching",
+    "time": "13/10/2015-16/10/2015",
+    "where": "Bilbao (Basque Country)",
+    "company": "Universidad de Deusto",
+    "companyUrl": "https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa",
+    "what": "Diploma de Especialización de Soluciones Software para Internet",
+    "title": "CSS3 module",
+    "resourcesUrl": "https://learncss.info/index.html"
+  },
+  {
+    "id": "4",
+    "category":"teaching",
+    "time": "24/06/2015",
+    "where": "",
+    "company": "Escuela IT",
+    "companyUrl": "https://escuela.it/",
+    "what": "Workshop online",
+    "title": "Especificación CSS3 y mejoras en la maquetación con CSS3",
+    "resourcesUrl": "https://github.com/EscuelaIt/HTML-CSS-2015/tree/master/CSS3"
+  },
+  {
+    "id": "5",
+    "category":"teaching",
+    "time": "05/12/2014 & 12/12/2014",
+    "where": "Bilbao (Basque Country)",
+    "company": "Coderdojo Bio",
+    "companyUrl": "https://coderdojo.com/",
+    "what": "Workshop for young people",
+    "title": "HTML5"
+  },
+  {
+    "id": "6",
+    "category":"teaching",
+    "time": "30/09/2014-3/10/2014",
+    "where": "Bilbao (Basque Country)",
+    "company": "Universidad de Deusto",
+    "companyUrl": "https://www.deusto.es",
+    "what": "Diploma de Especialización de Soluciones Software para Internet",
+    "title": "CSS3 module"
+  },
+  {
+    "id": "7",
+    "category":"teaching",
+    "time": "27/09/2013-1/10/2013",
+    "where": "Bilbao (Basque Country)",
+    "company": "Universidad de Deusto",
+    "companyUrl": "https://www.deusto.es",
+    "what": "Diploma de Especialización de Soluciones Software para Internet",
+    "title": "CSS3 module"
+  },
+  {
+    "id": "8",
+    "category":"teaching",
+    "time": "06/04/2013",
+    "where": "",
+    "company": "Escuela IT",
+    "companyUrl": "https://www.escuela.it/cursos",
+    "what": "Workshop online",
+    "title": "Taller de preprocesadores CSS: Sass"
+  },
+  {
+    "id": "9",
+    "category":"speaking",
+    "time": "nnnnn06/04/2013",
+    "where": "",
+    "company": "Escuela IT",
+    "companyUrl": "https://www.escuela.it/cursos",
+    "what": "Workshop online",
+    "title": "Taller de preprocesadores CSS: Sass"
+  }
+]

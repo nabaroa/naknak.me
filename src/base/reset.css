@@ -54,70 +54,51 @@ table {
   border-spacing: 0;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
-address, caption, cite, code, dfn, em, strong, th, var {
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
   font-style: normal;
   font-weight: normal;
 }
 
+ul,
 li {
   list-style: none;
 }
 
-caption, th {
+caption,
+th {
   text-align: left;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: normal;
 }
 
-q {
-  &::before, &::after {
-    content: '';
-  }
-}
-
-abbr, acronym {
-  border: 0;
-  font-variant: normal;
-}
-
-sup {
-  vertical-align: text-top;
-}
-
-sub {
-  vertical-align: text-bottom;
-}
-
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
 
-legend {
-  color: #000;
-}
-
 article {
   position: relative;
-}
-
-.table {
-  display: table;
-  width: 100%;
-}
-
-ul, ol {
-  padding-left: 1.3em;
-
-  @media all and (max-width: $mobile-width) {
-    padding-left: 0;
-  }
 }

@@ -4,7 +4,6 @@
 
 a {
   color: #666;
-  text-decoration: none;
 
   &:visited {
     color: #666;
@@ -41,20 +40,13 @@ a {
 }
 
 .contrast {
-  color: #fff !important;
+  color: #fff;
 }
 
 .firm,
 a.firm {
-  color: #f4b408 !important;
-}
-
-.positive {
-  color: #73ab00;
-}
-
-.negative {
-  color: #c20000;
+  /* color: #f4b408; */
+  color: #fabada;
 }
 
 a.bare,
@@ -103,7 +95,7 @@ a.negative,
 }
 
 .bgbare {
-  background: #bbb !important;
+  background: #bbb;
 }
 
 .bgpale {
@@ -128,15 +120,8 @@ header.bgopaque {
 }
 
 .bgfirm {
-  background: #f4b408;
-}
-
-.bgpositive {
-  background: #73ab00;
-}
-
-.bgnegative {
-  background: #c20000;
+  /* background: #f4b408; */
+  background: #fabada;
 }
 
 .bobare {
@@ -189,15 +174,8 @@ header.bgopaque {
   background-size: 100%;
 }
 
-.underline {
-  padding-bottom: 10px;
-  background: url(../assets/underline.png) bottom right no-repeat;
-}
 
-.underline_contrast {
-  padding-bottom: 10px;
-  background: url(../assets/underline_contrast.png) bottom right no-repeat;
-}
+
 
 .coming_soon {
   position: absolute;
@@ -255,12 +233,18 @@ ul.boxshadow2 li {
   }
 }
 
-.top_n {
-  width: 53px;
-  height: 80px;
-  margin: auto;
-  margin: -40px auto 0;
-  background: url(../assets/top_deco_n.png) no-repeat;
+.deco_n {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 26px);
+    width: 53px;
+    height: 80px;
+    background: url(../assets/n.svg) no-repeat;
+  }
 }
 
 .top_a {
@@ -292,27 +276,6 @@ ul.boxshadow2 li {
 
 .ank {
   margin: 0;
-}
-
-h1.logo {
-  position: relative;
-  width: 47px;
-  height: 196px;
-  margin: auto;
-
-  span {
-    position: absolute;
-    text-indent: -9999px;
-  }
-
-  em {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url(../assets/naknak.png) no-repeat top center;
-  }
 }
 
 .credits {
