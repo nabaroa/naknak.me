@@ -1686,7 +1686,9 @@ button.slider-switch {
 
 .nk-timeline__item {
   padding-left: 3rem;
-  padding-left: var(--x-large)
+  padding-left: var(--x-large);
+  margin-bottom: 2rem;
+  margin-bottom: var(--large)
 }
 
 .nk-timeline__item::before {

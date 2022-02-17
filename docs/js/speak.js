@@ -154,7 +154,9 @@ speakEvents.forEach((speakEvent) => {
   item.appendChild(what);
   item.appendChild(company);
   item.appendChild(date);
-  item.appendChild(where);
+  
+  isWhereInObject = "where" in event;
+  isWhereInObject && item.appendChild(where);
 
   isAssetLinkInObject = "assetLink" in speakEvent;
   isAssetLinkInObject && item.appendChild(assetLink);

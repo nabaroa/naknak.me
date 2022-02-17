@@ -120,6 +120,7 @@ Migration to nakDS.io 2022
 
 .nk-timeline__item {
   padding-left: var(--x-large);
+  margin-bottom: var(--large);
   
   &::before {
     opacity: .5;

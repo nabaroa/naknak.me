@@ -1,95 +1,75 @@
 const events = [
   {
     id: "1",
-    date: "28/10/2016-12/11/2016",
-    where: "Bilbao (Basque Country)",
-    company: "Mondragon Unibertsitatea",
-    companyUrl:
-      "https://www.mondragon.edu/es/estudios/master/master-universitario-en-marketing-digital/",
-    what: "Workshop",
-    title: "HTML/CSS",
-    assetLink: "https://escuela.it/cursos/postcss-mas-alla-del-css/",
+    date: "06/04/2013",
+    company: "Escuela IT",
+    what: "Workshop online",
+    title: "Taller de preprocesadores CSS: Sass",
+    assetLink: "https://escuela.it/cursos/sass/",
+    assetSlides: "https://drive.google.com/file/d/0B8ELniJ8ecbLVEVFT1hGQVJLdTg/view?resourcekey=0-JV6v0dpI7-5S4tzmmRszLQ",
   },
   {
     id: "2",
-    date: "18/04/2016-22/04/2016",
-    where: "",
-    company: "Escuela IT",
-    companyUrl: "https://escuela.it/",
-    what: "Workshop online",
-    title: "PostCSS",
-    assetLink: "https://escuela.it/cursos/postcss-mas-alla-del-css/",
-    assetLink2: "https://github.com/EscuelaIt/PostCSS-2016",
+    date: "27/09/2013-1/10/2013",
+    where: "Bilbao (Bizkaia)",
+    company: "Universidad de Deusto",
+    what: "Diploma de Especialización de Soluciones Software para Internet",
+    title: "CSS3",
+    assetLink: "https://ingenieria.deusto.es/cs/Satellite/ingenieria/en/facultad-ingenieria",
   },
   {
     id: "3",
-    date: "13/10/2015-16/10/2015",
-    where: "Bilbao (Basque Country)",
+    date: "30/09/2014-3/10/2014",
+    where: "Bilbao (Bizkaia)",
     company: "Universidad de Deusto",
-    companyUrl:
-      "https://www.postgrado.deusto.es/cs/Satellite/estudiantes/es/buscador-de-postgrados/diploma-de-especializacion-en-soluciones-software-para-internet-/programa",
     what: "Diploma de Especialización de Soluciones Software para Internet",
-    title: "CSS3 module",
-    assetLink: "https://learncss.info/index.html",
+    title: "CSS3",
+    assetLink: "https://ingenieria.deusto.es/cs/Satellite/ingenieria/en/facultad-ingenieria",
   },
   {
     id: "4",
-    date: "24/06/2015",
-    where: "",
-    company: "Escuela IT",
-    companyUrl: "https://escuela.it/",
-    what: "Workshop online",
-    title: "Especificación CSS3 y mejoras en la maquetación con CSS3",
-    assetLink: "https://github.com/EscuelaIt/HTML-CSS-2015/tree/master/CSS3",
+    date: "05/12/2014 & 12/12/2014",
+    where: "Bilbao (Bizkaia)",
+    company: "Coderdojo Bio",
+    what: "Workshop to young students",
+    title: "HTML5",
+    assetLink: "https://coderdojo.com/",
   },
   {
     id: "5",
-    date: "05/12/2014 & 12/12/2014",
-    where: "Bilbao (Basque Country)",
-    company: "Coderdojo Bio",
-    companyUrl: "https://coderdojo.com/",
-    what: "Workshop for young people",
-    title: "HTML5",
+    date: "24/06/2015",
+    company: "Escuela IT",
+    what: "Workshop online",
+    title: "Especificación CSS3 y mejoras en la maquetación con CSS3",
+    assetLink: "https://escuela.it/cursos/html-css/",
+    assetGithub: "https://github.com/EscuelaIt/HTML-CSS-2015/tree/master/CSS3",
   },
   {
     id: "6",
-    date: "30/09/2014-3/10/2014",
-    where: "Bilbao (Basque Country)",
+    date: "13/10/2015-16/10/2015",
+    where: "Bilbao (Bizkaia)",
     company: "Universidad de Deusto",
-    companyUrl: "https://www.deusto.es",
     what: "Diploma de Especialización de Soluciones Software para Internet",
-    title: "CSS3 module",
+    title: "CSS3",
+    assetLink: "https://ingenieria.deusto.es/cs/Satellite/ingenieria/en/facultad-ingenieria",
   },
   {
     id: "7",
-    date: "27/09/2013-1/10/2013",
-    where: "Bilbao (Basque Country)",
-    company: "Universidad de Deusto",
-    companyUrl: "https://www.deusto.es",
-    what: "Diploma de Especialización de Soluciones Software para Internet",
-    title: "CSS3 module",
+    date: "18/04/2016-22/04/2016",
+    company: "Escuela IT",
+    what: "Workshop online",
+    title: "PostCSS",
+    assetLink: "https://escuela.it/cursos/postcss-mas-alla-del-css/",
+    assetGithub: "https://github.com/EscuelaIt/PostCSS-2016",
   },
   {
     id: "8",
-    date: "06/04/2013",
-    where: "",
-    company: "Escuela IT",
-    companyUrl: "https://www.escuela.it/cursos",
-    what: "Workshop online",
-    title: "Taller de preprocesadores CSS: Sass",
-  },
-  {
-    id: "9",
-    date: "nnnnn06/04/2013",
-    where: "",
-    company: "Escuela IT",
-    companyUrl: "https://www.escuela.it/cursos",
-    what: "Workshop online",
-    title: "Taller de preprocesadores CSS: Sass",
-    assetLink: "asdf",
-    assetSlides: "asdfasd",
-    assetVideo: "",
-    assetGithub: "",
+    date: "28/10/2016-12/11/2016",
+    where: "Bilbao (Bizkaia)",
+    company: "Master Universitario de Marketing Digital. Mondragon Unibertsitatea",
+    what: "Workshop",
+    title: "HTML/CSS",
+    assetLink: "https://www.mondragon.edu/es/master-universitario-marketing-digital",
   },
 ];
 
@@ -126,26 +106,26 @@ events.forEach((event) => {
   imageLink.src = "assets/icon-link.svg";
   imageLink.alt = "Link to documentation";
 
-  const assetSlides  = document.createElement("a");
-  assetSlides.href = event.assetSlides ;
+  const assetSlides = document.createElement("a");
+  assetSlides.href = event.assetSlides;
 
-  const imageSlides  = document.createElement("img");
+  const imageSlides = document.createElement("img");
   imageSlides.className = "nk-timeline__icon";
   imageSlides.src = "assets/icon-slides.svg";
   imageSlides.alt = "Slides";
 
-  const assetGithub  = document.createElement("a");
-  assetGithub.href = event.assetGithub ;
+  const assetGithub = document.createElement("a");
+  assetGithub.href = event.assetGithub;
 
-  const imageGithub  = document.createElement("img");
+  const imageGithub = document.createElement("img");
   imageGithub.className = "nk-timeline__icon";
   imageGithub.src = "assets/icon-github.svg";
   imageGithub.alt = "Github";
 
-  const assetVideo  = document.createElement("a");
-  assetVideo.href = event.assetVideo ;
+  const assetVideo = document.createElement("a");
+  assetVideo.href = event.assetVideo;
 
-  const imageVideo  = document.createElement("img");
+  const imageVideo = document.createElement("img");
   imageVideo.className = "nk-timeline__icon";
   imageVideo.src = "assets/icon-video.svg";
   imageVideo.alt = "Video";
@@ -154,7 +134,9 @@ events.forEach((event) => {
   item.appendChild(what);
   item.appendChild(company);
   item.appendChild(date);
-  item.appendChild(where);
+
+  isWhereInObject = "where" in event;
+  isWhereInObject && item.appendChild(where);
 
   isAssetLinkInObject = "assetLink" in event;
   isAssetLinkInObject && item.appendChild(assetLink);
@@ -175,7 +157,6 @@ events.forEach((event) => {
   isAssetVideoInObject && item.appendChild(assetVideo);
 
   assetVideo && assetVideo.appendChild(imageVideo);
-
 
   eventsDiv.insertBefore(item, eventsDiv.firstChild);
 });
