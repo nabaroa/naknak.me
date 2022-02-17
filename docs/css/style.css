@@ -1671,6 +1671,10 @@ button.slider-switch {
      margin-top: auto;
    }
 
+.nk-timeline::before {
+    opacity: .3;
+  }
+
 .nk-timeline__date {
   color: #e5e5e5;
   color: var(--color--k-7);
@@ -1682,11 +1686,15 @@ button.slider-switch {
 
 .nk-timeline__item {
   padding-left: 3rem;
-  padding-left: var(--x-large);
+  padding-left: var(--x-large)
 }
 
+.nk-timeline__item::before {
+    opacity: .5;
+    left: 24px;
+  }
+
 .nk-timeline__icon {
-  fill: pink;
   width: 2rem;
   width: var(--large);
 }

@@ -104,6 +104,12 @@ Migration to nakDS.io 2022
    }
 }
 
+.nk-timeline {
+  &::before {
+    opacity: .3;
+  }
+}
+
 .nk-timeline__date {
   color: var(--color--k-7);
 }
@@ -114,9 +120,13 @@ Migration to nakDS.io 2022
 
 .nk-timeline__item {
   padding-left: var(--x-large);
+  
+  &::before {
+    opacity: .5;
+    left: 24px;
+  }
 }
 
 .nk-timeline__icon {
-  fill: pink;
   width: var(--large);
 }
