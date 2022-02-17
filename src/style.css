@@ -103,3 +103,20 @@ Migration to nakDS.io 2022
      margin-top: auto;
    }
 }
+
+.nk-timeline__date {
+  color: var(--color--k-7);
+}
+
+.nk-timeline__assets {
+  list-style: none;
+}
+
+.nk-timeline__item {
+  padding-left: var(--x-large);
+}
+
+.nk-timeline__icon {
+  fill: pink;
+  width: var(--large);
+}

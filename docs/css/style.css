@@ -1670,3 +1670,23 @@ button.slider-switch {
 .nk-card .date {
      margin-top: auto;
    }
+
+.nk-timeline__date {
+  color: #e5e5e5;
+  color: var(--color--k-7);
+}
+
+.nk-timeline__assets {
+  list-style: none;
+}
+
+.nk-timeline__item {
+  padding-left: 3rem;
+  padding-left: var(--x-large);
+}
+
+.nk-timeline__icon {
+  fill: pink;
+  width: 2rem;
+  width: var(--large);
+}
