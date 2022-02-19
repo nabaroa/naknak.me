@@ -9,7 +9,7 @@
     "web": "http://naknak.me"
   },
   "scripts": {
-    "css": "postcss src/style.css -o docs/css/style.css -w"
+    "css": "postcss src/style.css -o docs/css/styleV2.css -w"
   },
   "repository": {
     "type": "git",
