@@ -1,11 +1,9 @@
-# TODO list
+# Backlog
 
+- Review broken links
 - Pass core web vitals
 - Use a script to add the agenda and works
-- Remove iconfont
 - Improve mobile navigation
-- Review broken links
 - Upload old projects and publish the links in agenda?
-- Recopilar los vídeos
-- Update font
+- Ask for missing videos
 - Find previous antievent material
