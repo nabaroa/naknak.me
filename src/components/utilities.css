@@ -1,0 +1,27 @@
+.underline {
+  padding-bottom: 8px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 5px;
+    transform: rotate(3deg);
+    background: var(--color);
+  }
+}
+
+.underline_contrast {
+  padding-bottom: 10px;
+  background: url(../assets/underline_contrast.png) bottom right no-repeat;
+}
+
+.no-underline {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

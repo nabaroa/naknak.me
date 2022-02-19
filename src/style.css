@@ -1,25 +1,24 @@
 /*
 
-Created by NAK: @nabaroa
-2016
+Created by Naiara Abaroa: @nabaroa
+First commit 2012
+Migration to nakDS.io 2022
 
 */
 
-/* SCSS arquitecture based on Hugo Giraudel article: http://www.sitepoint.com/architecture-sass-project/ */
+@import "../node_modules/nakds/dist/css/nakDS.min.css";
 
 /* --------------------------------
-  helpers/
+  settings/
 -------------------------------- */
 
-@import "helpers/var.css";
-@import "helpers/placeholders.css";
+@import "settings/var.css";
 
 /* --------------------------------
   base
 -------------------------------- */
-@import "base/reset.css";
+/* @import "base/reset.css"; */
 @import "base/typography.css";
-@import "base/oocss.css";
 
 /* --------------------------------
   components/
@@ -28,13 +27,11 @@ Created by NAK: @nabaroa
 @import "components/agenda.css";
 @import "components/cards.css";
 @import "components/navigation.css";
+@import "components/utilities.css";
 
 /* --------------------------------
    layout/
 -------------------------------- */
-
-@import "layout/layout.css";
-@import "layout/flex.css";
 
 /* --------------------------------
     pages/
@@ -49,11 +46,137 @@ Created by NAK: @nabaroa
      themes/
 -------------------------------- */
 
-@import "themes/theme.css";
-@import "themes/icons.css";
-
 /* --------------------------------
      extra/
 -------------------------------- */
 
-@import "extra/icomoon.css";
+@custom-media --small (min-width: 480px);
+@custom-media --small--max (max-width: 799px);
+@custom-media --medium (min-width: 800px);
+@custom-media --medium--max (max-width: 1169px);
+@custom-media --large (min-width: 1170px);
+@custom-media --large--max (max-width: 1439px);
+@custom-media --xlarge (min-width: 1440px);
+
+.pattern3 {
+  background: url(../assets/bg5.png);
+}
+
+.nk-color {
+  color: var(--color);
+  animation: color 3s;
+}
+
+@keyframes color {
+  from {
+    --color: white;
+  }
+
+  to {
+    --color: pink;
+  }
+}
+
+.date {
+  text-align: right;
+  font-size: var(--medium);
+  color: var(--color--k-7);
+}
+
+.nk-card {
+  background: #111;
+  border-radius: 4px;
+  color: var(--color--k-6);
+
+  & img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px 4px 0 0;
+  }
+
+  & a {
+    color: var(--color--k-5);
+  }
+
+  & .nk-card__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  & .date {
+    margin-top: auto;
+  }
+}
+
+.nk-timeline {
+  &::before {
+    opacity: 0.3;
+  }
+}
+
+.nk-timeline__date {
+  color: var(--color--k-7);
+}
+
+.nk-timeline__assets {
+  list-style: none;
+}
+
+.nk-timeline__item {
+  padding-left: var(--x-large);
+  margin-bottom: var(--large);
+
+  &::before {
+    opacity: 0.5;
+    left: 24px;
+  }
+}
+
+.nk-timeline__assets {
+  display: flex;
+  align-items: center;
+  gap: var(--small);
+}
+
+.nk-timeline__icon {
+  width: var(--large);
+}
+
+.nk-full {
+  width: 100vw;
+}
+
+.nk-flex {
+  display: flex;
+}
+
+.js-menu-toggle {
+  position: fixed;
+  top: var(--small);
+  right: var(--small);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 3;
+
+  & .nk-icon {
+    fill: var(--color-secondary);
+  }
+  
+  @media (--small) {
+    display:none;
+  }
+}
+
+.js-menu {
+  display: none;
+
+  @media (--small) {
+    display: flex;
+  }
+
+  &.is-open {
+    display: flex;
+  }
+}

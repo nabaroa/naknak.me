@@ -1,11 +1,6 @@
 /* --------------------------------
   Home
 -------------------------------- */
-.home {
-  @media all and (max-width: 1000px) {
-    min-height: 140vh;
-  }
-}
 
 .index0 {
   background: url(../assets/randommatches_115.jpg) no-repeat;
@@ -58,35 +53,28 @@
   background-attachment: fixed;
 }
 
-.index1, .index2, .index3, .index4, .index5, .index6, .index7, .index8, .inspire {
-  -moz-background-size: 110% 110%;
-  -o-background-size: 110% 110%;
-  -webkit-background-size: 110% 110%;
+.index1,
+.index2,
+.index3,
+.index4,
+.index5,
+.index6,
+.index7,
+.index8,
+.inspire {
   background-size: 110% 110%;
-  -webkit-transition: background-size 2s linear;
-  -moz-transition: background-size 2s linear;
-  -o-transition: background-size 2s linear;
   transition: background-size 2s linear;
 }
 
-.index1:hover, .index2:hover, .index3:hover, .index4:hover, .index5:hover, .index6:hover, .index7:hover, .index8:hover, .inspire:hover {
-  -moz-background-position: 0 0;
-  -o-background-position: 0 0;
-  -webkit-background-position: 0 0;
+.index1:hover,
+.index2:hover,
+.index3:hover,
+.index4:hover,
+.index5:hover,
+.index6:hover,
+.index7:hover,
+.index8:hover,
+.inspire:hover {
   background-position: 0 0;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
-}
-
-@media all and (max-width: 360px) {
-  background-image: none;
-  background-size: 100% 100%;
-
-  /* Gecko 1.9.2 (Firefox 3.6) */
-
-  /* Opera 9.5 */
-
-  /* Safari 3.0 */
 }

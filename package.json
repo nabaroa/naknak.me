@@ -1,12 +1,15 @@
 {
   "name": "naknak.me",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "description": "This is my personal portfolio. Enjoy.",
   "homepage": "http://naknak.me",
   "author": {
     "name": "Naiara Abaroa",
     "email": "naiaraabaroa@gmail.com",
     "web": "http://naknak.me"
+  },
+  "scripts": {
+    "css": "postcss src/style.css -o docs/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -16,26 +19,13 @@
     "url": "https://github.com/nabaroa/naknak.me/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^9.7.1",
-    "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2",
-    "gulp-cssnano": "^2.1.3",
-    "gulp-notify": "^3.2.0",
-    "gulp-postcss": "^8.0.0",
-    "postcss-apply": "^0.11.0",
-    "postcss-custom-media": "^7.0.8",
-    "postcss-custom-properties": "^8.0.11",
+    "nakds": "^2.4.0",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
     "postcss-import": "^12.0.1",
-    "postcss-mixins": "^6.2.1",
-    "postcss-nested": "^4.1.1",
-    "reveal": "0.0.4",
-    "stylelint": "^11.1.1",
-    "stylelint-config-property-sort-order-smacss": "^4.0.2",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.3"
+    "postcss-preset-env": "^7.3.3"
   },
-  "license": "none",
+  "license": "MIT",
   "dependencies": {
     "npm-check-updates": "^3.1.26"
   }
