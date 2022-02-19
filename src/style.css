@@ -64,6 +64,17 @@ Migration to nakDS.io 2022
 
 .nk-color {
   color: var(--color);
+  animation: color 3s;
+}
+
+@keyframes color {
+  from {
+    --color: white;
+  }
+
+  to {
+    --color: pink;
+  }
 }
 
 .date {
@@ -75,7 +86,7 @@ Migration to nakDS.io 2022
 .nk-card {
   background: #111;
   border-radius: 4px;
-  color: var(--color--k-7);
+  color: var(--color--k-6);
 
   & img {
     width: 100%;
@@ -138,4 +149,34 @@ Migration to nakDS.io 2022
 
 .nk-flex {
   display: flex;
+}
+
+.js-menu-toggle {
+  position: fixed;
+  top: var(--small);
+  right: var(--small);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 3;
+
+  & .nk-icon {
+    fill: var(--color-secondary);
+  }
+  
+  @media (--small) {
+    display:none;
+  }
+}
+
+.js-menu {
+  display: none;
+
+  @media (--small) {
+    display: flex;
+  }
+
+  &.is-open {
+    display: flex;
+  }
 }

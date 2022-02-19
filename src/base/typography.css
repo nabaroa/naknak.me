@@ -12,7 +12,8 @@
 }
 
 body {
-  font-family: "Abel", sans-serif;
+  /* font-family: "Abel", sans-serif; */
+  font-family: "Lato-light", sans-serif;
 }
 
 .display-1 {
@@ -33,6 +34,10 @@ body {
 
 .display-5 {
   font-size: 1.5em;
+}
+
+.display-20vw {
+  font-size: 20vw;
 }
 
 [class^="nk-heading"] {

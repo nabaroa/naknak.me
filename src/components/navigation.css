@@ -3,7 +3,6 @@ html {
 }
 
 .menu {
-  display: none;
   flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
@@ -13,8 +12,8 @@ html {
   text-align: center;
   transition: all 0.1s ease;
   background: var(--color--k-2);
-  /* opacity: .9; */
   z-index: 2;
+  opacity: .9;
 
   @media (--small) {
     display: flex;

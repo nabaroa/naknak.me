@@ -80,7 +80,7 @@ participateEvents.forEach((speakEvent) => {
   const imageLink = document.createElement("img");
   imageLink.className = "nk-timeline__icon";
   imageLink.src = "assets/icon-link.svg";
-  imageLink.alt = "Link to documentation";
+  imageLink.alt = "Link";
 
   const assetSlides = document.createElement("a");
   assetSlides.href = speakEvent.assetSlides;

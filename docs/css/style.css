@@ -797,6 +797,7 @@ ol,ul{list-style-position:inside}
 :root {
   --color: rgb(250, 186, 218);
   --color: #f4b408;
+  --color-secondary: #bb2a5c;
 }
 
 /* --------------------------------
@@ -820,7 +821,8 @@ ol,ul{list-style-position:inside}
 }
 
 body {
-  font-family: "Abel", sans-serif;
+  /* font-family: "Abel", sans-serif; */
+  font-family: "Lato-light", sans-serif;
 }
 
 .display-1 {
@@ -841,6 +843,10 @@ body {
 
 .display-5 {
   font-size: 1.5em;
+}
+
+.display-20vw {
+  font-size: 20vw;
 }
 
 [class^="nk-heading"] {
@@ -921,7 +927,7 @@ body {
 .card {
   background: #f5f5f5;
   background: var(--color--k-9);
-  opacity: .7;
+  opacity: .8;
   position: absolute;
   top: 0;
   left: calc(50% - 25vw);
@@ -951,7 +957,6 @@ html {
 }
 
 .menu {
-  display: none;
   flex-wrap: wrap;
   justify-content: space-around;
   position: fixed;
@@ -962,8 +967,8 @@ html {
   transition: all 0.1s ease;
   background: #222;
   background: var(--color--k-2);
-  /* opacity: .9; */
-  z-index: 2
+  z-index: 2;
+  opacity: .9
 }
 
 @media (min-width: 480px) {
@@ -1632,6 +1637,28 @@ button.slider-switch {
 .nk-color {
   color: #f4b408;
   color: var(--color);
+  -webkit-animation: color 3s;
+          animation: color 3s;
+}
+
+@-webkit-keyframes color {
+  from {
+    --color: white;
+  }
+
+  to {
+    --color: pink;
+  }
+}
+
+@keyframes color {
+  from {
+    --color: white;
+  }
+
+  to {
+    --color: pink;
+  }
 }
 
 .date {
@@ -1645,8 +1672,8 @@ button.slider-switch {
 .nk-card {
   background: #111;
   border-radius: 4px;
-  color: #e5e5e5;
-  color: var(--color--k-7)
+  color: #d6d6d6;
+  color: var(--color--k-6)
 }
 
 .nk-card img {
@@ -1715,3 +1742,42 @@ button.slider-switch {
 .nk-flex {
   display: flex;
 }
+
+.js-menu-toggle {
+  position: fixed;
+  top: 0.5rem;
+  top: var(--small);
+  right: 0.5rem;
+  right: var(--small);
+  border: 0;
+  background: none;
+  cursor: pointer;
+  z-index: 3
+}
+
+.js-menu-toggle .nk-icon {
+    fill: #bb2a5c;
+    fill: var(--color-secondary);
+  }
+
+@media (min-width: 480px) {
+
+.js-menu-toggle {
+    display:none
+}
+  }
+
+.js-menu {
+  display: none
+}
+
+@media (min-width: 480px) {
+
+.js-menu {
+    display: flex
+}
+  }
+
+.js-menu.is-open {
+    display: flex;
+  }

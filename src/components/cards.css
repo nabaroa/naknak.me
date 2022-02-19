@@ -1,7 +1,7 @@
 
 .card {
   background: var(--color--k-9);
-  opacity: .7;
+  opacity: .8;
   position: absolute;
   top: 0;
   left: calc(50% - 25vw);

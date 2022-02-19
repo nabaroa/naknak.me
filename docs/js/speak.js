@@ -70,7 +70,7 @@ const speakEvents = [
     id: "9",
     date: "07/08/2013",
     company: "Desarrolloweb.com",
-    what: "clase Escuela IT online",
+    what: "Escuela IT online",
     title: "Practice safe design, use a concept",
     assetLink: "https://escuela.it/estudios/iniciacion-a-las-tecnologias-de-la-informacion",
     assetVideo: "https://www.youtube.com/watch?v=LCBf0qh6LQI",
@@ -81,7 +81,7 @@ const speakEvents = [
     company: "DevFestBilbao 2014",
     where: "Bilbao,Bizkaia",
     what: "Organized by Google Dev. Group of Bilbao",
-    title: "'Are you sassy?' speach on Sass",
+    title: "Are you SASSy?",
   },
   {
     id: "11",
@@ -220,7 +220,7 @@ speakEvents.forEach((speakEvent) => {
   const imageLink = document.createElement("img");
   imageLink.className = "nk-timeline__icon";
   imageLink.src = "assets/icon-link.svg";
-  imageLink.alt = "Link to documentation";
+  imageLink.alt = "Link";
 
   const assetSlides = document.createElement("a");
   assetSlides.href = speakEvent.assetSlides;
