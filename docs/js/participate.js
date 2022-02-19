@@ -122,7 +122,8 @@ participateEvents.forEach((speakEvent) => {
   isCompanyInObject = "company" in speakEvent;
   isCompanyInObject && item.appendChild(company);
  
-  item.appendChild(date);
+  isDateInObject = "date" in speakEvent;
+  isDateInObject && item.appendChild(date);
 
   isWhereInObject = "where" in speakEvent;
   isWhereInObject && item.appendChild(where);
