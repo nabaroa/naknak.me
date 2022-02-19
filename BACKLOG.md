@@ -1,7 +1,7 @@
 # Backlog
 
-- Pass core web vitals
-- Use a script to add the agenda and works
+- Create new icons
+- Performance 100
 - Improve mobile navigation
 - Upload old projects and publish the links in agenda
 - Ask for missing videos
