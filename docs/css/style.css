@@ -1668,11 +1668,11 @@ button.slider-switch {
   }
 
 .nk-card .date {
-     margin-top: auto;
-   }
+    margin-top: auto;
+  }
 
 .nk-timeline::before {
-    opacity: .3;
+    opacity: 0.3;
   }
 
 .nk-timeline__date {
@@ -1692,7 +1692,7 @@ button.slider-switch {
 }
 
 .nk-timeline__item::before {
-    opacity: .5;
+    opacity: 0.5;
     left: 24px;
   }
 
@@ -1706,4 +1706,8 @@ button.slider-switch {
 .nk-timeline__icon {
   width: 2rem;
   width: var(--large);
+}
+
+.nk-full {
+  width: 100vw;
 }
