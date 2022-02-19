@@ -1696,6 +1696,13 @@ button.slider-switch {
     left: 24px;
   }
 
+.nk-timeline__assets {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  gap: var(--small);
+}
+
 .nk-timeline__icon {
   width: 2rem;
   width: var(--large);

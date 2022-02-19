@@ -11,7 +11,7 @@ const events = [
   {
     id: "2",
     date: "27/09/2013-1/10/2013",
-    where: "Bilbao (Bizkaia)",
+    where: "Bilbao, Bizkaia",
     company: "Universidad de Deusto",
     what: "Diploma de Especialización de Soluciones Software para Internet",
     title: "CSS3",
@@ -20,7 +20,7 @@ const events = [
   {
     id: "3",
     date: "30/09/2014-3/10/2014",
-    where: "Bilbao (Bizkaia)",
+    where: "Bilbao, Bizkaia",
     company: "Universidad de Deusto",
     what: "Diploma de Especialización de Soluciones Software para Internet",
     title: "CSS3",
@@ -29,7 +29,7 @@ const events = [
   {
     id: "4",
     date: "05/12/2014 & 12/12/2014",
-    where: "Bilbao (Bizkaia)",
+    where: "Bilbao, Bizkaia",
     company: "Coderdojo Bio",
     what: "Workshop to young students",
     title: "HTML5",
@@ -47,7 +47,7 @@ const events = [
   {
     id: "6",
     date: "13/10/2015-16/10/2015",
-    where: "Bilbao (Bizkaia)",
+    where: "Bilbao, Bizkaia",
     company: "Universidad de Deusto",
     what: "Diploma de Especialización de Soluciones Software para Internet",
     title: "CSS3",
@@ -65,7 +65,7 @@ const events = [
   {
     id: "8",
     date: "28/10/2016-12/11/2016",
-    where: "Bilbao (Bizkaia)",
+    where: "Bilbao, Bizkaia",
     company: "Master Universitario de Marketing Digital. Mondragon Unibertsitatea",
     what: "Workshop",
     title: "HTML/CSS",
@@ -98,8 +98,12 @@ events.forEach((event) => {
   where.className = "nk-timeline__date";
   where.innerText = event.where;
 
+  const assets = document.createElement("div");
+  assets.className = "nk-timeline__assets";
+
   const assetLink = document.createElement("a");
   assetLink.href = event.assetLink;
+
 
   const imageLink = document.createElement("img");
   imageLink.className = "nk-timeline__icon";
@@ -137,24 +141,27 @@ events.forEach((event) => {
 
   isWhereInObject = "where" in event;
   isWhereInObject && item.appendChild(where);
+ 
+  isAssetsInObject = "assetLink" in event;
+  isAssetsInObject && item.appendChild(assets);
 
   isAssetLinkInObject = "assetLink" in event;
-  isAssetLinkInObject && item.appendChild(assetLink);
+  isAssetLinkInObject && assets.appendChild(assetLink);
 
   assetLink && assetLink.appendChild(imageLink);
 
   isAssetSlidesInObject = "assetSlides" in event;
-  isAssetSlidesInObject && item.appendChild(assetSlides);
+  isAssetSlidesInObject && assets.appendChild(assetSlides);
 
   assetSlides && assetSlides.appendChild(imageSlides);
 
   isAssetGithubInObject = "assetGithub" in event;
-  isAssetGithubInObject && item.appendChild(assetGithub);
+  isAssetGithubInObject && assets.appendChild(assetGithub);
 
   assetGithub && assetGithub.appendChild(imageGithub);
 
   isAssetVideoInObject = "assetVideo" in event;
-  isAssetVideoInObject && item.appendChild(assetVideo);
+  isAssetVideoInObject && assets.appendChild(assetVideo);
 
   assetVideo && assetVideo.appendChild(imageVideo);
 

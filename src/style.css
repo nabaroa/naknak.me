@@ -128,6 +128,12 @@ Migration to nakDS.io 2022
   }
 }
 
+.nk-timeline__assets {
+  display: flex;
+  align-items: center;
+  gap: var(--small);
+}
+
 .nk-timeline__icon {
   width: var(--large);
 }
