@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <link rel="shortcut icon" href="assets/favicon.ico">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+  
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Wire+One&display=swap" rel="stylesheet">
 </head>
@@ -39,7 +39,7 @@
     </svg>
   </button>
 
-  <header id="home" class="nk-section nk-height-fullpage index<?= mt_rand(1,8); ?> ">
+  <header id="home" class="nk-section nk-height-fullpage index5 ">
     <div class="card nk-theme--dark wire">
       <h1 class="logo">
         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="195">
@@ -552,20 +552,7 @@
   <script src="js/events.js"></script>
   <script src="js/media.js"></script>
   <script src="js/participate.js"></script>
-  <script>
-    function randOrd() {
-      return (Math.round(Math.random()) - 0.5);
-    }
 
-    $(document).ready(function () {
-      // var klasses = ['index0', 'index0'];
-      var klasses = ['index1', 'index2', 'index3', 'index4', 'index5'];
-      klasses.sort(randOrd);
-      $('#home').each(function (i, val) {
-        $(this).addClass(klasses[i]);
-      });
-    });
-  </script>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-32740256-1']);
