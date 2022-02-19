@@ -484,7 +484,7 @@
         <p class="small tac">Mark Twain</p>
       </div>
     </article>
-    <article id="about" class="nk-container nk-text-align--center">
+    <article id="about" class="nk-container nk-section nk-text-align--center">
       <h1 class="nk-heading--1 display-1">about</h1>
       <p class="">I am <strong class="nk-bold">Naiara Abaroa</strong></p>
       <img class="nk-avatar--large nk-mal" src="assets/naiara-abaroa-x.jpg" alt="Naiara Abaroa">
@@ -493,32 +493,48 @@
       </p>
     </article>
   </main>
-  <footer id="credits" class=" credits bgopaque size1of1 pal tac ">
-    <h1 class=" hole text size100 txtac mtx h1rwd">Credits</h1>
-    <div class="awards">
-      <a href="https://www.awwwards.com/best-websites/nak-ui-designer-developer-html5-css3-by-naiara-abaroa/"
-        target="_blank" rel="noreferrer"><img alt="" src="assets/logo_awwwards.png" alt="Awwwards">
-        <img alt="" src="assets/awwwards_special_mention.png" alt="Special mention. 18th March, 2015"></a>
-      <a href="https://www.csswinner.com/details/nak-front-end-developer/4569/" target="_blank" rel="noreferrer"><img
-          src="assets/CSSwinnerLogo.svg" alt="CSS Winner">
-        <div class="csswinner">Nominee CSS Winner </div>
+  <footer id="credits" class="nk-bg--k-1 nk-section nk-text-align--center">
+    <h1 class="nk-heading--1 display-1">Credits</h1>
+    <div class="nk-grid-2 nk-gap--large">
+      <a class="nk-flex nk-flex--column nk-gap--large"
+        href="https://www.awwwards.com/best-websites/nak-ui-designer-developer-html5-css3-by-naiara-abaroa/"
+        target="_blank" rel="noreferrer">
+        <span>
+          <img alt="" src="assets/logo_awwwards.png" alt="Awwwards">
+        </span>
+        <span>
+          <img alt="" src="assets/awwwards_special_mention.png" alt="Special mention. 18th March, 2015"></a>
+      </span>
+      <a class="nk-flex nk-flex--column nk-gap--large"
+        href="https://www.csswinner.com/details/nak-front-end-developer/4569/" target="_blank" rel="noreferrer">
+        <span>
+          <img src="assets/CSSwinnerLogo.svg" alt="CSS Winner">
+        </span>
+        <span>
+          <img src="assets/nominee-white-right.png" alt="Nominee CSS Winner">
+        </span>
       </a>
     </div>
-    <p class="mtl text size200 ">Find the <span class="nk-color">code</span> of this site: <a
-        href="https://github.com/nabaroa/naknak.me" target="_blank" rel="noreferrer"><i
-          class="icon-github size100 "></i></a>
+    <p class="nk-mtl">Find the <span class="nk-color">code</span> of this site: <a
+        href="https://github.com/nabaroa/naknak.me" target="_blank" rel="noreferrer">
+        github
+      </a>
     </p>
-    <p class="mtl">Tools used on this work:</p>
+    <div class="nk-text-align--left nk-container--text">
+    <p class="nk-mtl nk-heading--2">Hand crafted:</p>
     <ul>
-      <li><a href="https://postcss.org/" target="_blank" rel="noreferrer" class="nk-color">postCSS</a> </li>
-      <li><a href="https://gulpjs.com/" class="nk-color">Gulp</a>
-      </li>
+      <li>580 lines of HTML</li>
+      <li>54KB of CSS</li>
+      <li> 33KB of them are imported from nakDS</li>
+      <li> CSS standar + Postcss</li>
+      <li> Native nesting</li>
+      <li> 0 task runners</li>
     </ul>
-    <p> + my apportation ;)</p>
-    <p class="mtl small">Index images atributions are on <a href="https://pinterest.com/nabaroa/kristaletik-begira/"
+    <p class="nk-mtl">Index images atributions are on <a href="https://pinterest.com/nabaroa/kristaletik-begira/"
         target="_blank" rel="noreferrer">my
         pinterest board:"kristaletik begira"</a>
     </p>
+  </div>
   </footer>
   <script src="js/teach.js"></script>
   <script src="js/speak.js"></script>

@@ -135,3 +135,7 @@ Migration to nakDS.io 2022
 .nk-full {
   width: 100vw;
 }
+
+.nk-flex {
+  display: flex;
+}

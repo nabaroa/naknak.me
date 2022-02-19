@@ -1711,3 +1711,7 @@ button.slider-switch {
 .nk-full {
   width: 100vw;
 }
+
+.nk-flex {
+  display: flex;
+}
