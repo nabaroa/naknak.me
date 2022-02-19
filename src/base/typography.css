@@ -1,8 +1,9 @@
-/* --------------------------------
-  typography
--------------------------------- */
+@font-face {
+  font-display: swap;
+  font-family: "Wire One";
+  src: url(../assets/fonts/WireOne-Regular.ttf);
+}
 
-/* Fonts */
 .wire {
   font-family: "Wire One", sans-serif;
 }
