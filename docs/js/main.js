@@ -6,3 +6,4 @@ const closeByClick = document.getElementsByClassName(".menu__item");
 buttonNavOpen.onclick = () => navOpen.classList.toggle("is-open");
 
 closeByClick.onclick = () => console.log('nak');
+

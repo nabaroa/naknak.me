@@ -8,3 +8,4 @@
 - Ask for missing videos
 - Find previous antievent material
 - Tidy style.css code. Some parts to nakDS, others to component files
+- Add home random background JS
