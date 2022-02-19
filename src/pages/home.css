@@ -62,8 +62,13 @@
 .index7,
 .index8,
 .inspire {
-  background-size: 110% 110%;
-  transition: background-size 2s linear;
+  background-size: cover;
+  background-position: center;
+
+  @media (--medium) {
+    background-size: 110% 110%;
+    transition: background-size 2s linear;
+  }
 }
 
 .index1:hover,
@@ -75,6 +80,11 @@
 .index7:hover,
 .index8:hover,
 .inspire:hover {
-  background-position: 0 0;
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
+  
+  @media (--medium) {
+    background-position: 0 0;
+    background-size: 100% 100%;
+  }
 }
