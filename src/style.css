@@ -7,48 +7,12 @@ Migration to nakDS.io 2022
 */
 
 @import "../node_modules/nakds/dist/css/nakDS.min.css";
-
-/* --------------------------------
-  settings/
--------------------------------- */
-
 @import "settings/var.css";
-
-/* --------------------------------
-  base
--------------------------------- */
-/* @import "base/reset.css"; */
 @import "base/typography.css";
-
-/* --------------------------------
-  components/
--------------------------------- */
-
-@import "components/agenda.css";
 @import "components/cards.css";
 @import "components/navigation.css";
 @import "components/utilities.css";
-
-/* --------------------------------
-   layout/
--------------------------------- */
-
-/* --------------------------------
-    pages/
--------------------------------- */
-
 @import "pages/home.css";
-@import "pages/works.css";
-@import "pages/findme.css";
-@import "pages/work_file.css";
-
-/* --------------------------------
-     themes/
--------------------------------- */
-
-/* --------------------------------
-     extra/
--------------------------------- */
 
 @custom-media --small (min-width: 480px);
 @custom-media --small--max (max-width: 799px);
@@ -64,17 +28,6 @@ Migration to nakDS.io 2022
 
 .nk-color {
   color: var(--color);
-  animation: color 3s;
-}
-
-@keyframes color {
-  from {
-    --color: white;
-  }
-
-  to {
-    --color: pink;
-  }
 }
 
 .date {

@@ -19,6 +19,7 @@
     "url": "https://github.com/nabaroa/naknak.me/issues"
   },
   "devDependencies": {
+    "cssnano": "^5.0.17",
     "nakds": "^2.4.1",
     "postcss": "^8.4.6",
     "postcss-cli": "^9.1.0",

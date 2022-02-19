@@ -1,6 +1,7 @@
 require("postcss");
 require("postcss-import");
 require("postcss-preset-env");
+require("cssnano");
 
 module.exports = {
   plugins: {
@@ -10,6 +11,9 @@ module.exports = {
       features: {
         "custom-media-queries": true,
       },
+    },
+    cssnano: {
+      preset: "default",
     },
   },
 };
