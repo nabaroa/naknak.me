@@ -2,7 +2,6 @@
 
 - Create new icons
 - Use hero image as image and not background CSS
-- Performance 100
 - Improve mobile navigation
 - Upload old projects and publish the links in agenda
 - Ask for missing videos
