@@ -1,5 +1,6 @@
 # Backlog
 
+- Use vídeo as background hero and test performance to it.
 - Create new icons
 - Use hero image as image and not background CSS
 - Improve mobile navigation
