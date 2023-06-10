@@ -5,7 +5,8 @@ const speakEvents = [
     where: "Bilbao,Bizkaia",
     what: "Megathon Windows 8",
     title: "Diseño de apps Windows 8",
-    assetLink: "https://www.genbeta.com/desarrollo/megathon-windows-8-hackathon-multi-ciudad-de-aplicaciones-metro-y-unas-palabras-del-culpable",
+    assetLink:
+      "https://www.genbeta.com/desarrollo/megathon-windows-8-hackathon-multi-ciudad-de-aplicaciones-metro-y-unas-palabras-del-culpable",
   },
   {
     id: "2",
@@ -21,7 +22,7 @@ const speakEvents = [
     what: "Hangout online",
     title: "Emmet.io Improve your HTML & CSS workflow",
     assetLink: "https://desarrolloweb.com/",
-    assetVideo: "https://www.youtube.com/watch?v=ASELM0mYqtA"
+    assetVideo: "https://www.youtube.com/watch?v=ASELM0mYqtA",
   },
   {
     id: "4",
@@ -38,7 +39,8 @@ const speakEvents = [
     what: "Hangout online",
     title: "CSS Preprocessor. La revolución",
     assetLink: "https://www.meetup.com/HTML5-Spain/events/105307612/",
-    assetVideo: "https://www.youtube.com/watch?v=BQaKHGvjCYI&list=UU31NJL93O-T0seb7sOgxtsw&index=3",
+    assetVideo:
+      "https://www.youtube.com/watch?v=BQaKHGvjCYI&list=UU31NJL93O-T0seb7sOgxtsw&index=3",
   },
   {
     id: "6",
@@ -64,7 +66,8 @@ const speakEvents = [
     what: "Hangout online",
     title: "SASS. #devIO",
     assetLink: "https://desarrolloweb.com/",
-    assetVideo: "https://www.youtube.com/watch?v=MUN8CwzCecI&list=PLIcuwIrm4rKdiX6EJpH3dPMv0KkNHD_8q&index=13",
+    assetVideo:
+      "https://www.youtube.com/watch?v=MUN8CwzCecI&list=PLIcuwIrm4rKdiX6EJpH3dPMv0KkNHD_8q&index=13",
   },
   {
     id: "9",
@@ -72,7 +75,8 @@ const speakEvents = [
     company: "Desarrolloweb.com",
     what: "Escuela IT online",
     title: "Practice safe design, use a concept",
-    assetLink: "https://escuela.it/estudios/iniciacion-a-las-tecnologias-de-la-informacion",
+    assetLink:
+      "https://escuela.it/estudios/iniciacion-a-las-tecnologias-de-la-informacion",
     assetVideo: "https://www.youtube.com/watch?v=LCBf0qh6LQI",
   },
   {
@@ -98,7 +102,8 @@ const speakEvents = [
     company: "CIC Consulting",
     title: "'Workflow para volar con el CSS' ",
     assetLink: "https://www.hack2progress.com/",
-    assetSlides: "https://es.slideshare.net/NaiaraAbaroaKortabitarte/workfrow-para-volar-con-el-css",
+    assetSlides:
+      "https://es.slideshare.net/NaiaraAbaroaKortabitarte/workfrow-para-volar-con-el-css",
     assetVideo: "https://www.youtube.com/watch?v=rijHjt3fJ38",
   },
   {
@@ -107,7 +112,8 @@ const speakEvents = [
     where: "Bilbao,Bizkaia",
     what: "Webdev meetup",
     title: "The Gold Rush. CSS gold nuggets",
-    assetLink: "https://agenda.deusto.es/webdev-meetup-jornada-sobre-desarrollo-web/",
+    assetLink:
+      "https://agenda.deusto.es/webdev-meetup-jornada-sobre-desarrollo-web/",
   },
   {
     id: "14",
@@ -132,8 +138,10 @@ const speakEvents = [
     what: "Codemotion 2016",
     title: "PostCSS. Beyond the treasure map",
     assetGithub: "https://github.com/nabaroa/postcss-beyond-treasure-map",
-    assetVideo: "https://www.youtube.com/watch?v=7peIFggDH8M&list=PLKxa4AIfm4pUvMn4lZ8zin500bsp3oL2A",
-    assetLink: "https://www.youtube.com/watch?v=XRHoW5C8mQs&list=PLKxa4AIfm4pUvMn4lZ8zin500bsp3oL2A",
+    assetVideo:
+      "https://www.youtube.com/watch?v=7peIFggDH8M&list=PLKxa4AIfm4pUvMn4lZ8zin500bsp3oL2A",
+    assetLink:
+      "https://www.youtube.com/watch?v=XRHoW5C8mQs&list=PLKxa4AIfm4pUvMn4lZ8zin500bsp3oL2A",
   },
   {
     id: "17",
@@ -158,9 +166,12 @@ const speakEvents = [
     date: "30/03/2019",
     where: "Cordoba, Argentina",
     what: "Congreso Internacional de la Lengua Española",
-    title: "Cambios en la lectura y escritura: Una tecnología para el lenguaje emocional",
-    assetLink: "https://www.rae.es/la-institucion/politica-panhispanica/cile/viii-cile-argentina-2019",
-    assetSlides: "https://medium.com/@nabaroa/cambios-en-la-lectura-y-escritura-una-tecnolog%C3%ADa-para-el-lenguaje-emocional-60761304104",
+    title:
+      "Cambios en la lectura y escritura: Una tecnología para el lenguaje emocional",
+    assetLink:
+      "https://www.rae.es/la-institucion/politica-panhispanica/cile/viii-cile-argentina-2019",
+    assetSlides:
+      "https://medium.com/@nabaroa/cambios-en-la-lectura-y-escritura-una-tecnolog%C3%ADa-para-el-lenguaje-emocional-60761304104",
     assetVideo: "https://www.youtube.com/watch?v=pQVGwpiE6aw",
     assetPost: "https://medium.com/@nabaroa/a-10-407-km-58ed07e3056b",
   },
@@ -182,6 +193,14 @@ const speakEvents = [
     title: "10 años de CSS",
     assetLink: "https://bilbostack.com/",
     assetSlides: "https://nabaroa.github.io/10-years-of-css/",
+  },
+  {
+    id: "22",
+    date: "06/06/2023",
+    where: "Tallin, Estonia",
+    what: "Wise Tech Day",
+    title: "Surviving Hyphengate",
+    assetLink: "https://twitter.com/nabaroa/status/1666568521873080320?s=20",
   },
 ];
 
@@ -215,7 +234,6 @@ speakEvents.forEach((speakEvent) => {
 
   const assetLink = document.createElement("a");
   assetLink.href = speakEvent.assetLink;
-
 
   const imageLink = document.createElement("img");
   imageLink.className = "nk-timeline__icon";
@@ -261,13 +279,13 @@ speakEvents.forEach((speakEvent) => {
 
   isCompanyInObject = "company" in speakEvent;
   isCompanyInObject && item.appendChild(company);
- 
+
   item.appendChild(date);
 
   isWhereInObject = "where" in speakEvent;
   isWhereInObject && item.appendChild(where);
- 
-  isAssetsInObject = "assetLink", "assetVideo" in speakEvent;
+
+  (isAssetsInObject = "assetLink"), "assetVideo" in speakEvent;
   isAssetsInObject && item.appendChild(assets);
 
   isAssetLinkInObject = "assetLink" in speakEvent;
@@ -284,7 +302,6 @@ speakEvents.forEach((speakEvent) => {
   isAssetGithubInObject && assets.appendChild(assetGithub);
 
   assetGithub && assetGithub.appendChild(imageGithub);
-
 
   isAssetPostInObject = "assetPost" in speakEvent;
   isAssetPostInObject && assets.appendChild(assetPost);
